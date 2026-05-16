@@ -1,0 +1,36 @@
+# Netlify deploy config for the personal health dashboard.
+#
+# Static files live in ``public/`` and are served as-is. The function
+# at ``netlify/functions/ask.js`` is auto-discovered by Netlify (its
+# default functions directory is ``netlify/functions``). No build step
+# is required — the daily rebuild happens on Matt's Mac and the new
+# JSON files are pushed to git, which Netlify auto-deploys.
+
+[build]
+  publish = "public"
+  # No build command — the JSONs are pre-built on the Mac and committed.
+  command = ""
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Long cache on the static shell, short cache on the data so the daily
+# rebuild is picked up quickly.
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/data.json"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/insights.json"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+    X-Robots-Tag = "noindex, nofollow"

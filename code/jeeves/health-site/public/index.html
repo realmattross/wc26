@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Matt — Health</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    /* Light palette — soft off-white background, near-black text, */
+    /* Apple-style cool grey scale, slightly muted accents for legibility */
+    /* on white. The same CSS variable names are used throughout, so */
+    /* this is the only spot that needs to change to flip themes. */
+    --bg-0: #f7f7f9;   /* page background — barely-cool off-white */
+    --bg-1: #ffffff;   /* card surface — pure white */
+    --bg-2: #f1f2f5;   /* inset surface — chat input, hover */
+    --bg-3: #e5e6eb;   /* borders + dividers */
+    --bg-4: #d2d4db;   /* heavier borders, focus rings */
+    --fg: #1a1a1d;     /* primary text — near-black, not pure */
+    --fg-dim: #6e6e73; /* secondary text */
+    --fg-faint: #98989d; /* tertiary — captions, ticks, stale labels */
+    --gait: #b88835;     /* amber, darkened for white-bg contrast */
+    --activity: #2da567; /* green, slightly deepened */
+    --cardio: #c84a4a;   /* red, less saturated */
+    --sleep: #5a6dd9;    /* indigo, deeper */
+    --hydration: #3a9eb0;/* teal, deeper */
+    --good: #2da567;
+    --bad: #c84a4a;
+    --neutral: #6e6e73;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --radius-sm: 8px;
+    --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--bg-0);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+  body { padding: 0 24px 80px; }
+  .container { max-width: 1280px; margin: 0 auto; }
+
+  /* --------------------------------------------------------------- */
+  /* Top bar                                                         */
+  /* --------------------------------------------------------------- */
+  header.top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 36px 0 28px;
+    border-bottom: 1px solid var(--bg-3);
+  }
+  .brand {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--fg-dim);
+    font-weight: 500;
+  }
+  .brand b { color: var(--fg); font-weight: 600; }
+  .top-meta {
+    display: flex;
+    gap: 22px;
+    font-size: 12px;
+    color: var(--fg-faint);
+    letter-spacing: 0.04em;
+  }
+  .top-meta .dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--good);
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  .top-meta.stale .dot { background: var(--bad); }
+
+  /* --------------------------------------------------------------- */
+  /* Hero — walking speed                                            */
+  /* --------------------------------------------------------------- */
+  .hero {
+    padding: 40px 0 32px;
+    display: grid;
+    grid-template-columns: minmax(260px, 320px) 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .hero-num { border-left: 3px solid var(--gait); padding: 8px 0 8px 28px; }
+  .hero-label {
+    font-size: 12px;
+    color: var(--fg-dim);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .hero-sub {
+    font-size: 13px;
+    color: var(--fg-faint);
+    margin-top: 4px;
+  }
+  .hero-value {
+    margin-top: 18px;
+    font-size: 88px;
+    font-weight: 200;
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+    font-variant-numeric: tabular-nums;
+  }
+  .hero-unit {
+    font-size: 24px;
+    color: var(--fg-dim);
+    font-weight: 300;
+    margin-left: 10px;
+  }
+  .hero-foot {
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--fg-dim);
+    display: flex;
+    gap: 14px;
+    align-items: baseline;
+  }
+  .hero-foot .sep { color: var(--fg-faint); }
+  .hero-chart {
+    height: 200px;
+    position: relative;
+  }
+  .delta.good { color: var(--good); }
+  .delta.bad { color: var(--bad); }
+  .delta.neutral { color: var(--fg-dim); }
+
+  /* Range toggle */
+  .range-toggle {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 8px;
+    justify-content: flex-end;
+  }
+  .range-toggle button {
+    background: transparent;
+    color: var(--fg-dim);
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    padding: 4px 10px;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .range-toggle button:hover { color: var(--fg); }
+  .range-toggle button.active {
+    color: var(--fg);
+    background: var(--bg-2);
+    border-color: var(--bg-3);
+  }
+
+  /* --------------------------------------------------------------- */
+  /* Insights panel                                                  */
+  /* --------------------------------------------------------------- */
+  .insights {
+    background: linear-gradient(180deg, var(--bg-1), var(--bg-0));
+    border: 1px solid var(--bg-3);
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    margin: 16px 0 40px;
+    position: relative;
+    box-shadow: var(--shadow);
+  }
+  .insights-header {
+    font-size: 11px;
+    color: var(--fg-dim);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .insights-body {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--fg);
+    max-width: 760px;
+  }
+  .insights-foot {
+    margin-top: 16px;
+    font-size: 11px;
+    color: var(--fg-faint);
+    letter-spacing: 0.04em;
+  }
+
+  /* --------------------------------------------------------------- */
+  /* Section header                                                  */
+  /* --------------------------------------------------------------- */
+  section.metric-group { margin-bottom: 56px; }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--bg-3);
+    margin-bottom: 22px;
+  }
+  .section-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--fg);
+  }
+  .section-accent {
+    width: 8px; height: 8px; border-radius: 50%;
+    display: inline-block;
+  }
+  .section-sub {
+    font-size: 13px;
+    color: var(--fg-dim);
+  }
+
+  /* --------------------------------------------------------------- */
+  /* Metric cards                                                    */
+  /* --------------------------------------------------------------- */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--bg-1);
+    border: 1px solid var(--bg-3);
+    border-radius: var(--radius-md);
+    padding: 20px 22px;
+    transition: transform 120ms ease, border-color 120ms ease;
+  }
+  .card:hover {
+    border-color: var(--bg-4);
+    transform: translateY(-1px);
+  }
+  .card-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .card-label {
+    font-size: 11px;
+    color: var(--fg-dim);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .card-stale {
+    font-size: 10px;
+    color: var(--fg-faint);
+    font-style: italic;
+  }
+  .card-value {
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .card-unit {
+    font-size: 14px;
+    color: var(--fg-dim);
+    margin-left: 6px;
+    font-weight: 400;
+  }
+  .card.stale .card-value { color: var(--fg-dim); }
+  .card-foot {
+    margin-top: 12px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .card-avg { color: var(--fg-faint); }
+  .card-delta { font-variant-numeric: tabular-nums; }
+  .card-delta.good { color: var(--good); }
+  .card-delta.bad { color: var(--bad); }
+  .card-delta.neutral { color: var(--fg-dim); }
+  .card-spark {
+    margin-top: 14px;
+    height: 40px;
+    position: relative;
+  }
+
+  /* --------------------------------------------------------------- */
+  /* Chat                                                            */
+  /* --------------------------------------------------------------- */
+  .chat {
+    background: var(--bg-1);
+    border: 1px solid var(--bg-3);
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    margin: 56px 0 0;
+  }
+  .chat-header {
+    font-size: 11px;
+    color: var(--fg-dim);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .chat-sub {
+    font-size: 13px;
+    color: var(--fg-dim);
+    margin-bottom: 20px;
+  }
+  .chat-thread {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 20px;
+    max-height: 480px;
+    overflow-y: auto;
+  }
+  .chat-msg {
+    padding: 12px 16px;
+    border-radius: var(--radius-md);
+    font-size: 14px;
+    line-height: 1.55;
+    max-width: 80%;
+    white-space: pre-wrap;
+  }
+  .chat-msg.user {
+    background: var(--bg-3);
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+  }
+  .chat-msg.bot {
+    background: var(--bg-2);
+    border: 1px solid var(--bg-3);
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+  }
+  .chat-msg.thinking { color: var(--fg-dim); font-style: italic; }
+  .chat-input-row {
+    display: flex;
+    gap: 8px;
+  }
+  .chat-input {
+    flex: 1;
+    background: var(--bg-2);
+    border: 1px solid var(--bg-3);
+    border-radius: var(--radius-md);
+    color: var(--fg);
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 120ms ease;
+  }
+  .chat-input:focus { border-color: var(--bg-4); }
+  .chat-send {
+    background: var(--gait);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 0 22px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    font-family: inherit;
+    transition: opacity 120ms ease;
+  }
+  .chat-send:hover { opacity: 0.9; }
+  .chat-send:disabled { opacity: 0.4; cursor: default; }
+
+  /* --------------------------------------------------------------- */
+  /* Footer + empty state                                            */
+  /* --------------------------------------------------------------- */
+  footer {
+    margin-top: 56px;
+    padding: 28px 0;
+    border-top: 1px solid var(--bg-3);
+    text-align: center;
+    font-size: 11px;
+    color: var(--fg-faint);
+    letter-spacing: 0.06em;
+  }
+
+  .empty {
+    text-align: center;
+    padding: 80px 24px;
+    color: var(--fg-dim);
+  }
+  .empty h2 { font-weight: 300; color: var(--fg); }
+
+  /* --------------------------------------------------------------- */
+  /* Loading skeleton                                                */
+  /* --------------------------------------------------------------- */
+  .skeleton {
+    background: linear-gradient(90deg, var(--bg-2) 0%, var(--bg-3) 50%, var(--bg-2) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.2s infinite;
+    border-radius: 6px;
+  }
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* Responsive */
+  @media (max-width: 720px) {
+    .hero {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .hero-value { font-size: 64px; }
+    .insights { padding: 22px; }
+    .chat { padding: 22px; }
+    body { padding: 0 16px 80px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="top">
+    <div class="brand"><b>Matt</b> · Health</div>
+    <div id="topMeta" class="top-meta">
+      <span><span class="dot"></span><span id="metaToday">—</span></span>
+      <span>data <span id="metaStale">…</span></span>
+      <span>built <span id="metaBuilt">…</span></span>
+    </div>
+  </header>
+
+  <!-- Hero / walking speed ------------------------------------------- -->
+  <section class="hero" id="hero">
+    <div class="hero-num">
+      <div class="hero-label">Walking speed</div>
+      <div class="hero-sub">The headline Parkinson's metric — track this above all else.</div>
+      <div class="hero-value" id="heroValue">—<span class="hero-unit">m/s</span></div>
+      <div class="hero-foot">
+        <span>7-day avg <b id="heroAvg">—</b></span>
+        <span class="sep">·</span>
+        <span class="delta neutral" id="heroDelta">·</span>
+        <span class="sep">·</span>
+        <span>30-day avg <b id="heroAvg30">—</b></span>
+      </div>
+    </div>
+    <div>
+      <div class="range-toggle" id="rangeToggle">
+        <button data-range="14">14d</button>
+        <button data-range="30" class="active">30d</button>
+        <button data-range="60">60d</button>
+        <button data-range="90">90d</button>
+      </div>
+      <div class="hero-chart"><canvas id="heroChart"></canvas></div>
+    </div>
+  </section>
+
+  <!-- Insights ------------------------------------------------------- -->
+  <section class="insights">
+    <div class="insights-header">This week's read</div>
+    <div class="insights-body" id="insightsBody">
+      <div class="skeleton" style="height: 16px; width: 80%; margin-bottom: 10px;"></div>
+      <div class="skeleton" style="height: 16px; width: 92%; margin-bottom: 10px;"></div>
+      <div class="skeleton" style="height: 16px; width: 70%;"></div>
+    </div>
+    <div class="insights-foot" id="insightsFoot">Generating…</div>
+  </section>
+
+  <!-- Metric groups -------------------------------------------------- -->
+  <div id="groups"></div>
+
+  <!-- Chat ---------------------------------------------------------- -->
+  <section class="chat">
+    <div class="chat-header">Ask Claude</div>
+    <div class="chat-sub">Anything about your health data. Try "have my sleep patterns shifted in the last month?" or "what should I do about today's low steps?"</div>
+    <div class="chat-thread" id="chatThread"></div>
+    <form class="chat-input-row" id="chatForm">
+      <input class="chat-input" id="chatInput" placeholder="Type a question…" autocomplete="off" />
+      <button class="chat-send" id="chatSend" type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <div>Personal · Refreshes daily from Apple Health via Health Auto Export</div>
+  </footer>
+
+</div>
+
+<script>
+'use strict';
+
+// -------------------------------------------------------------------
+// Bootstrap
+// -------------------------------------------------------------------
+let DATA = null;
+let INSIGHTS = null;
+let heroChart = null;
+let currentRange = 30;
+
+const HISTORY_KEY = 'health-chat-history';
+let chatHistory = JSON.parse(sessionStorage.getItem(HISTORY_KEY) || '[]');
+
+window.addEventListener('DOMContentLoaded', async () => {
+  await Promise.all([loadData(), loadInsights()]);
+  renderAll();
+  bindRangeToggle();
+  bindChat();
+  restoreChatHistory();
+});
+
+async function loadData() {
+  try {
+    const r = await fetch('data.json?t=' + Date.now());
+    if (!r.ok) throw new Error('data fetch failed: ' + r.status);
+    DATA = await r.json();
+  } catch (e) {
+    console.error(e);
+    document.querySelector('.container').innerHTML =
+      '<div class="empty"><h2>Couldn’t load health data</h2><p>' + e.message + '</p></div>';
+  }
+}
+async function loadInsights() {
+  try {
+    const r = await fetch('insights.json?t=' + Date.now());
+    if (r.ok) INSIGHTS = await r.json();
+  } catch (e) { /* non-fatal */ }
+}
+
+function renderAll() {
+  renderTopMeta();
+  renderHero();
+  renderInsights();
+  renderGroups();
+}
+
+// -------------------------------------------------------------------
+// Helpers
+// -------------------------------------------------------------------
+function findMetric(catId, metricId) {
+  if (!DATA || !DATA.categories) return null;
+  for (const c of DATA.categories) {
+    if (c.id !== catId) continue;
+    for (const m of c.metrics) if (m.id === metricId) return m;
+  }
+  return null;
+}
+
+function fmt(value, decimals) {
+  if (value == null) return '—';
+  const n = Number(value);
+  if (isNaN(n)) return String(value);
+  return n.toFixed(decimals || 0);
+}
+
+function deltaDisplay(metric) {
+  if (!metric || metric.delta_7d_pct == null) return ['·', 'neutral'];
+  const pct = metric.delta_7d_pct;
+  const sign = pct > 0 ? '+' : '';
+  const text = sign + pct.toFixed(1) + '%';
+  const good = metric.good;
+  let cls = 'neutral';
+  if (good && pct !== 0) {
+    const isImprovement =
+      (pct > 0 && good === 'higher') || (pct < 0 && good === 'lower');
+    cls = isImprovement ? 'good' : 'bad';
+  }
+  return [text, cls];
+}
+
+function ageLabel(history) {
+  // Find days since most recent non-null
+  if (!history || !history.length) return '';
+  const today = new Date().toISOString().slice(0, 10);
+  for (let i = history.length - 1; i >= 0; i--) {
+    const [d, v] = history[i];
+    if (v == null) continue;
+    if (d === today) return '';
+    const daysAgo = Math.round(
+      (new Date(today) - new Date(d)) / 86400000,
+    );
+    if (daysAgo === 1) return 'yesterday';
+    if (daysAgo > 1) return daysAgo + 'd ago';
+    return '';
+  }
+  return '';
+}
+
+function latestValue(metric) {
+  if (!metric) return null;
+  if (metric.value != null) return metric.value;
+  const h = metric.history || [];
+  for (let i = h.length - 1; i >= 0; i--) {
+    if (h[i][1] != null) return h[i][1];
+  }
+  return null;
+}
+
+function avg30(metric) {
+  if (!metric) return null;
+  const h = metric.history || [];
+  const recent = h.slice(-30).map(([, v]) => v).filter(v => v != null);
+  if (!recent.length) return null;
+  return recent.reduce((a, b) => a + b, 0) / recent.length;
+}
+
+// -------------------------------------------------------------------
+// Top meta
+// -------------------------------------------------------------------
+function renderTopMeta() {
+  const today = DATA?.today ? new Date(DATA.today) : new Date();
+  document.getElementById('metaToday').textContent =
+    today.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+
+  const stale = DATA?.stale_hours;
+  let staleText = 'unknown';
+  let staleCls = '';
+  if (stale != null) {
+    if (stale < 1) staleText = 'fresh';
+    else if (stale < 24) staleText = Math.round(stale) + 'h old';
+    else { staleText = Math.round(stale / 24) + 'd old'; staleCls = 'stale'; }
+  }
+  document.getElementById('metaStale').textContent = staleText;
+  if (staleCls) document.getElementById('topMeta').classList.add('stale');
+
+  if (DATA?.built_at) {
+    const built = new Date(DATA.built_at);
+    document.getElementById('metaBuilt').textContent =
+      built.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) +
+      ' ' + built.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+  }
+}
+
+// -------------------------------------------------------------------
+// Hero
+// -------------------------------------------------------------------
+function renderHero() {
+  const m = findMetric('gait', 'walking_speed_m_s');
+  if (!m) return;
+  const v = latestValue(m);
+  document.getElementById('heroValue').innerHTML =
+    (v == null ? '—' : fmt(v, 2)) + '<span class="hero-unit">m/s</span>';
+  document.getElementById('heroAvg').textContent = m.avg_7d != null ? fmt(m.avg_7d, 2) : '—';
+  const a30 = avg30(m);
+  document.getElementById('heroAvg30').textContent = a30 != null ? fmt(a30, 2) : '—';
+  const [dText, dCls] = deltaDisplay(m);
+  const dEl = document.getElementById('heroDelta');
+  dEl.textContent = dText + ' vs 7d';
+  dEl.className = 'delta ' + dCls;
+  renderHeroChart(m);
+}
+
+function renderHeroChart(metric) {
+  const canvas = document.getElementById('heroChart');
+  const allHistory = (metric.history || []).filter(([, v]) => v != null);
+  const slice = allHistory.slice(-currentRange);
+  const labels = slice.map(([d]) => d);
+  const values = slice.map(([, v]) => v);
+
+  if (heroChart) heroChart.destroy();
+  const ctx = canvas.getContext('2d');
+  const grad = ctx.createLinearGradient(0, 0, 0, 200);
+  // Soft amber wash under the line — gentle enough to read on white.
+  grad.addColorStop(0, 'rgba(184, 136, 53, 0.18)');
+  grad.addColorStop(1, 'rgba(184, 136, 53, 0.01)');
+
+  const avg = metric.avg_7d;
+  const datasets = [{
+    label: 'Walking speed',
+    data: values,
+    borderColor: '#b88835',
+    borderWidth: 2,
+    pointRadius: 0,
+    pointHoverRadius: 4,
+    tension: 0.35,
+    fill: true,
+    backgroundColor: grad,
+  }];
+  if (avg != null && labels.length) {
+    datasets.push({
+      label: '7-day avg',
+      data: labels.map(() => avg),
+      borderColor: 'rgba(26, 26, 29, 0.25)',
+      borderWidth: 1,
+      borderDash: [4, 4],
+      pointRadius: 0,
+      fill: false,
+    });
+  }
+
+  heroChart = new Chart(ctx, {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 400 },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#ffffff',
+          titleColor: '#1a1a1d',
+          bodyColor: '#1a1a1d',
+          borderColor: '#e5e6eb',
+          borderWidth: 1,
+          padding: 10,
+          displayColors: false,
+          callbacks: { label: ctx => ctx.parsed.y.toFixed(2) + ' m/s' },
+        },
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: {
+            color: '#98989d',
+            font: { size: 10 },
+            maxRotation: 0,
+            autoSkip: true,
+            maxTicksLimit: 6,
+          },
+        },
+        y: {
+          grid: { color: 'rgba(0, 0, 0, 0.05)' },
+          ticks: {
+            color: '#98989d',
+            font: { size: 10 },
+            callback: v => Number(v).toFixed(2),
+          },
+        },
+      },
+    },
+  });
+}
+
+function bindRangeToggle() {
+  const toggle = document.getElementById('rangeToggle');
+  toggle.addEventListener('click', e => {
+    const btn = e.target.closest('button[data-range]');
+    if (!btn) return;
+    currentRange = Number(btn.dataset.range);
+    toggle.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const m = findMetric('gait', 'walking_speed_m_s');
+    if (m) renderHeroChart(m);
+  });
+}
+
+// -------------------------------------------------------------------
+// Insights
+// -------------------------------------------------------------------
+function renderInsights() {
+  if (!INSIGHTS) {
+    document.getElementById('insightsBody').textContent =
+      'Insights not generated yet. They’ll appear on the next daily build.';
+    document.getElementById('insightsFoot').textContent = '';
+    return;
+  }
+  document.getElementById('insightsBody').textContent = INSIGHTS.paragraph || '';
+  const when = INSIGHTS.generated_at
+    ? new Date(INSIGHTS.generated_at).toLocaleString('en-GB', {
+        day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit',
+      })
+    : '';
+  document.getElementById('insightsFoot').textContent =
+    'Generated ' + when + (INSIGHTS.model ? ' · ' + INSIGHTS.model : '');
+}
+
+// -------------------------------------------------------------------
+// Metric groups (everything except the hero, which gets its own)
+// -------------------------------------------------------------------
+const ACCENT = {
+  gait: 'var(--gait)',
+  activity: 'var(--activity)',
+  cardio: 'var(--cardio)',
+  sleep: 'var(--sleep)',
+  hydration: 'var(--hydration)',
+};
+
+function renderGroups() {
+  if (!DATA || !DATA.categories) return;
+  const container = document.getElementById('groups');
+  container.innerHTML = '';
+  for (const cat of DATA.categories) {
+    const section = document.createElement('section');
+    section.className = 'metric-group';
+    const head = document.createElement('div');
+    head.className = 'section-head';
+    head.innerHTML = `
+      <span class="section-accent" style="background:${ACCENT[cat.id] || 'var(--fg-dim)'}"></span>
+      <span class="section-title">${cat.label}</span>
+      <span class="section-sub">${cat.blurb || ''}</span>
+    `;
+    section.appendChild(head);
+
+    const grid = document.createElement('div');
+    grid.className = 'grid';
+    for (const m of cat.metrics) {
+      // Skip walking_speed in gait since it's the hero
+      if (cat.id === 'gait' && m.id === 'walking_speed_m_s') continue;
+      grid.appendChild(metricCard(m, cat));
+    }
+    section.appendChild(grid);
+    container.appendChild(section);
+  }
+}
+
+function metricCard(metric, cat) {
+  const card = document.createElement('div');
+  const v = latestValue(metric);
+  const stale = ageLabel(metric.history);
+  const [dText, dCls] = deltaDisplay(metric);
+
+  // Special-case sleep duration display
+  let displayValue;
+  if (metric.id === 'sleep_total_min' && v != null) {
+    const mins = Math.round(v);
+    displayValue = `${Math.floor(mins / 60)}h ${mins % 60}m`;
+  } else if (v == null) {
+    displayValue = '—';
+  } else {
+    displayValue = fmt(v, metric.decimals || 0);
+  }
+
+  const avg = metric.avg_7d;
+  let avgDisplay = '';
+  if (metric.id === 'sleep_total_min' && avg != null) {
+    avgDisplay = (avg / 60).toFixed(1) + 'h avg';
+  } else if (avg != null) {
+    avgDisplay = '7d avg ' + fmt(avg, metric.decimals || 0);
+  }
+
+  card.className = stale ? 'card stale' : 'card';
+  card.innerHTML = `
+    <div class="card-head">
+      <div class="card-label">${metric.label}</div>
+      ${stale ? `<span class="card-stale">${stale}</span>` : ''}
+    </div>
+    <div class="card-value">${displayValue}${
+      metric.unit && metric.id !== 'sleep_total_min'
+        ? `<span class="card-unit">${metric.unit}</span>`
+        : ''
+    }</div>
+    <div class="card-foot">
+      <span class="card-avg">${avgDisplay}</span>
+      <span class="card-delta ${dCls}">${dText !== '·' ? dText : ''}</span>
+    </div>
+    <div class="card-spark"><canvas></canvas></div>
+  `;
+
+  // Draw sparkline
+  setTimeout(() => {
+    const canvas = card.querySelector('canvas');
+    const ctx = canvas.getContext('2d');
+    const hist = (metric.history || []).slice(-30);
+    const values = hist.map(([, v]) => v);
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: hist.map(([d]) => d),
+        datasets: [{
+          data: values,
+          borderColor: getAccentHex(cat.id),
+          borderWidth: 1.5,
+          pointRadius: 0,
+          tension: 0.4,
+          fill: false,
+          spanGaps: true,
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { enabled: false } },
+        scales: { x: { display: false }, y: { display: false } },
+        animation: false,
+      },
+    });
+  }, 0);
+
+  return card;
+}
+
+function getAccentHex(catId) {
+  // Mirror the CSS --gait / --activity / etc. tokens so sparklines match
+  // the section accent dots exactly.
+  return {
+    gait: '#b88835',
+    activity: '#2da567',
+    cardio: '#c84a4a',
+    sleep: '#5a6dd9',
+    hydration: '#3a9eb0',
+  }[catId] || '#6e6e73';
+}
+
+// -------------------------------------------------------------------
+// Chat
+// -------------------------------------------------------------------
+function bindChat() {
+  const form = document.getElementById('chatForm');
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const input = document.getElementById('chatInput');
+    const question = input.value.trim();
+    if (!question) return;
+    input.value = '';
+    addMsg('user', question);
+    const thinking = addMsg('bot thinking', 'Thinking…');
+    try {
+      const r = await fetch('/.netlify/functions/ask', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          question,
+          data: DATA,
+          insights: INSIGHTS,
+          history: chatHistory,
+        }),
+      });
+      if (!r.ok) throw new Error('chat HTTP ' + r.status);
+      const j = await r.json();
+      thinking.remove();
+      addMsg('bot', j.answer || '(no answer)');
+      chatHistory.push({ role: 'user', content: question });
+      chatHistory.push({ role: 'assistant', content: j.answer || '' });
+      sessionStorage.setItem(HISTORY_KEY, JSON.stringify(chatHistory.slice(-20)));
+    } catch (err) {
+      thinking.remove();
+      addMsg('bot', '⚠️ Couldn’t reach Claude: ' + err.message);
+    }
+  });
+}
+
+function addMsg(cls, text) {
+  const div = document.createElement('div');
+  div.className = 'chat-msg ' + cls;
+  div.textContent = text;
+  const thread = document.getElementById('chatThread');
+  thread.appendChild(div);
+  thread.scrollTop = thread.scrollHeight;
+  return div;
+}
+
+function restoreChatHistory() {
+  for (const m of chatHistory) {
+    addMsg(m.role === 'user' ? 'user' : 'bot', m.content);
+  }
+}
+</script>
+</body>
+</html>

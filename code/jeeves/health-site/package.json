@@ -1,0 +1,9 @@
+{
+  "name": "matt-health-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal health dashboard — static site + Claude Q&A function.",
+  "engines": {
+    "node": ">=18"
+  }
+}
