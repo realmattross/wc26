@@ -184,7 +184,7 @@
   .task-due.today { color: var(--accent); }
   .task-source { font-family: 'Fraunces', serif; font-style: italic; font-size: 12px; color: var(--ink-faint); text-transform: none; letter-spacing: 0; }
   .task-source-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-right: 6px; vertical-align: 1px; }
-  .strip { margin-top: 56px; padding-top: 24px; border-top: 2px solid var(--ink); position: relative; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 0; }
+  .strip { margin-top: 56px; padding-top: 24px; border-top: 2px solid var(--ink); position: relative; display: grid; grid-template-columns: 1.1fr 0.9fr 1fr 1.1fr; gap: 0; }
   .strip::before { content: ''; position: absolute; left: 0; right: 0; top: 6px; border-top: 0.5px solid var(--ink); }
   .strip > section { padding: 0 28px; border-right: 0.5px solid var(--rule); }
   .strip > section:first-child { padding-left: 0; }
@@ -218,6 +218,101 @@
   .weather-cell-time { font-family: 'JetBrains Mono', monospace; font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px; }
   .weather-cell-icon { font-size: 18px; line-height: 1; margin-bottom: 4px; }
   .weather-cell-temp { font-family: 'Fraunces', serif; font-size: 18px; color: var(--ink); font-weight: 400; }
+
+  /* ---------- NOW PLAYING (Spotify) ---------- */
+  .music {
+    display: grid;
+    grid-template-columns: 78px 1fr;
+    gap: 14px;
+    align-items: start;
+  }
+  .music-cover {
+    width: 78px;
+    height: 78px;
+    border-radius: 3px;
+    background: var(--paper-deep);
+    overflow: hidden;
+    display: block;
+    position: relative;
+    box-shadow: 0 8px 16px -8px rgba(24, 19, 13, 0.35);
+    transition: transform 240ms ease, box-shadow 240ms ease;
+  }
+  .music-cover:hover { transform: translateY(-2px); box-shadow: 0 12px 24px -10px rgba(24, 19, 13, 0.45); }
+  .music-cover img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .music-cover .music-state-dot {
+    position: absolute;
+    bottom: 6px; right: 6px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--good);
+    box-shadow: 0 0 0 2px rgba(244,236,220,0.9);
+  }
+  .music-cover.paused .music-state-dot { background: var(--ink-faint); }
+  .music-info {
+    min-width: 0;   /* allow text-overflow ellipsis inside the column */
+  }
+  .music-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .music-artist {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.3;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .music-album {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .music-link {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 0.5px solid var(--accent);
+    padding-bottom: 2px;
+    align-self: start;
+    width: max-content;
+    transition: color 160ms ease, border-color 160ms ease;
+  }
+  .music-link:hover { color: var(--accent-deep); border-bottom-color: var(--accent-deep); }
+  .music-empty {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--ink-faint);
+    margin: 0;
+    padding-top: 4px;
+  }
   .colophon { margin-top: 64px; padding-top: 18px; border-top: 0.5px solid var(--rule); display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ink-faint); }
   .colophon-quote { font-family: 'Fraunces', serif; font-style: italic; font-size: 12px; text-transform: none; letter-spacing: 0; color: var(--ink-soft); max-width: 50%; text-align: right; }
   @media (max-width: 1100px) {
@@ -264,17 +359,17 @@
     </div>
     <div class="masthead-strap">
       <span>STATION 01 &middot; OPERATOR MATT ROSS &middot; PREPARED BY JEEVES</span>
-      <span>BRIEFING 259</span>
+      <span>BRIEFING 260</span>
     </div>
   </header>
 
   <section class="hero">
     <div class="hero-main">
-      <div class="hero-eyebrow">LEGAL AND FINANCIAL</div>
-      <h2 class="hero-headline"><em>Lawyer and accountant documents</em> require immediate attention before moving forward.</h2>
+      <div class="hero-eyebrow">LEGAL &amp; FINANCE</div>
+      <h2 class="hero-headline">Your <em>lawyer and accountant need documents</em>—and redesign decisions can't wait.</h2>
       <div class="hero-rule"></div>
-      <p class="hero-deck">Multiple tasks depend on finalizing these filings, and delays compound across your redesign, video, and deck work. Getting these cleared today unblocks everything downstream.</p>
-      <div class="hero-byline">10:38 · compiled from inbox, calendar &amp; tasks</div>
+      <p class="hero-deck">Three critical task clusters are stalled without action: legal docs from your team, accountant paperwork, and a redesign direction that cascades into video and deck work. These are gating items that will delay everything downstream.</p>
+      <div class="hero-byline">10:45 · compiled from inbox, calendar &amp; tasks</div>
     </div>
     <aside class="hero-aside">
       <div class="aside-head">First three movements</div>
@@ -456,10 +551,28 @@
       </div>
       <p class="body-trend" style="margin-top:18px">Drizzle through the morning, easing by afternoon. Take a coat for the school run.</p>
     </section>
+
+    <section>
+      <div class="card-head">
+        <span class="card-title">Now playing</span>
+        <span class="card-tally">playing</span>
+      </div>
+      
+      <div class="music">
+        <a class="music-cover" href="https://open.spotify.com/track/46eu3SBuFCXWsPT39Yg3tJ" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616d0000b2732b74bf21c7e4f56758610949" alt="" onerror="this.style.display='none'" /><span class="music-state-dot"></span></a>
+        <div class="music-info">
+          <div class="music-title">Don&#x27;t Stop &#x27;Til You Get Enough</div>
+          <div class="music-artist">Michael Jackson</div>
+          <div class="music-album">Off the Wall</div>
+        </div>
+        <a class="music-link" href="https://open.spotify.com/track/46eu3SBuFCXWsPT39Yg3tJ" target="_blank" rel="noopener">Open in Spotify &rarr;</a>
+      </div>
+    
+    </section>
   </div>
 
   <footer class="colophon">
-    <span>Compiled 10:38 &middot; matt-briefing.netlify.app &middot; Day2 / Jeeves</span>
+    <span>Compiled 10:45 &middot; matt-briefing.netlify.app &middot; Day2 / Jeeves</span>
     <span class="colophon-quote">“The early morning has gold in its mouth.” — Franklin</span>
   </footer>
 

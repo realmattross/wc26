@@ -2,8 +2,8 @@
   "date_day": "Monday",
   "date_long": "18 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "10:38",
-  "briefing_no": 259,
+  "compiled_at": "10:45",
+  "briefing_no": 260,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
@@ -149,6 +149,16 @@
     "trend": "Sleep ran 0h 5m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
+  "spotify": {
+    "name": "Don't Stop 'Til You Get Enough",
+    "artist": "Michael Jackson",
+    "album": "Off the Wall",
+    "is_playing": true,
+    "duration_ms": 364441,
+    "progress_ms": 43174,
+    "cover_url": "https://i.scdn.co/image/ab67616d0000b2732b74bf21c7e4f56758610949",
+    "spotify_url": "https://open.spotify.com/track/46eu3SBuFCXWsPT39Yg3tJ"
+  },
   "ticker": [
     {
       "kind": "news",
@@ -216,9 +226,9 @@
     }
   ],
   "lead": {
-    "eyebrow": "LEGAL AND FINANCIAL",
-    "headline": "<em>Lawyer and accountant documents</em> require immediate attention before moving forward.",
-    "deck": "Multiple tasks depend on finalizing these filings, and delays compound across your redesign, video, and deck work. Getting these cleared today unblocks everything downstream.",
-    "byline": "10:38 · compiled from inbox, calendar & tasks"
+    "eyebrow": "LEGAL & FINANCE",
+    "headline": "Your <em>lawyer and accountant need documents</em>—and redesign decisions can't wait.",
+    "deck": "Three critical task clusters are stalled without action: legal docs from your team, accountant paperwork, and a redesign direction that cascades into video and deck work. These are gating items that will delay everything downstream.",
+    "byline": "10:45 · compiled from inbox, calendar & tasks"
   }
 }
