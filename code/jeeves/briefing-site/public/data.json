@@ -2,8 +2,8 @@
   "date_day": "Monday",
   "date_long": "18 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "10:09",
-  "briefing_no": 257,
+  "compiled_at": "10:34",
+  "briefing_no": 258,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
@@ -130,7 +130,7 @@
       {
         "time": "15:00",
         "temp": 11,
-        "icon": "☔"
+        "icon": "⛅"
       },
       {
         "time": "19:00",
@@ -149,10 +149,76 @@
     "trend": "Sleep ran 0h 5m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
+  "ticker": [
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "UK companies linked to payments for small-boat crossings, BBC finds"
+    },
+    {
+      "kind": "fixture",
+      "label": "EPL",
+      "text": "FPL Deadline - Gameweek 38 · Sun 14:30"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "'All I thought about was running for my life': Footballer recalls train stabbing attack"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Are baby boomers like me the luckiest generation in history?"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "'This may be the last time you hear my voice': Political executions surge in Iran since start of war"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "HS2 failings blamed on high-speed focus and political pressure"
+    }
+  ],
+  "_news": [
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "UK companies linked to payments for small-boat crossings, BBC finds"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "'All I thought about was running for my life': Footballer recalls train stabbing attack"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Are baby boomers like me the luckiest generation in history?"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "'This may be the last time you hear my voice': Political executions surge in Iran since start of war"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "HS2 failings blamed on high-speed focus and political pressure"
+    }
+  ],
+  "_fixtures": [
+    {
+      "kind": "fixture",
+      "label": "EPL",
+      "text": "FPL Deadline - Gameweek 38 · Sun 14:30"
+    }
+  ],
   "lead": {
     "eyebrow": "LEGAL & OPERATIONS",
     "headline": "Lawyers must <em>finalize documents</em> before momentum stalls.",
-    "deck": "Critical legal paperwork remains unsigned while you're managing parallel redesign and testimonial collection efforts. Without clarity on the lawyer's timeline, downstream decisions on the deck and video work hang in limbo.",
-    "byline": "10:09 · compiled from inbox, calendar & tasks"
+    "deck": "With design redesigns, CEO testimonials, and meeting prep all in flight, you're waiting on legal to close out foundational paperwork. Getting those docs signed clears the path for everything else to move forward.",
+    "byline": "10:34 · compiled from inbox, calendar & tasks"
   }
 }
