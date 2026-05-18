@@ -6,7 +6,7 @@
 <title>Day2 Mission Control · 18 May 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:opsz,wght@9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" />
 <style>
   :root {
     --paper:        #f4ecdc;
@@ -30,7 +30,7 @@
     margin: 0; padding: 0;
     background: var(--paper);
     color: var(--ink);
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-feature-settings: 'ss01', 'cv11';
     font-size: 15px; line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -62,7 +62,7 @@
     padding: 0 22px;
     background: var(--accent);
     color: var(--paper);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Poppins', sans-serif;
     font-size: 13px;
     letter-spacing: 0.24em;
     font-weight: 500;
@@ -98,13 +98,13 @@
     padding: 0 30px;
     border-right: 0.5px solid rgba(255,255,255,0.12);
     white-space: nowrap;
-    font-family: 'Fraunces', serif;
+    font-family: 'Poppins', sans-serif;
     font-variation-settings: "opsz" 14;
     font-size: 19px;
     color: var(--paper);
   }
   .ticker-label {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Poppins', sans-serif;
     font-size: 11.5px;
     letter-spacing: 0.22em;
     color: var(--accent-soft);
@@ -118,36 +118,36 @@
   .page { max-width: 1380px; margin: 0 auto; padding: 56px 64px 72px; }
   .masthead { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 32px; padding-bottom: 18px; border-bottom: 1.5px solid var(--ink); position: relative; }
   .masthead::after { content: ''; position: absolute; left: 0; right: 0; bottom: -6px; border-bottom: 0.5px solid var(--ink); }
-  .title { font-family: 'Fraunces', serif; line-height: 0.85; letter-spacing: -0.04em; }
-  .title-line-1 { display: inline-flex; align-items: center; gap: 12px; font-family: 'Fraunces', serif; font-size: 22px; font-weight: 600; letter-spacing: 0.32em; color: var(--accent); font-variation-settings: "opsz" 14; text-transform: uppercase; margin-bottom: 4px; }
+  .title { font-family: 'Poppins', sans-serif; line-height: 0.85; letter-spacing: -0.04em; }
+  .title-line-1 { display: inline-flex; align-items: center; gap: 12px; font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 600; letter-spacing: 0.32em; color: var(--accent); font-variation-settings: "opsz" 14; text-transform: uppercase; margin-bottom: 4px; }
   .title-line-1::before { content: ''; display: inline-block; width: 28px; height: 8px; background: var(--accent); border-radius: 1px; }
-  .title-line-1::after { content: '— mission control'; font-family: 'Fraunces', serif; font-style: italic; font-weight: 350; text-transform: lowercase; letter-spacing: 0; color: var(--ink-faint); font-size: 15px; margin-left: 4px; }
+  .title-line-1::after { content: '— mission control'; font-family: 'Poppins', sans-serif; font-style: italic; font-weight: 350; text-transform: lowercase; letter-spacing: 0; color: var(--ink-faint); font-size: 15px; margin-left: 4px; }
   .title-line-2 { display: block; font-size: 112px; font-weight: 350; font-style: italic; font-variation-settings: "opsz" 144; margin-top: -4px; color: var(--ink); letter-spacing: -0.035em; }
   .title-line-2 em { font-style: italic; color: var(--ink); }
-  .dateline { text-align: right; font-family: 'Fraunces', serif; font-variation-settings: "opsz" 14; color: var(--ink-soft); }
+  .dateline { text-align: right; font-family: 'Poppins', sans-serif; font-variation-settings: "opsz" 14; color: var(--ink-soft); }
   .dateline-day { font-size: 13px; text-transform: uppercase; letter-spacing: 0.22em; color: var(--ink-faint); margin-bottom: 10px; }
   .dateline-date { font-size: 22px; font-weight: 400; letter-spacing: -0.01em; color: var(--ink); }
   .dateline-place { font-size: 13px; font-style: italic; color: var(--ink-soft); margin-top: 4px; }
-  .dateline-weather { margin-top: 14px; padding-top: 10px; border-top: 0.5px solid var(--rule-soft); font-family: 'DM Sans', sans-serif; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); }
+  .dateline-weather { margin-top: 14px; padding-top: 10px; border-top: 0.5px solid var(--rule-soft); font-family: 'Poppins', sans-serif; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); }
   .dateline-weather strong { color: var(--ink-soft); font-weight: 500; }
-  .masthead-strap { grid-column: 1 / -1; margin-top: 14px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.18em; color: var(--ink-faint); text-transform: uppercase; display: flex; justify-content: space-between; }
+  .masthead-strap { grid-column: 1 / -1; margin-top: 14px; font-family: 'Poppins', sans-serif; font-size: 10.5px; letter-spacing: 0.18em; color: var(--ink-faint); text-transform: uppercase; display: flex; justify-content: space-between; }
   .hero { margin: 48px 0 56px; display: grid; grid-template-columns: 1fr 380px; gap: 64px; align-items: start; }
   .hero-main { padding-top: 4px; }
-  .hero-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; display: inline-flex; align-items: center; gap: 8px; }
+  .hero-eyebrow { font-family: 'Poppins', sans-serif; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; display: inline-flex; align-items: center; gap: 8px; }
   .hero-eyebrow::before { content: ''; width: 18px; height: 1.5px; background: var(--accent); }
-  .hero-headline { font-family: 'Fraunces', serif; font-weight: 350; font-size: 64px; line-height: 0.98; letter-spacing: -0.025em; margin: 0 0 22px; color: var(--ink); font-variation-settings: "opsz" 144; }
+  .hero-headline { font-family: 'Poppins', sans-serif; font-weight: 350; font-size: 64px; line-height: 0.98; letter-spacing: -0.025em; margin: 0 0 22px; color: var(--ink); font-variation-settings: "opsz" 144; }
   .hero-headline em { font-style: italic; color: var(--accent); font-weight: 350; font-variation-settings: "opsz" 144; }
   .hero-rule { height: 2px; background: var(--accent); width: 64px; margin: -14px 0 22px; }
-  .hero-deck { font-family: 'Fraunces', serif; font-size: 19px; line-height: 1.5; color: var(--ink-soft); font-weight: 350; font-variation-settings: "opsz" 14; margin: 0 0 24px; max-width: 56ch; }
+  .hero-deck { font-family: 'Poppins', sans-serif; font-size: 19px; line-height: 1.5; color: var(--ink-soft); font-weight: 350; font-variation-settings: "opsz" 14; margin: 0 0 24px; max-width: 56ch; }
   .hero-deck em { font-style: italic; color: var(--ink); }
-  .hero-byline { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-faint); }
+  .hero-byline { font-family: 'Poppins', sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-faint); }
   .hero-aside { border-left: 1px solid var(--ink); padding-left: 28px; padding-top: 4px; }
-  .aside-head { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 18px; }
+  .aside-head { font-family: 'Poppins', sans-serif; font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 18px; }
   .aside-item { display: grid; grid-template-columns: 64px 1fr; gap: 14px; padding: 12px 0; border-top: 0.5px solid var(--rule-soft); }
   .aside-item:first-of-type { border-top: none; padding-top: 0; }
-  .aside-time { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--accent); letter-spacing: -0.02em; padding-top: 2px; }
-  .aside-event { font-family: 'Fraunces', serif; font-size: 17px; font-weight: 400; line-height: 1.25; color: var(--ink); }
-  .aside-where { display: block; font-family: 'DM Sans', sans-serif; font-size: 12px; color: var(--ink-faint); margin-top: 4px; font-style: italic; }
+  .aside-time { font-family: 'Poppins', sans-serif; font-size: 13px; color: var(--accent); letter-spacing: -0.02em; padding-top: 2px; }
+  .aside-event { font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 400; line-height: 1.25; color: var(--ink); }
+  .aside-where { display: block; font-family: 'Poppins', sans-serif; font-size: 12px; color: var(--ink-faint); margin-top: 4px; font-style: italic; }
   .heavy-rule { border: none; border-top: 2px solid var(--ink); margin: 0; position: relative; }
   .heavy-rule::after { content: ''; display: block; border-top: 0.5px solid var(--ink); margin-top: 4px; }
   /* .grid is now the BOTTOM block (correspondence/messages/tasks).
@@ -174,34 +174,34 @@
   .grid > section:first-child { padding-left: 0; }
   .grid > section:last-child { padding-right: 0; border-right: none; }
   .card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--ink); }
-  .card-title { font-family: 'Fraunces', serif; font-style: italic; font-weight: 450; font-size: 22px; letter-spacing: -0.01em; color: var(--ink); }
-  .card-tally { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); }
+  .card-title { font-family: 'Poppins', sans-serif; font-style: italic; font-weight: 450; font-size: 22px; letter-spacing: -0.01em; color: var(--ink); }
+  .card-tally { font-family: 'Poppins', sans-serif; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); }
   .card-tally strong { color: var(--accent); font-weight: 500; }
   .emails { list-style: none; padding: 0; margin: 0; }
   .email { display: grid; grid-template-columns: 1fr auto; gap: 8px 14px; padding: 14px 0; border-top: 0.5px solid var(--rule-soft); }
   .email:first-child { border-top: none; padding-top: 0; }
-  .email-from { font-family: 'Fraunces', serif; font-weight: 500; font-size: 15px; color: var(--ink); grid-column: 1; }
-  .email-time { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-faint); letter-spacing: 0.02em; grid-column: 2; padding-top: 2px; }
+  .email-from { font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 15px; color: var(--ink); grid-column: 1; }
+  .email-time { font-family: 'Poppins', sans-serif; font-size: 11px; color: var(--ink-faint); letter-spacing: 0.02em; grid-column: 2; padding-top: 2px; }
   .email-subject { grid-column: 1 / -1; font-size: 13.5px; color: var(--ink-soft); line-height: 1.45; margin-top: -2px; }
-  .email-flag { font-family: 'JetBrains Mono', monospace; font-size: 9.5px; color: var(--accent); letter-spacing: 0.14em; text-transform: uppercase; margin-left: 8px; padding: 1px 6px; border: 0.5px solid var(--accent); border-radius: 2px; vertical-align: 2px; }
+  .email-flag { font-family: 'Poppins', sans-serif; font-size: 9.5px; color: var(--accent); letter-spacing: 0.14em; text-transform: uppercase; margin-left: 8px; padding: 1px 6px; border: 0.5px solid var(--accent); border-radius: 2px; vertical-align: 2px; }
   .messages-list { list-style: none; padding: 0; margin: 0; }
   .message { padding: 13px 0; border-top: 0.5px solid var(--rule-soft); display: grid; grid-template-columns: 70px 1fr; gap: 10px; align-items: baseline; }
   .message:first-child { border-top: none; padding-top: 0; }
-  .msg-channel { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-faint); padding-top: 4px; }
+  .msg-channel { font-family: 'Poppins', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-faint); padding-top: 4px; }
   .msg-channel.wa { color: var(--good); }
   .msg-channel.im { color: var(--warm); }
   .msg-body { grid-column: 2; }
-  .msg-from { font-family: 'Fraunces', serif; font-weight: 500; font-size: 14.5px; color: var(--ink); }
+  .msg-from { font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 14.5px; color: var(--ink); }
   .msg-preview { display: block; font-size: 13px; color: var(--ink-soft); margin-top: 2px; line-height: 1.45; font-style: italic; }
   .tasks-list { list-style: none; padding: 0; margin: 0; counter-reset: t; }
-  .task { counter-increment: t; padding: 12px 0 12px 28px; border-top: 0.5px solid var(--rule-soft); position: relative; font-family: 'Fraunces', serif; font-size: 15px; line-height: 1.4; color: var(--ink); }
+  .task { counter-increment: t; padding: 12px 0 12px 28px; border-top: 0.5px solid var(--rule-soft); position: relative; font-family: 'Poppins', sans-serif; font-size: 15px; line-height: 1.4; color: var(--ink); }
   .task:first-child { border-top: none; padding-top: 0; }
   .task:first-child::before { top: -2px; }
-  .task::before { content: counter(t, decimal-leading-zero); position: absolute; left: 0; top: 14px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--ink-faint); letter-spacing: 0.1em; }
-  .task-due { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--ink-faint); margin-top: 4px; font-style: normal; }
+  .task::before { content: counter(t, decimal-leading-zero); position: absolute; left: 0; top: 14px; font-family: 'Poppins', sans-serif; font-size: 10.5px; color: var(--ink-faint); letter-spacing: 0.1em; }
+  .task-due { display: block; font-family: 'Poppins', sans-serif; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--ink-faint); margin-top: 4px; font-style: normal; }
   .task-due.overdue { color: var(--bad); }
   .task-due.today { color: var(--accent); }
-  .task-source { font-family: 'Fraunces', serif; font-style: italic; font-size: 12px; color: var(--ink-faint); text-transform: none; letter-spacing: 0; }
+  .task-source { font-family: 'Poppins', sans-serif; font-style: italic; font-size: 12px; color: var(--ink-faint); text-transform: none; letter-spacing: 0; }
   .task-source-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-right: 6px; vertical-align: 1px; }
   /* .strip is now the TOP block (markets/body/weather/music). Sits
      directly after the hero's heavy-rule divider — no extra rule of
@@ -211,14 +211,14 @@
   .strip > section:first-child { padding-left: 0; }
   .strip > section:last-child { padding-right: 0; border-right: none; }
   .market-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 18px; }
-  .market-title { font-family: 'Fraunces', serif; font-style: italic; font-size: 22px; color: var(--ink); }
-  .market-time { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); }
+  .market-title { font-family: 'Poppins', sans-serif; font-style: italic; font-size: 22px; color: var(--ink); }
+  .market-time { font-family: 'Poppins', sans-serif; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); }
   .ticker { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; }
   .ticker-text { display: flex; flex-direction: column; gap: 4px; }
-  .ticker-symbol { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.16em; color: var(--ink-faint); }
-  .ticker-name { font-family: 'Fraunces', serif; font-style: italic; font-size: 12px; color: var(--ink-faint); margin-top: -2px; }
-  .ticker-price { font-family: 'Fraunces', serif; font-weight: 350; font-size: 44px; line-height: 1; color: var(--ink); margin: 6px 0 4px; letter-spacing: -0.02em; font-variation-settings: "opsz" 144; }
-  .ticker-change { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.04em; }
+  .ticker-symbol { font-family: 'Poppins', sans-serif; font-size: 12px; letter-spacing: 0.16em; color: var(--ink-faint); }
+  .ticker-name { font-family: 'Poppins', sans-serif; font-style: italic; font-size: 12px; color: var(--ink-faint); margin-top: -2px; }
+  .ticker-price { font-family: 'Poppins', sans-serif; font-weight: 350; font-size: 44px; line-height: 1; color: var(--ink); margin: 6px 0 4px; letter-spacing: -0.02em; font-variation-settings: "opsz" 144; }
+  .ticker-change { font-family: 'Poppins', sans-serif; font-size: 12px; letter-spacing: 0.04em; }
   .ticker-change.up { color: var(--good); }
   .ticker-change.down { color: var(--bad); }
   .ticker-change.up::before { content: '▲ '; font-size: 9px; vertical-align: 1px; }
@@ -228,17 +228,17 @@
   .sparkline path.area { fill: rgba(14, 124, 124, 0.12); stroke: none; }
   .sparkline circle { fill: var(--accent); }
   .body-stat { display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; }
-  .body-num { font-family: 'Fraunces', serif; font-weight: 350; font-size: 56px; line-height: 1; color: var(--ink); letter-spacing: -0.02em; font-variation-settings: "opsz" 144; }
-  .body-unit { font-family: 'Fraunces', serif; font-style: italic; font-size: 18px; color: var(--ink-soft); }
-  .body-label { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 14px; }
-  .body-trend { font-family: 'Fraunces', serif; font-size: 14px; color: var(--ink-soft); line-height: 1.5; font-style: italic; border-left: 2px solid var(--accent); padding-left: 14px; margin-bottom: 18px; font-variation-settings: "opsz" 14; }
-  .body-link { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--accent); text-decoration: none; border-bottom: 0.5px solid var(--accent); padding-bottom: 2px; transition: color 160ms ease, border-color 160ms ease; }
+  .body-num { font-family: 'Poppins', sans-serif; font-weight: 350; font-size: 56px; line-height: 1; color: var(--ink); letter-spacing: -0.02em; font-variation-settings: "opsz" 144; }
+  .body-unit { font-family: 'Poppins', sans-serif; font-style: italic; font-size: 18px; color: var(--ink-soft); }
+  .body-label { font-family: 'Poppins', sans-serif; font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 14px; }
+  .body-trend { font-family: 'Poppins', sans-serif; font-size: 14px; color: var(--ink-soft); line-height: 1.5; font-style: italic; border-left: 2px solid var(--accent); padding-left: 14px; margin-bottom: 18px; font-variation-settings: "opsz" 14; }
+  .body-link { font-family: 'Poppins', sans-serif; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--accent); text-decoration: none; border-bottom: 0.5px solid var(--accent); padding-bottom: 2px; transition: color 160ms ease, border-color 160ms ease; }
   .body-link:hover { color: var(--accent-deep); border-bottom-color: var(--accent-deep); }
   .weather-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 8px; }
   .weather-cell { text-align: center; }
-  .weather-cell-time { font-family: 'JetBrains Mono', monospace; font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px; }
+  .weather-cell-time { font-family: 'Poppins', sans-serif; font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px; }
   .weather-cell-icon { font-size: 18px; line-height: 1; margin-bottom: 4px; }
-  .weather-cell-temp { font-family: 'Fraunces', serif; font-size: 18px; color: var(--ink); font-weight: 400; }
+  .weather-cell-temp { font-family: 'Poppins', sans-serif; font-size: 18px; color: var(--ink); font-weight: 400; }
 
   /* ---------- NOW PLAYING (Spotify) ---------- */
   .music {
@@ -277,7 +277,7 @@
     min-width: 0;   /* allow text-overflow ellipsis inside the column */
   }
   .music-title {
-    font-family: 'Fraunces', serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 17px;
     line-height: 1.2;
@@ -290,7 +290,7 @@
     -webkit-box-orient: vertical;
   }
   .music-artist {
-    font-family: 'Fraunces', serif;
+    font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-size: 13.5px;
     color: var(--ink-soft);
@@ -301,7 +301,7 @@
     white-space: nowrap;
   }
   .music-album {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Poppins', sans-serif;
     font-size: 10.5px;
     letter-spacing: 0.08em;
     color: var(--ink-faint);
@@ -313,7 +313,7 @@
   .music-link {
     grid-column: 1 / -1;
     margin-top: 10px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Poppins', sans-serif;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.18em;
@@ -327,15 +327,15 @@
   }
   .music-link:hover { color: var(--accent-deep); border-bottom-color: var(--accent-deep); }
   .music-empty {
-    font-family: 'Fraunces', serif;
+    font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-size: 14px;
     color: var(--ink-faint);
     margin: 0;
     padding-top: 4px;
   }
-  .colophon { margin-top: 64px; padding-top: 18px; border-top: 0.5px solid var(--rule); display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ink-faint); }
-  .colophon-quote { font-family: 'Fraunces', serif; font-style: italic; font-size: 12px; text-transform: none; letter-spacing: 0; color: var(--ink-soft); max-width: 50%; text-align: right; }
+  .colophon { margin-top: 64px; padding-top: 18px; border-top: 0.5px solid var(--rule); display: flex; justify-content: space-between; font-family: 'Poppins', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ink-faint); }
+  .colophon-quote { font-family: 'Poppins', sans-serif; font-style: italic; font-size: 12px; text-transform: none; letter-spacing: 0; color: var(--ink-soft); max-width: 50%; text-align: right; }
   @media (max-width: 1100px) {
     .page { padding: 40px 32px; }
     .hero { grid-template-columns: 1fr; gap: 32px; }
@@ -380,17 +380,17 @@
     </div>
     <div class="masthead-strap">
       <span>STATION 01 &middot; OPERATOR MATT ROSS &middot; PREPARED BY JEEVES</span>
-      <span>BRIEFING 261</span>
+      <span>BRIEFING 262</span>
     </div>
   </header>
 
   <section class="hero">
     <div class="hero-main">
-      <div class="hero-eyebrow">LEGAL &amp; COMPLIANCE</div>
-      <h2 class="hero-headline">Lawyers must <em>finalize and send documents</em> before momentum stalls.</h2>
+      <div class="hero-eyebrow">Legal matters</div>
+      <h2 class="hero-headline">Your <em>lawyer needs finalized documents</em> before moving forward.</h2>
       <div class="hero-rule"></div>
-      <p class="hero-deck">Critical paperwork sits unsigned while timeline assumptions slip. Getting signed docs from your legal team moves everything downstream—from accountant handoff to CEO testimonial coordination—back into motion.</p>
-      <div class="hero-byline">10:50 · compiled from inbox, calendar &amp; tasks</div>
+      <p class="hero-deck">Multiple tasks point to pending legal paperwork that's blocking progress—both the lawyer's docs and accountant materials remain outstanding. Getting these submitted clears the path for whatever comes next.</p>
+      <div class="hero-byline">10:54 · compiled from inbox, calendar &amp; tasks</div>
     </div>
     <aside class="hero-aside">
       <div class="aside-head">First three movements</div>
@@ -499,7 +499,7 @@
         <span class="card-tally">0 new &middot; <strong>0 want a reply</strong></span>
       </div>
       <ul class="emails">
-        <p style="font-family:Fraunces,serif;font-style:italic;color:var(--ink-faint);font-size:13.5px;margin:0;">Inbox is quiet.</p>
+        <p style="font-family:Poppins,sans-serif;font-style:italic;color:var(--ink-faint);font-size:13.5px;margin:0;">Inbox is quiet.</p>
       </ul>
     </section>
 
@@ -593,7 +593,7 @@
   </div>
 
   <footer class="colophon">
-    <span>Compiled 10:50 &middot; matt-briefing.netlify.app &middot; Day2 / Jeeves</span>
+    <span>Compiled 10:54 &middot; matt-briefing.netlify.app &middot; Day2 / Jeeves</span>
     <span class="colophon-quote">“The early morning has gold in its mouth.” — Franklin</span>
   </footer>
 
