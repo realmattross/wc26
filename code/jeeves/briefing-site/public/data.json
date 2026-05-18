@@ -2,16 +2,11 @@
   "date_day": "Monday",
   "date_long": "18 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "08:50",
-  "briefing_no": 256,
+  "compiled_at": "10:09",
+  "briefing_no": 257,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
-    {
-      "time": "11:00",
-      "event": "Thames Water Payment Due",
-      "where": ""
-    },
     {
       "time": "11:45",
       "event": "chickens",
@@ -21,6 +16,11 @@
   "emails": [],
   "email_tally": "0 new · 0 want a reply",
   "messages": [
+    {
+      "channel": "wa",
+      "from": "177992168951853",
+      "preview": "Intro incoming (sorry for the 6 month delay)…. What’s the best email? How are you going? Big game tomorrow"
+    },
     {
       "channel": "wa",
       "from": "87793460072514",
@@ -40,11 +40,6 @@
       "channel": "wa",
       "from": "Ross boys",
       "preview": "Literally"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Ah lovely. let me know what you think"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -134,19 +129,19 @@
       },
       {
         "time": "15:00",
-        "temp": 10,
+        "temp": 11,
         "icon": "☔"
       },
       {
         "time": "19:00",
-        "temp": 10,
-        "icon": "☔"
+        "temp": 11,
+        "icon": "⛅"
       }
     ],
-    "summary": "<strong>7–12°C</strong> · rain · sunrise 05:09",
-    "narrative": "Wet day ahead. Boots and a proper coat."
+    "summary": "<strong>7–11°C</strong> · light drizzle · sunrise 05:09",
+    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>7–12°C</strong> · rain · sunrise 05:09",
+  "weather_summary": "<strong>7–11°C</strong> · light drizzle · sunrise 05:09",
   "body": {
     "value": "0.99",
     "unit": "m/s",
@@ -155,9 +150,9 @@
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "lead": {
-    "eyebrow": "URGENT",
-    "headline": "<em>Thames Water payment due</em> in under an hour.",
-    "deck": "The 11:00 deadline is imminent and requires immediate attention. This cannot be delayed without potential consequences.",
-    "byline": "08:51 · compiled from inbox, calendar & tasks"
+    "eyebrow": "LEGAL & OPERATIONS",
+    "headline": "Lawyers must <em>finalize documents</em> before momentum stalls.",
+    "deck": "Critical legal paperwork remains unsigned while you're managing parallel redesign and testimonial collection efforts. Without clarity on the lawyer's timeline, downstream decisions on the deck and video work hang in limbo.",
+    "byline": "10:09 · compiled from inbox, calendar & tasks"
   }
 }
