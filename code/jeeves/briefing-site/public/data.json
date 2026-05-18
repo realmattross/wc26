@@ -2,8 +2,8 @@
   "date_day": "Monday",
   "date_long": "18 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 268,
+  "compiled_at": "14:39",
+  "briefing_no": 269,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
@@ -19,7 +19,7 @@
     {
       "channel": "wa",
       "from": "177992168951853",
-      "preview": "Intro incoming (sorry for the 6 month delay)…. What’s the best email? How are you going? Big game tomorrow"
+      "preview": "https://www.bbc.co.uk/sport/football/articles/cr7pm71rvkvo"
     },
     {
       "channel": "wa",
@@ -78,12 +78,11 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$393.32",
-    "change": "+$91.86 · +30.47%",
+    "price": "$399.62",
+    "change": "+$93.31 · +30.47%",
     "direction": "up",
-    "as_of": "Close 15 May · NASDAQ",
+    "as_of": "Close 18 May · NASDAQ",
     "history": [
-      297.6600036621094,
       303.92999267578125,
       314.739990234375,
       316.3699951171875,
@@ -112,7 +111,8 @@
       383.82000732421875,
       399.0400085449219,
       397.1700134277344,
-      393.32000732421875
+      393.32000732421875,
+      399.614990234375
     ]
   },
   "weather": {
@@ -149,21 +149,12 @@
     "trend": "Sleep ran 0h 5m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": {
-    "name": "Don't Stop 'Til You Get Enough",
-    "artist": "Michael Jackson",
-    "album": "Off the Wall",
-    "is_playing": true,
-    "duration_ms": 364441,
-    "progress_ms": 185424,
-    "cover_url": "https://i.scdn.co/image/ab67616d0000b2732b74bf21c7e4f56758610949",
-    "spotify_url": "https://open.spotify.com/track/46eu3SBuFCXWsPT39Yg3tJ"
-  },
+  "spotify": null,
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "UK companies linked to payments for small-boat crossings, BBC finds"
+      "text": "Bodies of missing Italian divers found in Maldives"
     },
     {
       "kind": "fixture",
@@ -173,12 +164,12 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Bodies of missing Italian divers found in Maldives"
+      "text": "Prince William selling 20% of duchy property for housing and nature projects"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'All I thought about was running for my life': Footballer recalls train stabbing attack"
+      "text": "UK companies linked to payments for small boat crossings, BBC finds"
     },
     {
       "kind": "news",
@@ -188,24 +179,24 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Parents could face bigger fines for child's crimes under youth justice shake-up"
+      "text": "UK growth forecast upgraded by IMF but risks remain"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "UK companies linked to payments for small-boat crossings, BBC finds"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
       "text": "Bodies of missing Italian divers found in Maldives"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'All I thought about was running for my life': Footballer recalls train stabbing attack"
+      "text": "Prince William selling 20% of duchy property for housing and nature projects"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "UK companies linked to payments for small boat crossings, BBC finds"
     },
     {
       "kind": "news",
@@ -215,7 +206,7 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Parents could face bigger fines for child's crimes under youth justice shake-up"
+      "text": "UK growth forecast upgraded by IMF but risks remain"
     }
   ],
   "_fixtures": [
@@ -226,9 +217,9 @@
     }
   ],
   "lead": {
-    "eyebrow": "Priority signal",
-    "headline": "First call at <em>16</em>. Tom/Matt.",
-    "deck": "—",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "Legal & Operations",
+    "headline": "Lawyers must <em>finalise and send documents</em> before momentum stalls.",
+    "deck": "With legal sign-off still pending and accountant docs in queue, delays here cascade across your redesign timeline and upcoming Caroline prep. This is the blocking issue.",
+    "byline": "14:39 · compiled from inbox, calendar & tasks"
   }
 }
