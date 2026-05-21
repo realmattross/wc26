@@ -1,26 +1,36 @@
 {
-  "date_day": "Wednesday",
-  "date_long": "20 May 2026",
+  "date_day": "Thursday",
+  "date_long": "21 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 273,
+  "compiled_at": "06:25",
+  "briefing_no": 274,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "07:45",
-      "event": "Bills",
+      "time": "09:30",
+      "event": "Day2Health Technical Run Through",
       "where": ""
     },
     {
-      "time": "09:30",
-      "event": "LIVE: Building your GTM from scratch with Dama, BGV",
-      "where": "Online"
+      "time": "10:00",
+      "event": "Republic Working Session",
+      "where": ""
     },
     {
-      "time": "11:00",
-      "event": "LIVE: Early-stage sales skills with Tom Ricca-McCarthy, BGV Venture Partner",
-      "where": "Online"
+      "time": "11:15",
+      "event": "Republic Creative",
+      "where": ""
+    },
+    {
+      "time": "15:00",
+      "event": "30 min with Matt (Akee Kazi)",
+      "where": ""
+    },
+    {
+      "time": "15:00",
+      "event": "30 min with Matt (Akee Kazi)",
+      "where": ""
     }
   ],
   "emails": [],
@@ -29,30 +39,25 @@
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "Just had a great meeting with the CEO of the Cheltenham festivals, she's really lovely, has invited us to a drinks thing. Hope you're not fe"
+      "preview": "She replied - approx 7.25 pick so I said Esme will look out for her xx"
+    },
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "I sadly can’t, got clients all day. But I’ve had a chat with Tom and we’ll catch up tomorrow"
+    },
+    {
+      "channel": "wa",
+      "from": "119206834131172",
+      "preview": "Admirer"
     },
     {
       "channel": "wa",
       "from": "Lords Day2",
       "preview": "Understood… we can’t hide our true selves forever!"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Sorry dude! 😔"
-    },
-    {
-      "channel": "wa",
-      "from": "Day2  Core Team",
-      "preview": "Worth a go"
-    },
-    {
-      "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Whats your plan on friday. I will be at work but will hopefully come back early. Are u in central London?"
     }
   ],
-  "messages_tally": "5 unread · 5 chats",
+  "messages_tally": "4 unread · 4 chats",
   "tasks": [
     {
       "text": "Brian. Book meeting Prep for Caroline",
@@ -89,11 +94,10 @@
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
     "price": "$384.90",
-    "change": "+$79.17 · +25.90%",
+    "change": "+$86.11 · +28.82%",
     "direction": "up",
-    "as_of": "Close 19 May · NASDAQ",
+    "as_of": "Close 20 May · NASDAQ",
     "history": [
-      314.739990234375,
       316.3699951171875,
       315.7200012207031,
       319.2099914550781,
@@ -122,6 +126,7 @@
       397.1700134277344,
       393.32000732421875,
       393.1099853515625,
+      384.8999938964844,
       384.8999938964844
     ]
   },
@@ -129,29 +134,29 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 11,
+        "temp": 12,
         "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 15,
+        "temp": 18,
         "icon": "⛅"
       },
       {
         "time": "15:00",
-        "temp": 15,
+        "temp": 20,
         "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 14,
-        "icon": "⛅"
+        "temp": 19,
+        "icon": "☀"
       }
     ],
-    "summary": "<strong>10–15°C</strong> · light drizzle · sunrise 05:06",
-    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
+    "summary": "<strong>11–21°C</strong> · overcast · sunrise 05:05",
+    "narrative": "Quiet weather. Top of 20°C around lunchtime."
   },
-  "weather_summary": "<strong>10–15°C</strong> · light drizzle · sunrise 05:06",
+  "weather_summary": "<strong>11–21°C</strong> · overcast · sunrise 05:05",
   "body": {
     "value": "0.99",
     "unit": "m/s",
@@ -164,7 +169,7 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Supermarkets hit back over pressure to cap price of milk, bread and eggs"
+      "text": "Streeting pledges 'wealth tax that works' as part of leadership pitch"
     },
     {
       "kind": "fixture",
@@ -174,49 +179,49 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Inflation falls to 2.8% but is expected to rise from here"
+      "text": "TikTok and YouTube 'not safe enough' for kids, says Ofcom"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Arsenal fans and players celebrate title at Emirates at 5am"
+      "text": "UK agrees £3.7bn trade deal with six Gulf states"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Kylie Minogue reveals she had second cancer diagnosis in 2021"
+      "text": "Children in England to be offered free bus trips this August"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "MPs ask Channel 4 for answers over 'horrifying' Married At First Sight allegations"
+      "text": "BBC in Cuba after US announces criminal charges against Raúl Castro"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Supermarkets hit back over pressure to cap price of milk, bread and eggs"
+      "text": "Streeting pledges 'wealth tax that works' as part of leadership pitch"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Inflation falls to 2.8% but is expected to rise from here"
+      "text": "TikTok and YouTube 'not safe enough' for kids, says Ofcom"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Arsenal fans and players celebrate title at Emirates at 5am"
+      "text": "UK agrees £3.7bn trade deal with six Gulf states"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Kylie Minogue reveals she had second cancer diagnosis in 2021"
+      "text": "Children in England to be offered free bus trips this August"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "MPs ask Channel 4 for answers over 'horrifying' Married At First Sight allegations"
+      "text": "BBC in Cuba after US announces criminal charges against Raúl Castro"
     }
   ],
   "_fixtures": [
@@ -227,9 +232,9 @@
     }
   ],
   "lead": {
-    "eyebrow": "THIS MORNING",
-    "headline": "Two <em>live GTM sessions</em> demand your attention before noon.",
-    "deck": "You're back-to-back with Building your GTM from scratch at 9:30am and Early-stage sales skills at 11:00am—both online with BGV partners. These are the foundational skills sessions you need to lock in before the day fragments.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "TODAY'S PRIORITY",
+    "headline": "Day2Health <em>technical rehearsal</em> sets tone for morning",
+    "deck": "With the Republic working session and creative meeting following at 10 and 11:15, the 9:30 run-through is your foundation—any technical issues caught now won't derail the day's momentum. This is your window to ensure everything holds up before back-to-back strategic work.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
