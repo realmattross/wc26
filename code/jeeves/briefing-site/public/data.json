@@ -2,21 +2,11 @@
   "date_day": "Friday",
   "date_long": "22 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:34",
-  "briefing_no": 276,
+  "compiled_at": "12:30",
+  "briefing_no": 277,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
-    {
-      "time": "09:04",
-      "event": "Train to London Paddington",
-      "where": "Kingham"
-    },
-    {
-      "time": "12:00",
-      "event": "Cohort lunch",
-      "where": "Breakout space by The Gallery, Techspace Goswell Road"
-    },
     {
       "time": "13:00",
       "event": "Cohort check-in",
@@ -38,28 +28,28 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "The Young Ones",
+      "preview": "👍"
+    },
+    {
+      "channel": "wa",
+      "from": "Hampnett village group",
+      "preview": "Yes, our black cat in particular seems to have them every day at tbe moment despite medication"
+    },
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "Tom was excellent yesterday I thought"
+    },
+    {
+      "channel": "wa",
       "from": "Ross boys",
       "preview": "Vote for the Parkinson’s garden which my friend worked on"
     },
     {
       "channel": "wa",
-      "from": "The Young Ones",
-      "preview": "Evening! So I’ve booked a private session for us at the sauna on Thursday 04 at 11 am for an hour. It will cost just £10 and we can pay in c"
-    },
-    {
-      "channel": "wa",
       "from": "Day2 Tech",
       "preview": "Very cool!"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "👏"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Be back in 5"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -140,7 +130,7 @@
       {
         "time": "07:00",
         "temp": 14,
-        "icon": "☀"
+        "icon": "⛅"
       },
       {
         "time": "12:00",
@@ -184,22 +174,22 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Andrew investigation police renew call for information"
+      "text": "Andrew investigation could look into sexual misconduct allegations"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Rubio says Cuba is threat to US as Havana accuses him of 'lies'"
+      "text": "Stop blaming young people for being unemployed, says Amazon's UK boss"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Guardiola says 'nothing is eternal' as Man City confirm exit after 10 years"
     },
     {
       "kind": "news",
       "label": "BBC",
       "text": "Riskiest skin cancer cases hit UK record high"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Prepare for half term queues at Dover due to EU border process, port says"
     }
   ],
   "_news": [
@@ -211,22 +201,22 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Andrew investigation police renew call for information"
+      "text": "Andrew investigation could look into sexual misconduct allegations"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Rubio says Cuba is threat to US as Havana accuses him of 'lies'"
+      "text": "Stop blaming young people for being unemployed, says Amazon's UK boss"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Guardiola says 'nothing is eternal' as Man City confirm exit after 10 years"
     },
     {
       "kind": "news",
       "label": "BBC",
       "text": "Riskiest skin cancer cases hit UK record high"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Prepare for half term queues at Dover due to EU border process, port says"
     }
   ],
   "_fixtures": [
@@ -237,9 +227,9 @@
     }
   ],
   "lead": {
-    "eyebrow": "TODAY'S PRIORITY",
-    "headline": "You need to <em>prep for Caroline</em> before your London commute",
-    "deck": "Your 09:04 train to Paddington leaves this morning, and you still have a meeting with Brian to schedule and prepare for. Getting this locked in now clears the path for your cohort events starting at noon.",
-    "byline": "06:34 · compiled from inbox, calendar & tasks"
+    "eyebrow": "Priority signal",
+    "headline": "First call at <em>13</em>. Cohort check-in.",
+    "deck": "—",
+    "byline": "12:31 · compiled from inbox, calendar & tasks"
   }
 }
