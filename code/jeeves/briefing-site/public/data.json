@@ -2,31 +2,11 @@
   "date_day": "Saturday",
   "date_long": "23 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 278,
+  "compiled_at": "12:36",
+  "briefing_no": 279,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
-    {
-      "time": "09:45",
-      "event": "Speech Day Service — Chapel",
-      "where": "Cheltenham College Chapel, Bath Road, Cheltenham, GL53 7LD"
-    },
-    {
-      "time": "11:00",
-      "event": "Prize-giving & Speeches — Sports Hall",
-      "where": "Cheltenham College Sports Hall, Bath Road, Cheltenham, GL53 7LD"
-    },
-    {
-      "time": "11:32",
-      "event": "Train to Cheltenham Spa",
-      "where": "London Paddington"
-    },
-    {
-      "time": "12:30",
-      "event": "Speech Day — Drinks & Picnic",
-      "where": "Cheltenham College, Bath Road, Cheltenham, GL53 7LD"
-    },
     {
       "time": "14:00",
       "event": "Art & DT Displays — Thirlestaine Long Gallery",
@@ -43,13 +23,18 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Mate can I nab a fan from your room pls for laurel"
+      "from": "Southwood 4F Floreat2526 (sports password)",
+      "preview": "Arthur didn’t take a white shirt, so 🤷‍♀️ I can’t get worked up about things like this! 🤣"
     },
     {
       "channel": "wa",
-      "from": "Southwood 4F Floreat2526 (sports password)",
-      "preview": "…. 🤔 seems strange…?!"
+      "from": "84623824556136",
+      "preview": "I dreamt u blocked two of our toilets and needed to go to my grandpa’s one in stoke"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "See you then x"
     },
     {
       "channel": "wa",
@@ -60,11 +45,6 @@
       "channel": "wa",
       "from": "Day2 Tech",
       "preview": "I imagine it will be ignored until Tuesday… if at all!"
-    },
-    {
-      "channel": "wa",
-      "from": "Ross boys",
-      "preview": "Important recognition"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -242,9 +222,9 @@
     }
   ],
   "lead": {
-    "eyebrow": "SCHEDULE CONFLICT",
-    "headline": "You're <em>double-booked</em> this morning at Cheltenham College.",
-    "deck": "Your train to Cheltenham Spa departs at 11:32 from London Paddington, but prize-giving and speeches don't wrap until 11:00 at the Sports Hall—leaving you a 32-minute window to travel across town, collect luggage, and reach the station. You need to either adjust your departure or confirm whether you're attending the full ceremony.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "Priority signal",
+    "headline": "First call at <em>14</em>. Art & DT Displays — Thirlestaine Long Gallery.",
+    "deck": "—",
+    "byline": "12:48 · compiled from inbox, calendar & tasks"
   }
 }
