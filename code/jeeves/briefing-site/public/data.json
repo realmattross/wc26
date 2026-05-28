@@ -2,14 +2,14 @@
   "date_day": "Thursday",
   "date_long": "28 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 285,
+  "compiled_at": "12:48",
+  "briefing_no": 286,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "00:00",
-      "event": "PUK",
+      "time": "14:38",
+      "event": "Releaf parcel delivery",
       "where": ""
     }
   ],
@@ -19,7 +19,7 @@
     {
       "channel": "wa",
       "from": "Hampnett village group",
-      "preview": "Should be reconnected by Thursday 8am."
+      "preview": "Sorry I did not realise that some of you were still without power. We're at home all day if anyone needs anything XX"
     },
     {
       "channel": "wa",
@@ -206,9 +206,9 @@
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "PERSONNEL",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and transition planning.",
-    "deck": "With no due date flagged and multiple concurrent priorities, this departure needs to be addressed before institutional knowledge walks out the door. Clear next steps on coverage and handover should be established today.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "Priority signal",
+    "headline": "First call at <em>14</em>. Releaf parcel delivery.",
+    "deck": "—",
+    "byline": "12:50 · compiled from inbox, calendar & tasks"
   }
 }
