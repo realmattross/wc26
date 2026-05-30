@@ -2,16 +2,11 @@
   "date_day": "Saturday",
   "date_long": "30 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:33",
-  "briefing_no": 292,
+  "compiled_at": "12:30",
+  "briefing_no": 293,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
-    {
-      "time": "12:00",
-      "event": "GYm",
-      "where": ""
-    },
     {
       "time": "13:00",
       "event": "Saracens v Harlequins - Gallagher Prem (copy)",
@@ -23,28 +18,28 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "84623824556136",
+      "preview": "We did. That/s been washed ahead of Wendy tonight!"
+    },
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "I’ve been linked to these guys via Amy who were chatting to on Wednesday… have a quick look and let me know what you think re smartmap etc? "
+    },
+    {
+      "channel": "wa",
+      "from": "Hampnett village group",
+      "preview": "CHURCH TOMORROW \n31st May 2026\nWe have a Church Service (Benefice Choral Evensong) at 6.30 pm tomorrow - Sunday 31st May. There will be a gl"
+    },
+    {
+      "channel": "wa",
       "from": "The Young Ones",
       "preview": "https://view.hello.parkinsons.org.uk/?vawpToken=Z52BDGCSUI4U3DHO3W2A65GFSI.500020&utm_source=MarketingCloud&utm_medium=Email&utm_campaign=29"
     },
     {
       "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Would u be able to get the text on a web page that wasn’t live kind of thing. Struggling with the PowerPoint thing now I need to finesse it."
-    },
-    {
-      "channel": "wa",
       "from": "Day2 Fred",
       "preview": "En route"
-    },
-    {
-      "channel": "wa",
-      "from": "Bitches be",
-      "preview": "I wasn’t in mission impossible."
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Do you have any idea how much my go daddy website costs might be? x"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -81,16 +76,6 @@
     }
   ],
   "school_week": [
-    {
-      "date": "2026-05-30",
-      "date_display": "Sat 30 May",
-      "time": "08:00",
-      "all_day": false,
-      "school": "Cheltenham",
-      "title": "Southwood House Opens on Speech Day",
-      "is_hoh": true,
-      "location": "Southwood, Cheltenham College"
-    },
     {
       "date": "2026-05-31",
       "date_display": "Sun 31 May",
@@ -230,6 +215,16 @@
       "title": "Fourth Form Biology Summer Exam",
       "is_hoh": false,
       "location": ""
+    },
+    {
+      "date": "2026-06-06",
+      "date_display": "Sat 6 Jun",
+      "time": "08:50",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Fourth Form Saturday Exams",
+      "is_hoh": false,
+      "location": ""
     }
   ],
   "market": {
@@ -277,33 +272,33 @@
       {
         "time": "07:00",
         "temp": 14,
-        "icon": "☀"
+        "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 20,
-        "icon": "⛅"
-      },
-      {
-        "time": "15:00",
-        "temp": 22,
+        "temp": 21,
         "icon": "☀"
       },
       {
+        "time": "15:00",
+        "temp": 23,
+        "icon": "⛅"
+      },
+      {
         "time": "19:00",
-        "temp": 20,
+        "temp": 21,
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>11–22°C</strong> · overcast · sunrise 04:55",
-    "narrative": "Quiet weather. Top of 22°C around lunchtime."
+    "summary": "<strong>11–23°C</strong> · overcast · sunrise 04:55",
+    "narrative": "Quiet weather. Top of 23°C around lunchtime."
   },
-  "weather_summary": "<strong>11–22°C</strong> · overcast · sunrise 04:55",
+  "weather_summary": "<strong>11–23°C</strong> · overcast · sunrise 04:55",
   "body": {
-    "value": "1.06",
+    "value": "1.18",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Up 4.3% on the prior week. Sleep ran 3h 24m overnight.",
+    "trend": "Sleep ran 8h 18m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -311,7 +306,7 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Palace handed Andrew's controversial envoy emails six years ago"
+      "text": "Palace was handed Andrew's controversial envoy emails six years ago"
     },
     {
       "kind": "news",
@@ -326,19 +321,19 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Attorney general had 'no doubt' on reviewing teen boys' rape sentences"
+      "text": "Millions of breast cancer patients could safely avoid chemotherapy, study suggests"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'Poison seller' who sold toxic chemicals online to people across world admits aiding suicides"
+      "text": "Attorney general had 'no doubt' on reviewing teen boys' rape sentences"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Palace handed Andrew's controversial envoy emails six years ago"
+      "text": "Palace was handed Andrew's controversial envoy emails six years ago"
     },
     {
       "kind": "news",
@@ -353,19 +348,19 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Attorney general had 'no doubt' on reviewing teen boys' rape sentences"
+      "text": "Millions of breast cancer patients could safely avoid chemotherapy, study suggests"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'Poison seller' who sold toxic chemicals online to people across world admits aiding suicides"
+      "text": "Attorney general had 'no doubt' on reviewing teen boys' rape sentences"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "PERSONNEL",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "With no due date flagged, this departure risk sits unaddressed among your tasks. Clarifying the timeline and transition plan needs to happen today.",
-    "byline": "06:42 · compiled from inbox, calendar & tasks"
+    "eyebrow": "STAFFING",
+    "headline": "<em>Teresa's resignation</em> demands immediate attention",
+    "deck": "With no due date flagged and multiple competing priorities, this personnel change risks becoming a crisis if not addressed promptly. Clarity on timing and succession planning needs to happen now.",
+    "byline": "12:45 · compiled from inbox, calendar & tasks"
   }
 }
