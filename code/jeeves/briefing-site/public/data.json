@@ -1,16 +1,26 @@
 {
-  "date_day": "Saturday",
-  "date_long": "30 May 2026",
+  "date_day": "Sunday",
+  "date_long": "31 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 293,
+  "compiled_at": "06:36",
+  "briefing_no": 294,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "13:00",
-      "event": "Saracens v Harlequins - Gallagher Prem (copy)",
-      "where": "StoneX Stadium"
+      "time": "09:00",
+      "event": "[Memo] Watch the dog",
+      "where": ""
+    },
+    {
+      "time": "09:45",
+      "event": "Ed card",
+      "where": ""
+    },
+    {
+      "time": "15:00",
+      "event": "[Memo] Call Andy re: Q3 numbers",
+      "where": ""
     }
   ],
   "emails": [],
@@ -19,27 +29,27 @@
     {
       "channel": "wa",
       "from": "84623824556136",
-      "preview": "We did. That/s been washed ahead of Wendy tonight!"
+      "preview": "Are you as delighted as tom that they lost."
     },
     {
       "channel": "wa",
       "from": "87793460072514",
-      "preview": "I’ve been linked to these guys via Amy who were chatting to on Wednesday… have a quick look and let me know what you think re smartmap etc? "
+      "preview": "How about this for a shorter section…\n\n\n\nEd Shaw\nCo-Founder\n\n\"Together, we saw the opportunity to build the support platform we'd both been "
     },
     {
       "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "CHURCH TOMORROW \n31st May 2026\nWe have a Church Service (Benefice Choral Evensong) at 6.30 pm tomorrow - Sunday 31st May. There will be a gl"
+      "from": "150409754763471",
+      "preview": "Fuckers."
     },
     {
       "channel": "wa",
-      "from": "The Young Ones",
-      "preview": "https://view.hello.parkinsons.org.uk/?vawpToken=Z52BDGCSUI4U3DHO3W2A65GFSI.500020&utm_source=MarketingCloud&utm_medium=Email&utm_campaign=29"
+      "from": "4698794942473",
+      "preview": "With my cock"
     },
     {
       "channel": "wa",
-      "from": "Day2 Fred",
-      "preview": "En route"
+      "from": "150409754763471",
+      "preview": "Let Tudor get a point off him"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -271,29 +281,29 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 14,
+        "temp": 15,
         "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 21,
-        "icon": "☀"
+        "temp": 17,
+        "icon": "⛅"
       },
       {
         "time": "15:00",
-        "temp": 23,
+        "temp": 17,
         "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 21,
-        "icon": "⛅"
+        "temp": 15,
+        "icon": "☔"
       }
     ],
-    "summary": "<strong>11–23°C</strong> · overcast · sunrise 04:55",
-    "narrative": "Quiet weather. Top of 23°C around lunchtime."
+    "summary": "<strong>13–18°C</strong> · rain · sunrise 04:54",
+    "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>11–23°C</strong> · overcast · sunrise 04:55",
+  "weather_summary": "<strong>13–18°C</strong> · rain · sunrise 04:54",
   "body": {
     "value": "1.18",
     "unit": "m/s",
@@ -306,61 +316,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Palace was handed Andrew's controversial envoy emails six years ago"
+      "text": "Sturgeon tells BBC: I'm serving a sentence for crime I didn't commit"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "No deal announced after Trump meeting to make 'final determination' on Iran"
+      "text": "Hundreds arrested in France after wild Champions League celebrations"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Arrive three hours before flight home, airline boss tells UK holidaymakers"
+      "text": "How Putin became master of the image"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Millions of breast cancer patients could safely avoid chemotherapy, study suggests"
+      "text": "'Killer fungus' could be good news for habitats decimated by invasive moss"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Attorney general had 'no doubt' on reviewing teen boys' rape sentences"
+      "text": "Oscar-winning Star Wars editor Marcia Lucas dies aged 80"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Palace was handed Andrew's controversial envoy emails six years ago"
+      "text": "Sturgeon tells BBC: I'm serving a sentence for crime I didn't commit"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "No deal announced after Trump meeting to make 'final determination' on Iran"
+      "text": "Hundreds arrested in France after wild Champions League celebrations"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Arrive three hours before flight home, airline boss tells UK holidaymakers"
+      "text": "How Putin became master of the image"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Millions of breast cancer patients could safely avoid chemotherapy, study suggests"
+      "text": "'Killer fungus' could be good news for habitats decimated by invasive moss"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Attorney general had 'no doubt' on reviewing teen boys' rape sentences"
+      "text": "Oscar-winning Star Wars editor Marcia Lucas dies aged 80"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "STAFFING",
-    "headline": "<em>Teresa's resignation</em> demands immediate attention",
-    "deck": "With no due date flagged and multiple competing priorities, this personnel change risks becoming a crisis if not addressed promptly. Clarity on timing and succession planning needs to happen now.",
-    "byline": "12:45 · compiled from inbox, calendar & tasks"
+    "eyebrow": "PERSONNEL",
+    "headline": "<em>Teresa's resignation</em> requires immediate transition planning.",
+    "deck": "With no clear timeline or succession plan documented, this departure creates an operational gap that needs addressing today. Getting ahead of the handover process now prevents downstream disruption across your teams.",
+    "byline": "06:36 · compiled from inbox, calendar & tasks"
   }
 }
