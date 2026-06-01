@@ -1,30 +1,29 @@
 {
-  "date_day": "Sunday",
-  "date_long": "31 May 2026",
+  "date_day": "Monday",
+  "date_long": "1 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 295,
+  "compiled_at": "06:25",
+  "briefing_no": 296,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
-  "agenda": [
-    {
-      "time": "09:00",
-      "event": "[Memo] Watch the dog",
-      "where": ""
-    },
-    {
-      "time": "09:45",
-      "event": "Ed card",
-      "where": ""
-    }
-  ],
+  "agenda": [],
   "emails": [],
   "email_tally": "0 new · 0 want a reply",
   "messages": [
     {
       "channel": "wa",
+      "from": "The Young Ones",
+      "preview": "Please see attached an email about the Parkinson’s Nurse service in Gloucestershire. If anyone is struggling and needs any advice or support"
+    },
+    {
+      "channel": "wa",
       "from": "84623824556136",
-      "preview": "Chapter\nreel\nFilms"
+      "preview": "And the final page….how about\n\nEvery story has a beginning. Start yours with Chapter One.\n\nJust added a couple of words\n\nSorry missed “a\""
+    },
+    {
+      "channel": "wa",
+      "from": "Hampnett village group",
+      "preview": "Don’t take chances with CO alarms - if it is sounding leave the area and make sure ventilated - they can give a false alarm but veer on the "
     },
     {
       "channel": "wa",
@@ -35,16 +34,6 @@
       "channel": "wa",
       "from": "87793460072514",
       "preview": "Looks good right? Real people creating real solutions!"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Fuckers."
-    },
-    {
-      "channel": "wa",
-      "from": "4698794942473",
-      "preview": "With my cock"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -81,16 +70,6 @@
     }
   ],
   "school_week": [
-    {
-      "date": "2026-05-31",
-      "date_display": "Sun 31 May",
-      "time": "",
-      "all_day": true,
-      "school": "Cheltenham",
-      "title": "Silver DofE Camp Departure",
-      "is_hoh": false,
-      "location": ""
-    },
     {
       "date": "2026-06-01",
       "date_display": "Mon 1 Jun",
@@ -176,29 +155,29 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 15,
-        "icon": "☀"
+        "temp": 13,
+        "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 17,
+        "temp": 16,
         "icon": "⛅"
       },
       {
         "time": "15:00",
-        "temp": 17,
+        "temp": 15,
         "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 16,
+        "temp": 15,
         "icon": "☔"
       }
     ],
-    "summary": "<strong>12–18°C</strong> · light drizzle · sunrise 04:54",
-    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
+    "summary": "<strong>12–16°C</strong> · rain · sunrise 04:54",
+    "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>12–18°C</strong> · light drizzle · sunrise 04:54",
+  "weather_summary": "<strong>12–16°C</strong> · rain · sunrise 04:54",
   "body": {
     "value": "1.18",
     "unit": "m/s",
@@ -211,61 +190,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Sturgeon tells BBC: I'm serving a sentence for crime I didn't commit"
+      "text": "Second batch of Mandelson files to be published on Monday"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Key moments from Nicola Sturgeon's interview with Laura Kuenssberg"
+      "text": "'Don't be too kind': Stories from the maternity unit where mums were failed"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Hundreds arrested and dozens of police injured after Champions League riots in France"
+      "text": "Iran and US report new wave of air strikes in Gulf"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "How Putin became master of the image"
+      "text": "NHS single patient record to be debated for first time"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Israel seizes castle in Lebanon as it expands ground offensive"
+      "text": "Athlete forced to travel 800 miles for meeting that boss didn't show up for wins £149,000"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Sturgeon tells BBC: I'm serving a sentence for crime I didn't commit"
+      "text": "Second batch of Mandelson files to be published on Monday"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Key moments from Nicola Sturgeon's interview with Laura Kuenssberg"
+      "text": "'Don't be too kind': Stories from the maternity unit where mums were failed"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Hundreds arrested and dozens of police injured after Champions League riots in France"
+      "text": "Iran and US report new wave of air strikes in Gulf"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "How Putin became master of the image"
+      "text": "NHS single patient record to be debated for first time"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Israel seizes castle in Lebanon as it expands ground offensive"
+      "text": "Athlete forced to travel 800 miles for meeting that boss didn't show up for wins £149,000"
     }
   ],
   "_fixtures": [],
   "lead": {
     "eyebrow": "PERSONNEL",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention.",
-    "deck": "A key team member is departing and the transition needs to be managed now to minimize disruption. This takes priority over other pending items.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and transition planning.",
+    "deck": "With no details logged on timing or transition, this departure needs clarification on effective date and handover priorities. Getting ahead of it now prevents operational disruption.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
