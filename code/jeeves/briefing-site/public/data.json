@@ -1,34 +1,60 @@
 {
-  "date_day": "Monday",
-  "date_long": "1 June 2026",
+  "date_day": "Tuesday",
+  "date_long": "2 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 297,
+  "compiled_at": "06:25",
+  "briefing_no": 298,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
-  "agenda": [],
+  "agenda": [
+    {
+      "time": "09:00",
+      "event": "Oven Delivery and Craig",
+      "where": ""
+    },
+    {
+      "time": "13:00",
+      "event": "Ed",
+      "where": ""
+    },
+    {
+      "time": "14:30",
+      "event": "Day 2 Health <> BGV Check-in",
+      "where": ""
+    },
+    {
+      "time": "14:30",
+      "event": "Weekly Founder Check-in - BGV Programme",
+      "where": ""
+    },
+    {
+      "time": "15:15",
+      "event": "Day2Health round 2",
+      "where": ""
+    }
+  ],
   "emails": [],
   "email_tally": "0 new · 0 want a reply",
   "messages": [
     {
       "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Home in 12 x"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Noted"
+    },
+    {
+      "channel": "wa",
       "from": "87793460072514",
-      "preview": "This isn’t live is it? Will need to get photo permission if we use these…"
+      "preview": "Cool! I may have childcare issues tomorrow but hopefully sorted…"
     },
     {
       "channel": "wa",
       "from": "84623824556136",
-      "preview": "Hmm. Doesn’t work centre frame does it. Leave it with me"
-    },
-    {
-      "channel": "wa",
-      "from": "The Young Ones",
-      "preview": "Please see attached an email about the Parkinson’s Nurse service in Gloucestershire. If anyone is struggling and needs any advice or support"
-    },
-    {
-      "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "Don’t take chances with CO alarms - if it is sounding leave the area and make sure ventilated - they can give a false alarm but veer on the "
+      "preview": "Let me know your thoughts on email address too."
     }
   ],
   "messages_tally": "4 unread · 4 chats",
@@ -66,32 +92,12 @@
   ],
   "school_week": [
     {
-      "date": "2026-06-01",
-      "date_display": "Mon 1 Jun",
-      "time": "",
-      "all_day": true,
-      "school": "Cheltenham",
-      "title": "Prize Giving and Speech Day",
-      "is_hoh": false,
-      "location": "Cheltenham College"
-    },
-    {
       "date": "2026-06-03",
       "date_display": "Wed 3 Jun",
       "time": "",
       "all_day": true,
       "school": "Dean Close",
       "title": "Mead House Photo",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-03",
-      "date_display": "Wed 3 Jun",
-      "time": "",
-      "all_day": true,
-      "school": "Dean Close",
-      "title": "4th Form End of Year Exams",
       "is_hoh": false,
       "location": ""
     },
@@ -114,17 +120,26 @@
       "title": "Fourth Form Chemistry Summer Exam",
       "is_hoh": false,
       "location": ""
+    },
+    {
+      "date": "2026-06-09",
+      "date_display": "Tue 9 Jun",
+      "time": "",
+      "all_day": true,
+      "school": "Dean Close",
+      "title": "U6 Mead House Dinner",
+      "is_hoh": false,
+      "location": "Dean Close House"
     }
   ],
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$376.43",
-    "change": "+$102.67 · +37.50%",
+    "price": "$372.58",
+    "change": "+$77.68 · +26.34%",
     "direction": "up",
-    "as_of": "Close 29 May · NASDAQ",
+    "as_of": "Close 1 Jun · NASDAQ",
     "history": [
-      339.3999938964844,
       335.3999938964844,
       330.4700012207031,
       337.7300109863281,
@@ -153,15 +168,16 @@
       384.8399963378906,
       384.8299865722656,
       386.1199951171875,
-      376.42999267578125
+      376.42999267578125,
+      372.5799865722656
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 13,
-        "icon": "⛅"
+        "temp": 14,
+        "icon": "☔"
       },
       {
         "time": "12:00",
@@ -170,19 +186,19 @@
       },
       {
         "time": "15:00",
-        "temp": 17,
-        "icon": "⛅"
+        "temp": 15,
+        "icon": "☔"
       },
       {
         "time": "19:00",
-        "temp": 15,
+        "temp": 16,
         "icon": "☔"
       }
     ],
-    "summary": "<strong>11–17°C</strong> · rain · sunrise 04:54",
+    "summary": "<strong>13–18°C</strong> · rain · sunrise 04:53",
     "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>11–17°C</strong> · rain · sunrise 04:54",
+  "weather_summary": "<strong>13–18°C</strong> · rain · sunrise 04:53",
   "body": {
     "value": "1.18",
     "unit": "m/s",
@@ -190,66 +206,75 @@
     "trend": "Sleep ran 8h 18m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": null,
+  "spotify": {
+    "name": "Aperol Spritz",
+    "artist": "deBasement",
+    "album": "Aperol Spritz",
+    "is_playing": false,
+    "duration_ms": 179000,
+    "progress_ms": 2238,
+    "cover_url": "https://i.scdn.co/image/ab67616d0000b273350722cf1bc5cc033ff51b6c",
+    "spotify_url": "https://open.spotify.com/track/10V1mRpItQP4ZNCfEiOuF7"
+  },
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US says it struck Iranian radar sites as Kuwait reports missile and drone attacks"
+      "text": "Massive Russian attack on cities across Ukraine kills at least ten people"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Satellite images suggest Iran's strikes are more precise and extensive than US acknowledged"
+      "text": "'Beleaguered and bereft' - Mandelson messages reveal criticism of No 10"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Ministers braced for private texts and WhatsApps in Mandelson file release"
+      "text": "Weapons‑obsessed killer jailed as body cam footage shows victim being handcuffed"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "UK wins court case over collapsed Rwanda asylum deal"
+      "text": "Six people killed in Iowa domestic dispute, police say"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'Don't be too kind': Maternity staff used offensive terms to refer to patients"
+      "text": "Lebanon says Hezbollah agrees reciprocal halt to attacks on Israel"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US says it struck Iranian radar sites as Kuwait reports missile and drone attacks"
+      "text": "Massive Russian attack on cities across Ukraine kills at least ten people"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Satellite images suggest Iran's strikes are more precise and extensive than US acknowledged"
+      "text": "'Beleaguered and bereft' - Mandelson messages reveal criticism of No 10"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Ministers braced for private texts and WhatsApps in Mandelson file release"
+      "text": "Weapons‑obsessed killer jailed as body cam footage shows victim being handcuffed"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "UK wins court case over collapsed Rwanda asylum deal"
+      "text": "Six people killed in Iowa domestic dispute, police say"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'Don't be too kind': Maternity staff used offensive terms to refer to patients"
+      "text": "Lebanon says Hezbollah agrees reciprocal halt to attacks on Israel"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "URGENT STAFFING",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and transition planning.",
-    "deck": "With no timeline specified on this task, clarity is needed now on her departure date and what handover needs to happen before she leaves. This directly impacts team capacity and any projects she's stewarding.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "STAFFING CHANGE",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
+    "deck": "With a key team member departing, you need to move quickly on coverage and knowledge transfer before institutional gaps widen. This shapes your hiring and project continuity over the coming weeks.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
