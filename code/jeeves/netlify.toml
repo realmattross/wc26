@@ -1,0 +1,4 @@
+
+[[functions]]
+name = "email-triage"
+schedule = "@every 30m"
