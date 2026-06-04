@@ -1,26 +1,36 @@
 {
-  "date_day": "Wednesday",
-  "date_long": "3 June 2026",
+  "date_day": "Thursday",
+  "date_long": "4 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 301,
+  "compiled_at": "06:28",
+  "briefing_no": 302,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "13:15",
-      "event": "D2 catch up",
+      "time": "09:15",
+      "event": "Chat with Sam",
+      "where": ""
+    },
+    {
+      "time": "09:45",
+      "event": "Chicken",
       "where": ""
     },
     {
       "time": "14:00",
-      "event": "Day2Health x Speedflex",
-      "where": "Microsoft Teams Meeting"
+      "event": "Taxi",
+      "where": ""
     },
     {
-      "time": "14:45",
-      "event": "Certificates. Dad and bgv",
-      "where": ""
+      "time": "15:02",
+      "event": "Train to London Paddington",
+      "where": "Kingham"
+    },
+    {
+      "time": "18:00",
+      "event": "St Paul's School Reunion",
+      "where": "St Paul's School and The Bridge, Castelnau, Lonsdale Road, Barnes, London SW13 9JT"
     }
   ],
   "emails": [],
@@ -29,27 +39,27 @@
     {
       "channel": "wa",
       "from": "87793460072514",
-      "preview": "Phew…I’m starving!! 🤣"
+      "preview": "So, Jo and Tom just messaged to say that Tom and Jo’s sister broke up today 😔 thought he looked sad!"
     },
     {
       "channel": "wa",
-      "from": "The Young Ones",
-      "preview": "Any last minute takers for the sauna and optional cold plunge, tomorrow at 11am? 😊"
+      "from": "Day2 Tech",
+      "preview": "Keen to see if we walk up to a response from them too! If not, more ammo"
+    },
+    {
+      "channel": "wa",
+      "from": "Sneakerheads",
+      "preview": "The diagonal lines are heritage from hoddle era"
+    },
+    {
+      "channel": "wa",
+      "from": "Lords Day2",
+      "preview": "I’m packed up tomorrow but free after 3pm if that’s any use to anyone"
     },
     {
       "channel": "wa",
       "from": "Day2 Fred",
-      "preview": "If you need an example I was thinking Cheltenham leisure looks good as it has good facilities and a GP referral program but it’s also a quit"
-    },
-    {
-      "channel": "wa",
-      "from": "Say it ain’t so",
-      "preview": "probably busy in meetings"
-    },
-    {
-      "channel": "wa",
-      "from": "81527186686069",
-      "preview": "Good Afternoon Matt. I hope you are well.  \n\nCleaning Service in May.\n5.5 - £72\n12.5-  £72\n19.5- £72\n26.5- £72\n\nTotal £288\n\nBest Regards \nKa"
+      "preview": "Thanks mate"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -86,16 +96,6 @@
     }
   ],
   "school_week": [
-    {
-      "date": "2026-06-03",
-      "date_display": "Wed 3 Jun",
-      "time": "",
-      "all_day": true,
-      "school": "Dean Close",
-      "title": "Mead House Photo",
-      "is_hoh": false,
-      "location": ""
-    },
     {
       "date": "2026-06-04",
       "date_display": "Thu 4 Jun",
@@ -145,17 +145,26 @@
       "title": "Whole School Talk",
       "is_hoh": false,
       "location": ""
+    },
+    {
+      "date": "2026-06-11",
+      "date_display": "Thu 11 Jun",
+      "time": "",
+      "all_day": true,
+      "school": "Dean Close",
+      "title": "Annual Sports Day",
+      "is_hoh": false,
+      "location": "Prince of Wales Stadium"
     }
   ],
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$358.39",
-    "change": "+$63.93 · +21.71%",
+    "price": "$355.68",
+    "change": "+$61.22 · +20.79%",
     "direction": "up",
-    "as_of": "Close 2 Jun · NASDAQ",
+    "as_of": "Close 3 Jun · NASDAQ",
     "history": [
-      330.4700012207031,
       337.7300109863281,
       337.75,
       342.32000732421875,
@@ -184,7 +193,8 @@
       386.1199951171875,
       376.42999267578125,
       372.5799865722656,
-      358.3900146484375
+      358.3900146484375,
+      355.67999267578125
     ]
   },
   "weather": {
@@ -215,10 +225,10 @@
   },
   "weather_summary": "<strong>12–17°C</strong> · rain · sunrise 04:52",
   "body": {
-    "value": "1.18",
+    "value": "1.19",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Up 2.6% on the prior week. Sleep ran 8h 25m overnight.",
+    "trend": "Down 10.8% on the prior week. Sleep ran 9h 34m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -226,61 +236,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Royal Navy helicopter crash worrying, PM says"
+      "text": "Israel and Lebanon agree to implement ceasefire if Hezbollah stops attacks"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iran launch new strikes, as Kuwait says airport hit by Iranian drones"
+      "text": "US House votes to rein in Trump's war powers in rebuke over Iran"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Ukrainian drones hit St Petersburg as Putin's flagship economic forum opens"
+      "text": "New ovarian cancer drug offers patients more time and better quality of life"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "How a content creator tried to use a YouTube alibi to get away with murder"
+      "text": "NHS staff should be banned from wearing pro-Palestinian badges, report recommends"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Giorgio Locatelli replaces John Torode as co-host of Celebrity MasterChef"
+      "text": "MI5 warns Chinese spies are using job websites to target government staff"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Royal Navy helicopter crash worrying, PM says"
+      "text": "Israel and Lebanon agree to implement ceasefire if Hezbollah stops attacks"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iran launch new strikes, as Kuwait says airport hit by Iranian drones"
+      "text": "US House votes to rein in Trump's war powers in rebuke over Iran"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Ukrainian drones hit St Petersburg as Putin's flagship economic forum opens"
+      "text": "New ovarian cancer drug offers patients more time and better quality of life"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "How a content creator tried to use a YouTube alibi to get away with murder"
+      "text": "NHS staff should be banned from wearing pro-Palestinian badges, report recommends"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Giorgio Locatelli replaces John Torode as co-host of Celebrity MasterChef"
+      "text": "MI5 warns Chinese spies are using job websites to target government staff"
     }
   ],
   "_fixtures": [],
   "lead": {
     "eyebrow": "STAFFING",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "This personnel change sits unresolved in your task list without timeline clarity. With multiple business initiatives underway, addressing the transition now prevents operational disruption across your teams.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "headline": "<em>Teresa's resignation</em> demands immediate attention",
+    "deck": "With no due date set and multiple competing priorities already stacking up, clarifying the timeline and transition plan for this departure needs to move to the front of your queue today. The longer this sits unaddressed, the harder the handoff becomes.",
+    "byline": "06:52 · compiled from inbox, calendar & tasks"
   }
 }
