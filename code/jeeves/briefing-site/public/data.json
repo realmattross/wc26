@@ -2,21 +2,11 @@
   "date_day": "Friday",
   "date_long": "5 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 304,
+  "compiled_at": "12:30",
+  "briefing_no": 305,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
-    {
-      "time": "08:00",
-      "event": "Day2 Health ✖️Techne Video Tags Enhancement Meeting",
-      "where": ""
-    },
-    {
-      "time": "12:00",
-      "event": "Cohort lunch",
-      "where": "Breakout space by The Gallery, Techspace Goswell Road"
-    },
     {
       "time": "13:45",
       "event": "Founder confidential with Nicholas Betts, Founder & CEO at Zerotec",
@@ -33,28 +23,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Not to worry concierge knows you are coming and will let you in .\nThen buzz I’ll be up ."
-    },
-    {
-      "channel": "wa",
-      "from": "Sneakerheads",
-      "preview": "https://vm.tiktok.com/ZNRv111g1/"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Just means Max has lost one xx"
-    },
-    {
-      "channel": "wa",
       "from": "Lords Day2",
-      "preview": "Wish I was having a drink!! What a week"
+      "preview": "I wouldn’t like to bat on that wicket!"
     },
     {
       "channel": "wa",
-      "from": "Day2  Core Team",
-      "preview": "It was fine, food for thought ultimately for them. My hope is they can see that we may be a good partner to help raise awareness… which may "
+      "from": "84623824556136",
+      "preview": "Well I only have you. I think two is enough but three its better. First one free and second one 50% off? what do u think? BUT they have to b"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Not before breakfast"
+    },
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "I’ve made a note to go over the tagging later"
+    },
+    {
+      "channel": "wa",
+      "from": "Say it ain’t so",
+      "preview": "tragic🫡"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -171,7 +161,7 @@
       },
       {
         "time": "12:00",
-        "temp": 15,
+        "temp": 14,
         "icon": "⛅"
       },
       {
@@ -181,19 +171,19 @@
       },
       {
         "time": "19:00",
-        "temp": 13,
+        "temp": 12,
         "icon": "☔"
       }
     ],
-    "summary": "<strong>10–15°C</strong> · light drizzle · sunrise 04:51",
+    "summary": "<strong>10–14°C</strong> · light drizzle · sunrise 04:51",
     "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>10–15°C</strong> · light drizzle · sunrise 04:51",
+  "weather_summary": "<strong>10–14°C</strong> · light drizzle · sunrise 04:51",
   "body": {
-    "value": "1.18",
+    "value": "1.12",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Sleep ran 9h 8m overnight.",
+    "trend": "Down 31.3% on the prior week. Sleep ran 9h 8m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -206,22 +196,22 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Burnham says he would seek to enter any Labour leadership contest"
+      "text": "World-first vaccine designed by AI could protect against whole families of viruses"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'World-first' vaccine designed by artificial intelligence"
+      "text": "Former student charged after University of Surrey crossbow attack"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Mason: Two weeks out from crucial Makerfield by-election here's how the contest is shaping up"
     },
     {
       "kind": "news",
       "label": "BBC",
       "text": "UK in most dangerous period I've known, military chief says"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "One in four births in England is now emergency caesarean, BBC analysis shows"
     }
   ],
   "_news": [
@@ -233,29 +223,29 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Burnham says he would seek to enter any Labour leadership contest"
+      "text": "World-first vaccine designed by AI could protect against whole families of viruses"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'World-first' vaccine designed by artificial intelligence"
+      "text": "Former student charged after University of Surrey crossbow attack"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Mason: Two weeks out from crucial Makerfield by-election here's how the contest is shaping up"
     },
     {
       "kind": "news",
       "label": "BBC",
       "text": "UK in most dangerous period I've known, military chief says"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "One in four births in England is now emergency caesarean, BBC analysis shows"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "INTERNAL TRANSITION",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "With a key team member departing, you need to address the gap in your Day2 Health operations before momentum stalls. This task sits undated and unurgent in your list—but it shouldn't be.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "INTERNAL PRIORITY",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention before today's events.",
+    "deck": "With a founder confidential and pitch practice already scheduled for this afternoon, handling this departure now prevents cascading complications across your team and upcoming commitments. Getting ahead of the transition matters more than the day's external meetings.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
