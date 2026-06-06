@@ -1,21 +1,31 @@
 {
-  "date_day": "Friday",
-  "date_long": "5 June 2026",
+  "date_day": "Saturday",
+  "date_long": "6 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 305,
+  "compiled_at": "06:25",
+  "briefing_no": 306,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "13:45",
-      "event": "Founder confidential with Nicholas Betts, Founder & CEO at Zerotec",
-      "where": "The Gallery, Techspace Goswell Road"
+      "time": "13:32",
+      "event": "Train to Cheltenham Spa",
+      "where": "London Paddington"
     },
     {
-      "time": "15:00",
-      "event": "Pitch practice: defining your team edge 💎",
-      "where": "The Gallery, Techspace Goswell Road"
+      "time": "14:15",
+      "event": "🏏 Max Cricket",
+      "where": "Cheltenham Prep"
+    },
+    {
+      "time": "15:15",
+      "event": "Harlequins v Northampton Saints - Gallagher Prem (copy)",
+      "where": "Twickenham Stoop"
+    },
+    {
+      "time": "21:00",
+      "event": "England vs New Zealand (Warm-up Game)",
+      "where": "Raymond James Stadium, Tampa, Florida"
     }
   ],
   "emails": [],
@@ -23,28 +33,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "Lords Day2",
-      "preview": "I wouldn’t like to bat on that wicket!"
-    },
-    {
-      "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Well I only have you. I think two is enough but three its better. First one free and second one 50% off? what do u think? BUT they have to b"
+      "from": "150409754763471",
+      "preview": "It’s all marketing"
     },
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "Not before breakfast"
+      "preview": "Hi! Sorry missed you was cooking. Hope pitch went well? X"
+    },
+    {
+      "channel": "wa",
+      "from": "84623824556136",
+      "preview": "On ten tonight if your dad watches that"
     },
     {
       "channel": "wa",
       "from": "87793460072514",
-      "preview": "I’ve made a note to go over the tagging later"
+      "preview": "Urgh… I feel a bit sick at the thought of it!!"
     },
     {
       "channel": "wa",
-      "from": "Say it ain’t so",
-      "preview": "tragic🫡"
+      "from": "150409754763471",
+      "preview": "I await your call !"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -115,13 +125,11 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$369.27",
-    "change": "+$74.81 · +25.41%",
+    "price": "$365.76",
+    "change": "+$71.30 · +24.21%",
     "direction": "up",
-    "as_of": "Close 4 Jun · NASDAQ",
+    "as_of": "Close 5 Jun · NASDAQ",
     "history": [
-      337.7300109863281,
-      337.75,
       342.32000732421875,
       348.5199890136719,
       347.5,
@@ -149,41 +157,43 @@
       376.42999267578125,
       372.5799865722656,
       358.3900146484375,
-      355.67999267578125
+      355.67999267578125,
+      369.2699890136719,
+      365.760009765625
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 11,
-        "icon": "⛅"
+        "temp": 10,
+        "icon": "☔"
       },
       {
         "time": "12:00",
-        "temp": 14,
-        "icon": "⛅"
+        "temp": 13,
+        "icon": "☔"
       },
       {
         "time": "15:00",
-        "temp": 14,
-        "icon": "⛅"
+        "temp": 13,
+        "icon": "☔"
       },
       {
         "time": "19:00",
-        "temp": 12,
+        "temp": 14,
         "icon": "☔"
       }
     ],
-    "summary": "<strong>10–14°C</strong> · light drizzle · sunrise 04:51",
-    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
+    "summary": "<strong>10–15°C</strong> · rain · sunrise 04:50",
+    "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>10–14°C</strong> · light drizzle · sunrise 04:51",
+  "weather_summary": "<strong>10–15°C</strong> · rain · sunrise 04:50",
   "body": {
-    "value": "1.12",
+    "value": "1.17",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 31.3% on the prior week. Sleep ran 9h 8m overnight.",
+    "trend": "Up 12.0% on the prior week. Sleep ran 6h 33m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -191,61 +201,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Andrew was sub-letting Royal Lodge cottages, watchdog reveals"
+      "text": "Downing Street hits out at 'people seeking to stir division' after Vance's Nowak post"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "World-first vaccine designed by AI could protect against whole families of viruses"
+      "text": "US and Iran exchange strikes in Gulf in latest test of ceasefire"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Former student charged after University of Surrey crossbow attack"
+      "text": "Buffy and Ted Lasso star Anthony Head dies at 72"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Mason: Two weeks out from crucial Makerfield by-election here's how the contest is shaping up"
+      "text": "Putin says there is 'no point' meeting Zelensky over ending Ukraine war"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "UK in most dangerous period I've known, military chief says"
+      "text": "Why are devastating mice plagues happening in Australia?"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Andrew was sub-letting Royal Lodge cottages, watchdog reveals"
+      "text": "Downing Street hits out at 'people seeking to stir division' after Vance's Nowak post"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "World-first vaccine designed by AI could protect against whole families of viruses"
+      "text": "US and Iran exchange strikes in Gulf in latest test of ceasefire"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Former student charged after University of Surrey crossbow attack"
+      "text": "Buffy and Ted Lasso star Anthony Head dies at 72"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Mason: Two weeks out from crucial Makerfield by-election here's how the contest is shaping up"
+      "text": "Putin says there is 'no point' meeting Zelensky over ending Ukraine war"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "UK in most dangerous period I've known, military chief says"
+      "text": "Why are devastating mice plagues happening in Australia?"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "INTERNAL PRIORITY",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention before today's events.",
-    "deck": "With a founder confidential and pitch practice already scheduled for this afternoon, handling this departure now prevents cascading complications across your team and upcoming commitments. Getting ahead of the transition matters more than the day's external meetings.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "URGENT TASK",
+    "headline": "<em>Teresa's resignation</em> needs immediate attention",
+    "deck": "This unresolved personnel matter sits among your open tasks with no due date assigned, creating potential exposure. Clarifying next steps and succession planning should happen before the day's events take you out of the office.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
