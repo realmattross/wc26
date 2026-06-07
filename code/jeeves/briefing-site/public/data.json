@@ -2,8 +2,8 @@
   "date_day": "Sunday",
   "date_long": "7 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 308,
+  "compiled_at": "12:30",
+  "briefing_no": 309,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
@@ -19,25 +19,30 @@
     {
       "channel": "wa",
       "from": "84623824556136",
-      "preview": "Since I am sure Amy won’t deliver on time, can you use this paragraph as a description rather than a quote for now pls.\n\nThis client wanted "
+      "preview": "Let me know when I can double check if those changes have gone through, then we are good to go bro"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "I don’t mind"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Esme obviously hob knobs with the great and the good 😊"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "gotcha"
     },
     {
       "channel": "wa",
       "from": "150409754763471",
       "preview": "Nice! Such filthy weather"
-    },
-    {
-      "channel": "wa",
-      "from": "Ross boys",
-      "preview": "It makes me a lot older than you !"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Morning! Remind me of logistics - are you coming home with Max in taxi from Cheltenham? Xx"
     }
   ],
-  "messages_tally": "4 unread · 4 chats",
+  "messages_tally": "5 unread · 5 chats",
   "tasks": [
     {
       "text": "Brian. Book meeting Prep for Caroline",
@@ -80,16 +85,6 @@
       "title": "U6 Mead House Dinner",
       "is_hoh": false,
       "location": "Dean Close House"
-    },
-    {
-      "date": "2026-06-09",
-      "date_display": "Tue 9 Jun",
-      "time": "16:15",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Whole School Talk",
-      "is_hoh": false,
-      "location": ""
     },
     {
       "date": "2026-06-11",
@@ -146,17 +141,17 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 12,
+        "temp": 11,
         "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 13,
+        "temp": 15,
         "icon": "☔"
       },
       {
         "time": "15:00",
-        "temp": 15,
+        "temp": 16,
         "icon": "⛅"
       },
       {
@@ -165,15 +160,15 @@
         "icon": "☔"
       }
     ],
-    "summary": "<strong>10–15°C</strong> · light drizzle · sunrise 04:50",
-    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
+    "summary": "<strong>10–16°C</strong> · rain · sunrise 04:50",
+    "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>10–15°C</strong> · light drizzle · sunrise 04:50",
+  "weather_summary": "<strong>10–16°C</strong> · rain · sunrise 04:50",
   "body": {
-    "value": "1.09",
+    "value": "1.12",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Up 9.6% on the prior week. Sleep ran 6h 33m overnight.",
+    "trend": "Up 23.9% on the prior week. Sleep ran 6h 33m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -181,61 +176,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Delays to defence plan undermine UK credibility, MPs say"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Starmer tells supporters he will fight any leadership contest"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Cosmeticorexia: How girls are falling down a skincare rabbit hole"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Police officer turned Love Island US contestant faces hometown backlash"
+      "text": "Lammy says he told JD Vance his Nowak comments were 'wrong'"
     },
     {
       "kind": "news",
       "label": "BBC",
       "text": "Hegseth attacks Europe over migration with beach 'invasion' D-Day speech"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Delays to defence plan undermine UK credibility, MPs say"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Steve Rosenberg: Russia's economic forum overshadowed by drone attacks on St Petersburg"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Cosmeticorexia: How girls are falling down a skincare rabbit hole"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Delays to defence plan undermine UK credibility, MPs say"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Starmer tells supporters he will fight any leadership contest"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Cosmeticorexia: How girls are falling down a skincare rabbit hole"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Police officer turned Love Island US contestant faces hometown backlash"
+      "text": "Lammy says he told JD Vance his Nowak comments were 'wrong'"
     },
     {
       "kind": "news",
       "label": "BBC",
       "text": "Hegseth attacks Europe over migration with beach 'invasion' D-Day speech"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Delays to defence plan undermine UK credibility, MPs say"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Steve Rosenberg: Russia's economic forum overshadowed by drone attacks on St Petersburg"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Cosmeticorexia: How girls are falling down a skincare rabbit hole"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "URGENT",
+    "eyebrow": "STAFFING",
     "headline": "<em>Teresa's resignation</em> requires immediate attention",
-    "deck": "This personnel change sits unresolved in your task list with no due date or urgency marker, yet it's a staffing matter that typically demands swift action. Without clarity on timing and transition planning, this could create operational gaps across your team.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "deck": "With no due date set and multiple competing priorities, this personnel matter risks sliding through the cracks during a busy period. Clarity on timing and transition planning needs to happen now.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
