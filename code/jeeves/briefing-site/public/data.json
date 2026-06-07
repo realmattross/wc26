@@ -1,31 +1,16 @@
 {
-  "date_day": "Saturday",
-  "date_long": "6 June 2026",
+  "date_day": "Sunday",
+  "date_long": "7 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:33",
-  "briefing_no": 307,
+  "compiled_at": "06:25",
+  "briefing_no": 308,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "13:32",
-      "event": "Train to Cheltenham Spa",
-      "where": "London Paddington"
-    },
-    {
-      "time": "14:15",
-      "event": "🏏 Max Cricket",
-      "where": "Cheltenham Prep"
-    },
-    {
-      "time": "15:15",
-      "event": "Harlequins v Northampton Saints - Gallagher Prem (copy)",
-      "where": "Twickenham Stoop"
-    },
-    {
-      "time": "21:00",
-      "event": "England vs New Zealand (Warm-up Game)",
-      "where": "Raymond James Stadium, Tampa, Florida"
+      "time": "16:15",
+      "event": "Oven Ready For recycling",
+      "where": ""
     }
   ],
   "emails": [],
@@ -34,7 +19,12 @@
     {
       "channel": "wa",
       "from": "84623824556136",
-      "preview": "Hi BGV.\r\nI’m keen to share something that has been incredibly valuable to Day2. Given what we discussed on Friday about “Origin stories” I w"
+      "preview": "Since I am sure Amy won’t deliver on time, can you use this paragraph as a description rather than a quote for now pls.\n\nThis client wanted "
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Nice! Such filthy weather"
     },
     {
       "channel": "wa",
@@ -45,19 +35,9 @@
       "channel": "wa",
       "from": "150409754763471",
       "preview": "Morning! Remind me of logistics - are you coming home with Max in taxi from Cheltenham? Xx"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "It’s all marketing"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Urgh… I feel a bit sick at the thought of it!!"
     }
   ],
-  "messages_tally": "5 unread · 5 chats",
+  "messages_tally": "4 unread · 4 chats",
   "tasks": [
     {
       "text": "Brian. Book meeting Prep for Caroline",
@@ -90,7 +70,38 @@
       "urgency": null
     }
   ],
-  "school_week": [],
+  "school_week": [
+    {
+      "date": "2026-06-09",
+      "date_display": "Tue 9 Jun",
+      "time": "",
+      "all_day": true,
+      "school": "Dean Close",
+      "title": "U6 Mead House Dinner",
+      "is_hoh": false,
+      "location": "Dean Close House"
+    },
+    {
+      "date": "2026-06-09",
+      "date_display": "Tue 9 Jun",
+      "time": "16:15",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Whole School Talk",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-11",
+      "date_display": "Thu 11 Jun",
+      "time": "",
+      "all_day": true,
+      "school": "Dean Close",
+      "title": "Annual Sports Day",
+      "is_hoh": false,
+      "location": "Prince of Wales Stadium"
+    }
+  ],
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
@@ -135,8 +146,8 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 10,
-        "icon": "☔"
+        "temp": 12,
+        "icon": "⛅"
       },
       {
         "time": "12:00",
@@ -145,8 +156,8 @@
       },
       {
         "time": "15:00",
-        "temp": 13,
-        "icon": "☔"
+        "temp": 15,
+        "icon": "⛅"
       },
       {
         "time": "19:00",
@@ -154,15 +165,15 @@
         "icon": "☔"
       }
     ],
-    "summary": "<strong>10–15°C</strong> · rain · sunrise 04:50",
-    "narrative": "Wet day ahead. Boots and a proper coat."
+    "summary": "<strong>10–15°C</strong> · light drizzle · sunrise 04:50",
+    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>10–15°C</strong> · rain · sunrise 04:50",
+  "weather_summary": "<strong>10–15°C</strong> · light drizzle · sunrise 04:50",
   "body": {
-    "value": "1.11",
+    "value": "1.09",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 16.6% on the prior week. Sleep ran 6h 33m overnight.",
+    "trend": "Up 9.6% on the prior week. Sleep ran 6h 33m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -170,61 +181,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Downing Street hits out at 'people seeking to stir division' after Vance's Nowak post"
+      "text": "Delays to defence plan undermine UK credibility, MPs say"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iran exchange strikes in Gulf in latest test of ceasefire"
+      "text": "Starmer tells supporters he will fight any leadership contest"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Buffy and Ted Lasso star Anthony Head dies at 72"
+      "text": "Cosmeticorexia: How girls are falling down a skincare rabbit hole"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Putin says there is 'no point' meeting Zelensky over ending Ukraine war"
+      "text": "Police officer turned Love Island US contestant faces hometown backlash"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Why are devastating mice plagues happening in Australia?"
+      "text": "Hegseth attacks Europe over migration with beach 'invasion' D-Day speech"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Downing Street hits out at 'people seeking to stir division' after Vance's Nowak post"
+      "text": "Delays to defence plan undermine UK credibility, MPs say"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iran exchange strikes in Gulf in latest test of ceasefire"
+      "text": "Starmer tells supporters he will fight any leadership contest"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Buffy and Ted Lasso star Anthony Head dies at 72"
+      "text": "Cosmeticorexia: How girls are falling down a skincare rabbit hole"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Putin says there is 'no point' meeting Zelensky over ending Ukraine war"
+      "text": "Police officer turned Love Island US contestant faces hometown backlash"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Why are devastating mice plagues happening in Australia?"
+      "text": "Hegseth attacks Europe over migration with beach 'invasion' D-Day speech"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "Priority signal",
-    "headline": "First call at <em>13</em>. Train to Cheltenham Spa.",
-    "deck": "—",
-    "byline": "13:06 · compiled from inbox, calendar & tasks"
+    "eyebrow": "URGENT",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention",
+    "deck": "This personnel change sits unresolved in your task list with no due date or urgency marker, yet it's a staffing matter that typically demands swift action. Without clarity on timing and transition planning, this could create operational gaps across your team.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
