@@ -1,15 +1,30 @@
 {
-  "date_day": "Sunday",
-  "date_long": "7 June 2026",
+  "date_day": "Monday",
+  "date_long": "8 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 309,
+  "compiled_at": "06:25",
+  "briefing_no": 310,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "16:15",
-      "event": "Oven Ready For recycling",
+      "time": "08:00",
+      "event": "Day2 Health AI Playlist UI Design Review",
+      "where": ""
+    },
+    {
+      "time": "08:00",
+      "event": "Day2 Health AI Playlist UI Design Review",
+      "where": ""
+    },
+    {
+      "time": "08:30",
+      "event": "Esme — Mum school drop off & pick up",
+      "where": ""
+    },
+    {
+      "time": "12:00",
+      "event": "Strategy Refresh: Lived Experience Advisory Group Online Meeting",
       "where": ""
     }
   ],
@@ -19,7 +34,17 @@
     {
       "channel": "wa",
       "from": "84623824556136",
-      "preview": "Let me know when I can double check if those changes have gone through, then we are good to go bro"
+      "preview": "Or could have a section that people fill in with their contact details and they then send that from within the website and that info is just"
+    },
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "Did you send the 1-pager to Tyndall?"
+    },
+    {
+      "channel": "wa",
+      "from": "Day2 Tech",
+      "preview": "FYI, my 2pm has just cancelled tomorrow, so could have a catch up if necessary following Brooks call in the morning…"
     },
     {
       "channel": "wa",
@@ -30,16 +55,6 @@
       "channel": "wa",
       "from": "150409754763471",
       "preview": "Esme obviously hob knobs with the great and the good 😊"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "gotcha"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Nice! Such filthy weather"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -141,96 +156,105 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 11,
-        "icon": "⛅"
+        "temp": 12,
+        "icon": "☔"
       },
       {
         "time": "12:00",
-        "temp": 15,
+        "temp": 12,
         "icon": "☔"
       },
       {
         "time": "15:00",
-        "temp": 16,
+        "temp": 15,
         "icon": "⛅"
       },
       {
         "time": "19:00",
         "temp": 14,
-        "icon": "☔"
+        "icon": "⛅"
       }
     ],
-    "summary": "<strong>10–16°C</strong> · rain · sunrise 04:50",
+    "summary": "<strong>10–15°C</strong> · rain · sunrise 04:49",
     "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>10–16°C</strong> · rain · sunrise 04:50",
+  "weather_summary": "<strong>10–15°C</strong> · rain · sunrise 04:49",
   "body": {
-    "value": "1.12",
+    "value": "1.07",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Up 23.9% on the prior week. Sleep ran 6h 33m overnight.",
+    "trend": "Down 15.7% on the prior week. Sleep ran 9h 51m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": null,
+  "spotify": {
+    "name": "Nasty",
+    "artist": "Tinashe",
+    "album": "Nasty",
+    "is_playing": false,
+    "duration_ms": 176027,
+    "progress_ms": 53111,
+    "cover_url": "https://i.scdn.co/image/ab67616d0000b27399068b5c52ec35ec2db977a7",
+    "spotify_url": "https://open.spotify.com/track/6NjWCIYu1W8xa3HIvcIhd4"
+  },
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Lammy says he told JD Vance his Nowak comments were 'wrong'"
+      "text": "Vulnerable women lured by illegal sperm donor services on social media"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Hegseth attacks Europe over migration with beach 'invasion' D-Day speech"
+      "text": "M&S launches new traineeship for 1,000 young people"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Delays to defence plan undermine UK credibility, MPs say"
+      "text": "'No dead ends': What the Dutch can teach us about tackling youth unemployment"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Steve Rosenberg: Russia's economic forum overshadowed by drone attacks on St Petersburg"
+      "text": "How the High Street became a window on our political instability"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Cosmeticorexia: How girls are falling down a skincare rabbit hole"
+      "text": "'A World Cup for them not us': Fans' anger at US travel bans and visa restrictions"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Lammy says he told JD Vance his Nowak comments were 'wrong'"
+      "text": "Vulnerable women lured by illegal sperm donor services on social media"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Hegseth attacks Europe over migration with beach 'invasion' D-Day speech"
+      "text": "M&S launches new traineeship for 1,000 young people"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Delays to defence plan undermine UK credibility, MPs say"
+      "text": "'No dead ends': What the Dutch can teach us about tackling youth unemployment"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Steve Rosenberg: Russia's economic forum overshadowed by drone attacks on St Petersburg"
+      "text": "How the High Street became a window on our political instability"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Cosmeticorexia: How girls are falling down a skincare rabbit hole"
+      "text": "'A World Cup for them not us': Fans' anger at US travel bans and visa restrictions"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "STAFFING",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention",
-    "deck": "With no due date set and multiple competing priorities, this personnel matter risks sliding through the cracks during a busy period. Clarity on timing and transition planning needs to happen now.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "IMMEDIATE ATTENTION",
+    "headline": "<em>Teresa's resignation</em> requires immediate action before the Day2 Health design review.",
+    "deck": "With a key team member departing and critical UI work underway this morning, you need to address continuity and coverage now. The timing collision between this transition and your product roadmap makes this the threshold issue for the day.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
