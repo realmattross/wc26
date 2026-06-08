@@ -2,29 +2,14 @@
   "date_day": "Monday",
   "date_long": "8 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 310,
+  "compiled_at": "12:30",
+  "briefing_no": 311,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "08:00",
-      "event": "Day2 Health AI Playlist UI Design Review",
-      "where": ""
-    },
-    {
-      "time": "08:00",
-      "event": "Day2 Health AI Playlist UI Design Review",
-      "where": ""
-    },
-    {
-      "time": "08:30",
-      "event": "Esme — Mum school drop off & pick up",
-      "where": ""
-    },
-    {
-      "time": "12:00",
-      "event": "Strategy Refresh: Lived Experience Advisory Group Online Meeting",
+      "time": "14:30",
+      "event": "Call",
       "where": ""
     }
   ],
@@ -34,27 +19,27 @@
     {
       "channel": "wa",
       "from": "84623824556136",
-      "preview": "Or could have a section that people fill in with their contact details and they then send that from within the website and that info is just"
+      "preview": "I have the actual king quote. Will send asap"
     },
     {
       "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Did you send the 1-pager to Tyndall?"
+      "from": "Atrium Day2",
+      "preview": "Thanks for sharing mate. Do you have an email contact for Terry Peters which you could share? Or intro me via email. Was having a lovely cha"
     },
     {
       "channel": "wa",
       "from": "Day2 Tech",
-      "preview": "FYI, my 2pm has just cancelled tomorrow, so could have a catch up if necessary following Brooks call in the morning…"
+      "preview": "“Bombing it” may not have been the best choice of phrase 😂"
     },
     {
       "channel": "wa",
-      "from": "150409754763471",
-      "preview": "I don’t mind"
+      "from": "87793460072514",
+      "preview": "Thinking about Thursday photos… what are we wearing? Might be too tight to get a tee done for me now?"
     },
     {
       "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Esme obviously hob knobs with the great and the good 😊"
+      "from": "4698794942473",
+      "preview": "Thanks matey. Bare with me as car gone capput so having to train cross country to look at new on today. Will try to have a read en route x"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -172,89 +157,80 @@
       {
         "time": "19:00",
         "temp": 14,
-        "icon": "⛅"
+        "icon": "☀"
       }
     ],
-    "summary": "<strong>10–15°C</strong> · rain · sunrise 04:49",
+    "summary": "<strong>9–15°C</strong> · rain · sunrise 04:49",
     "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>10–15°C</strong> · rain · sunrise 04:49",
+  "weather_summary": "<strong>9–15°C</strong> · rain · sunrise 04:49",
   "body": {
-    "value": "1.07",
+    "value": "1.09",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 15.7% on the prior week. Sleep ran 9h 51m overnight.",
+    "trend": "Sleep ran 8h 34m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": {
-    "name": "Nasty",
-    "artist": "Tinashe",
-    "album": "Nasty",
-    "is_playing": false,
-    "duration_ms": 176027,
-    "progress_ms": 53111,
-    "cover_url": "https://i.scdn.co/image/ab67616d0000b27399068b5c52ec35ec2db977a7",
-    "spotify_url": "https://open.spotify.com/track/6NjWCIYu1W8xa3HIvcIhd4"
-  },
+  "spotify": null,
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Vulnerable women lured by illegal sperm donor services on social media"
+      "text": "Iran releases footage of missiles launched at Israel"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "M&S launches new traineeship for 1,000 young people"
+      "text": "Starmer tells Apple and Google to ban nude images on children's phones"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'No dead ends': What the Dutch can teach us about tackling youth unemployment"
+      "text": "Attacks inquiry revealed miscarriage of justice, victim's mother says"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "How the High Street became a window on our political instability"
+      "text": "Rare footage captured of Great White shark in Mediterranean Sea"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'A World Cup for them not us': Fans' anger at US travel bans and visa restrictions"
+      "text": "Christian Eriksen 'in good spirits' after collapsing in Denmark game, team's doctor says"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Vulnerable women lured by illegal sperm donor services on social media"
+      "text": "Iran releases footage of missiles launched at Israel"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "M&S launches new traineeship for 1,000 young people"
+      "text": "Starmer tells Apple and Google to ban nude images on children's phones"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'No dead ends': What the Dutch can teach us about tackling youth unemployment"
+      "text": "Attacks inquiry revealed miscarriage of justice, victim's mother says"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "How the High Street became a window on our political instability"
+      "text": "Rare footage captured of Great White shark in Mediterranean Sea"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'A World Cup for them not us': Fans' anger at US travel bans and visa restrictions"
+      "text": "Christian Eriksen 'in good spirits' after collapsing in Denmark game, team's doctor says"
     }
   ],
   "_fixtures": [],
   "lead": {
     "eyebrow": "IMMEDIATE ATTENTION",
-    "headline": "<em>Teresa's resignation</em> requires immediate action before the Day2 Health design review.",
-    "deck": "With a key team member departing and critical UI work underway this morning, you need to address continuity and coverage now. The timing collision between this transition and your product roadmap makes this the threshold issue for the day.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "headline": "<em>Teresa's resignation</em> requires urgent handling before the day escalates.",
+    "deck": "This personnel matter sits unaddressed among your tasks with no due date assigned, yet it's the kind of issue that compounds quickly without immediate action. You need to establish next steps and communication strategy before end of business today.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
