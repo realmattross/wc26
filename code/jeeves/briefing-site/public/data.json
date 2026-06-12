@@ -2,40 +2,15 @@
   "date_day": "Friday",
   "date_long": "12 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:37",
-  "briefing_no": 318,
+  "compiled_at": "12:30",
+  "briefing_no": 319,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "07:02",
-      "event": "Train to London Paddington",
-      "where": "Kingham"
-    },
-    {
-      "time": "08:38",
-      "event": "Take transit from Paddington Station to Parkinson's UK",
-      "where": ""
-    },
-    {
-      "time": "09:30",
-      "event": "Caroline / Matt: in-person meeting",
-      "where": "Parkinson's UK, 50 Broadway, London SW1H 0DB, UK, 50 Broadway-4-Jenkins Room (4J) (10) [Google Meet, WebEx Compatibility, Zoom Compatibility]"
-    },
-    {
-      "time": "09:30",
-      "event": "Caroline / Matt: in-person meeting",
-      "where": "Parkinson's UK, 50 Broadway, London SW1H 0DB, UK"
-    },
-    {
-      "time": "10:36",
-      "event": "Take transit from Parkinson's UK to Farringdon Station",
-      "where": ""
-    },
-    {
-      "time": "12:00",
-      "event": "Cohort lunch",
-      "where": "Breakout space by The Gallery, Techspace Goswell Road"
+      "time": "13:00",
+      "event": "Cohort check-in",
+      "where": "The Gallery, Techspace"
     }
   ],
   "emails": [],
@@ -43,28 +18,28 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "87793460072514",
+      "preview": "She should be all over us giving them 5%… did you mention the course?"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Can’t wait !"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "ENJOY: https://thequietus.com/news/thomas-bangalter-shares-rare-dj-set-for-the-lot-radio/"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Good luck with everything today! Xx"
+    },
+    {
+      "channel": "wa",
       "from": "150409754763471",
       "preview": "all good xx"
-    },
-    {
-      "channel": "wa",
-      "from": "Thom & Max",
-      "preview": "And I can bring Thom home tomorrow if that's useful? X"
-    },
-    {
-      "channel": "wa",
-      "from": "Day2 Tech",
-      "preview": "All good! 👍"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "👍"
-    },
-    {
-      "channel": "wa",
-      "from": "Say it ain’t so",
-      "preview": "Helping with the workshop 🤗"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -104,12 +79,11 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$353.32",
-    "change": "+$37.60 · +11.91%",
+    "price": "$356.56",
+    "change": "+$40.84 · +12.94%",
     "direction": "up",
-    "as_of": "Close 10 Jun · NASDAQ",
+    "as_of": "Close 11 Jun · NASDAQ",
     "history": [
-      347.30999755859375,
       381.94000244140625,
       383.2200012207031,
       379.6400146484375,
@@ -138,36 +112,37 @@
       365.760009765625,
       361.1700134277344,
       362.2900085449219,
-      353.32000732421875
+      353.32000732421875,
+      356.55999755859375
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 11,
-        "icon": "☔"
+        "temp": 14,
+        "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 11,
-        "icon": "☔"
+        "temp": 17,
+        "icon": "⛅"
       },
       {
         "time": "15:00",
-        "temp": 14,
-        "icon": "☔"
+        "temp": 18,
+        "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 14,
+        "temp": 17,
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>7–14°C</strong> · rain · sunrise 04:48",
-    "narrative": "Wet day ahead. Boots and a proper coat."
+    "summary": "<strong>12–19°C</strong> · overcast · sunrise 04:48",
+    "narrative": "Quiet weather. Top of 18°C around lunchtime."
   },
-  "weather_summary": "<strong>7–14°C</strong> · rain · sunrise 04:48",
+  "weather_summary": "<strong>12–19°C</strong> · overcast · sunrise 04:48",
   "body": {
     "value": "1.14",
     "unit": "m/s",
@@ -180,61 +155,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Police officer, 19, dies from crash injuries"
+      "text": "Chris Mason: Dissent fizzes again at the top of the Labour Party"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Olivia Rodrigo on heartbreak and choosing her wedding song"
+      "text": "Elon Musk's SpaceX raises $75bn ahead of record stock market debut"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Facing a seismic by-election, the people of Makerfield tell us what matters to them"
+      "text": "Ministers want 60% of children walking or cycling to school by 2035"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Serena Williams' run at Queen's over as partner Victoria Mboko withdraws"
+      "text": "Grooming survivors left with criminal records still being failed, BBC told"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Nearly 3,000 patients a day in England face corridor care in NHS"
+      "text": "Nineteen now arrested over Northern Ireland disorder with house targeted in arson"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Police officer, 19, dies from crash injuries"
+      "text": "Chris Mason: Dissent fizzes again at the top of the Labour Party"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Olivia Rodrigo on heartbreak and choosing her wedding song"
+      "text": "Elon Musk's SpaceX raises $75bn ahead of record stock market debut"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Facing a seismic by-election, the people of Makerfield tell us what matters to them"
+      "text": "Ministers want 60% of children walking or cycling to school by 2035"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Serena Williams' run at Queen's over as partner Victoria Mboko withdraws"
+      "text": "Grooming survivors left with criminal records still being failed, BBC told"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Nearly 3,000 patients a day in England face corridor care in NHS"
+      "text": "Nineteen now arrested over Northern Ireland disorder with house targeted in arson"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "Priority signal",
-    "headline": "First call at <em>07</em>. Train to London Paddington.",
-    "deck": "—",
-    "byline": "06:53 · compiled from inbox, calendar & tasks"
+    "eyebrow": "PERSONNEL",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
+    "deck": "With no due date flagged but clearly sitting atop your task list, this departure needs to be addressed before it creates operational gaps. The faster you move on clarity and coverage, the smoother the transition.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
