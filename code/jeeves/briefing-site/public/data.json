@@ -1,16 +1,16 @@
 {
-  "date_day": "Friday",
-  "date_long": "12 June 2026",
+  "date_day": "Saturday",
+  "date_long": "13 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 319,
+  "compiled_at": "06:25",
+  "briefing_no": 320,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "13:00",
-      "event": "Cohort check-in",
-      "where": "The Gallery, Techspace"
+      "time": "11:32",
+      "event": "Train to Cheltenham Spa",
+      "where": "London Paddington"
     }
   ],
   "emails": [],
@@ -18,28 +18,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "87793460072514",
-      "preview": "She should be all over us giving them 5%… did you mention the course?"
+      "from": "150409754763471",
+      "preview": "Roast chicken awaits !"
     },
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "Can’t wait !"
+      "preview": "Send love xxxxxxxxx"
     },
     {
       "channel": "wa",
-      "from": "150409754763471",
-      "preview": "ENJOY: https://thequietus.com/news/thomas-bangalter-shares-rare-dj-set-for-the-lot-radio/"
+      "from": "Day2 Tech",
+      "preview": "Awesome!  I don’t feel obliged, don’t worry 🙂"
     },
     {
       "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Good luck with everything today! Xx"
+      "from": "4698794942473",
+      "preview": "😂 very droll"
     },
     {
       "channel": "wa",
-      "from": "150409754763471",
-      "preview": "all good xx"
+      "from": "Thom & Max",
+      "preview": "Hi Fran\nBringing Thom for me today would be great.\nS xx"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -79,12 +79,11 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$356.56",
-    "change": "+$40.84 · +12.94%",
+    "price": "$358.16",
+    "change": "+$42.44 · +13.44%",
     "direction": "up",
-    "as_of": "Close 11 Jun · NASDAQ",
+    "as_of": "Close 12 Jun · NASDAQ",
     "history": [
-      381.94000244140625,
       383.2200012207031,
       379.6400146484375,
       384.2699890136719,
@@ -113,41 +112,42 @@
       361.1700134277344,
       362.2900085449219,
       353.32000732421875,
-      356.55999755859375
+      356.55999755859375,
+      358.1600036621094
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 14,
-        "icon": "⛅"
+        "temp": 12,
+        "icon": "☀"
       },
       {
         "time": "12:00",
-        "temp": 17,
+        "temp": 16,
         "icon": "⛅"
       },
       {
         "time": "15:00",
         "temp": 18,
-        "icon": "⛅"
+        "icon": "☀"
       },
       {
         "time": "19:00",
         "temp": 17,
-        "icon": "⛅"
+        "icon": "☀"
       }
     ],
-    "summary": "<strong>12–19°C</strong> · overcast · sunrise 04:48",
+    "summary": "<strong>10–18°C</strong> · overcast · sunrise 04:48",
     "narrative": "Quiet weather. Top of 18°C around lunchtime."
   },
-  "weather_summary": "<strong>12–19°C</strong> · overcast · sunrise 04:48",
+  "weather_summary": "<strong>10–18°C</strong> · overcast · sunrise 04:48",
   "body": {
-    "value": "1.14",
+    "value": "1.15",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Up 6.9% on the prior week. Sleep ran 7h 37m overnight.",
+    "trend": "Down 49.5% on the prior week. Sleep ran 7h 9m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -155,61 +155,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Chris Mason: Dissent fizzes again at the top of the Labour Party"
+      "text": "Rugby star Sinfield and authors Blackman and Donaldson lead honours list"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Elon Musk's SpaceX raises $75bn ahead of record stock market debut"
+      "text": "Married at First Sight Australia stars not told partners had drug and violence convictions"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Ministers want 60% of children walking or cycling to school by 2035"
+      "text": "Elon Musk becomes world's first trillionaire as SpaceX soars in stock market debut"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Grooming survivors left with criminal records still being failed, BBC told"
+      "text": "Deal to end fighting would lead to Hormuz reopening, Iran says"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Nineteen now arrested over Northern Ireland disorder with house targeted in arson"
+      "text": "I have a duty to stay on, says Starmer, as he justifies defence spending decisions"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Chris Mason: Dissent fizzes again at the top of the Labour Party"
+      "text": "Rugby star Sinfield and authors Blackman and Donaldson lead honours list"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Elon Musk's SpaceX raises $75bn ahead of record stock market debut"
+      "text": "Married at First Sight Australia stars not told partners had drug and violence convictions"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Ministers want 60% of children walking or cycling to school by 2035"
+      "text": "Elon Musk becomes world's first trillionaire as SpaceX soars in stock market debut"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Grooming survivors left with criminal records still being failed, BBC told"
+      "text": "Deal to end fighting would lead to Hormuz reopening, Iran says"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Nineteen now arrested over Northern Ireland disorder with house targeted in arson"
+      "text": "I have a duty to stay on, says Starmer, as he justifies defence spending decisions"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "PERSONNEL",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "With no due date flagged but clearly sitting atop your task list, this departure needs to be addressed before it creates operational gaps. The faster you move on clarity and coverage, the smoother the transition.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "IMMEDIATE",
+    "headline": "<em>Teresa's resignation</em> requires urgent attention before your Cheltenham trip",
+    "deck": "With a departure scheduled for 11:32 this morning, you need to address this staffing change now rather than from the road. The lack of due dates across your task list suggests this may have been flagged but not yet acted upon.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
