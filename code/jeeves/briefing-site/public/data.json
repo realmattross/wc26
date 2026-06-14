@@ -2,14 +2,19 @@
   "date_day": "Sunday",
   "date_long": "14 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:31",
-  "briefing_no": 322,
+  "compiled_at": "12:30",
+  "briefing_no": 323,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [],
   "emails": [],
   "email_tally": "0 new · 0 want a reply",
   "messages": [
+    {
+      "channel": "wa",
+      "from": "Hampnett village group",
+      "preview": "0630. Someone just rang our doorbell! No one there and nothing in the delivery bin. If anyone has a problem  and needs help please call me o"
+    },
     {
       "channel": "wa",
       "from": "150409754763471",
@@ -29,11 +34,6 @@
       "channel": "wa",
       "from": "84623824556136",
       "preview": "That waistcoat."
-    },
-    {
-      "channel": "wa",
-      "from": "BGV 2026",
-      "preview": "Hi all, dropping the photos from yesterday."
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -125,13 +125,13 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 11,
+        "temp": 12,
         "icon": "⛅"
       },
       {
         "time": "12:00",
         "temp": 16,
-        "icon": "☀"
+        "icon": "⛅"
       },
       {
         "time": "15:00",
@@ -144,10 +144,10 @@
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>8–18°C</strong> · overcast · sunrise 04:47",
+    "summary": "<strong>9–18°C</strong> · overcast · sunrise 04:47",
     "narrative": "Quiet weather. Top of 18°C around lunchtime."
   },
-  "weather_summary": "<strong>8–18°C</strong> · overcast · sunrise 04:47",
+  "weather_summary": "<strong>9–18°C</strong> · overcast · sunrise 04:47",
   "body": {
     "value": "1.10",
     "unit": "m/s",
@@ -160,61 +160,61 @@
     {
       "kind": "news",
       "label": "BBC",
+      "text": "Royal Marines board Russian shadow fleet oil tanker in English Channel"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "MOD video shows Russian shadow fleet tanker interception"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Why Haiti v Scotland was antidote to the ills of world football"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Tech firms had 'enough time' says Nandy, ahead of social media announcement"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
       "text": "Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Resident doctors cancel strike after new offer from government"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Molly Russell's dad says PM rushing social media restrictions 'deplorable'"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Jarvis says Labour must 'meet the moment' on defence spending"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Norway braces for verdict in rape trial of crown princess's son Høiby"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
+      "text": "Royal Marines board Russian shadow fleet oil tanker in English Channel"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "MOD video shows Russian shadow fleet tanker interception"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Why Haiti v Scotland was antidote to the ills of world football"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Tech firms had 'enough time' says Nandy, ahead of social media announcement"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
       "text": "Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Resident doctors cancel strike after new offer from government"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Molly Russell's dad says PM rushing social media restrictions 'deplorable'"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Jarvis says Labour must 'meet the moment' on defence spending"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Norway braces for verdict in rape trial of crown princess's son Høiby"
     }
   ],
   "_fixtures": [],
   "lead": {
     "eyebrow": "STAFFING",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "With no timeline specified, clarity on her departure date and transition plan is essential to minimize disruption. This needs to move from your task list to active management today.",
-    "byline": "06:31 · compiled from inbox, calendar & tasks"
+    "headline": "<em>Teresa's resignation</em> requires immediate transition planning.",
+    "deck": "With no clear timeline documented and multiple active projects in motion, addressing the departure now prevents operational disruption across your team's current commitments.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
