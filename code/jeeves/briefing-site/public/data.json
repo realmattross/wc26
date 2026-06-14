@@ -1,50 +1,39 @@
 {
-  "date_day": "Saturday",
-  "date_long": "13 June 2026",
+  "date_day": "Sunday",
+  "date_long": "14 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:35",
-  "briefing_no": 321,
+  "compiled_at": "06:31",
+  "briefing_no": 322,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
-  "agenda": [
-    {
-      "time": "00:00",
-      "event": "Wedding",
-      "where": ""
-    },
-    {
-      "time": "11:32",
-      "event": "Train to Cheltenham Spa",
-      "where": "London Paddington"
-    }
-  ],
+  "agenda": [],
   "emails": [],
   "email_tally": "0 new · 0 want a reply",
   "messages": [
     {
       "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Waiting for cab Xx"
+    },
+    {
+      "channel": "wa",
       "from": "Day2 Tech",
-      "preview": "i’m moving back to opus.  it’ll be fine, but it’s frustrating.  could have ‘vibe coded’ the whole day2 much faster, but i wanted to make sur"
+      "preview": "Hi mate, yes I am, wasn’t using that workspace"
     },
     {
       "channel": "wa",
-      "from": "Thom & Max",
-      "preview": "Yes of course. James will collect them after cricket x"
+      "from": "The Young Ones",
+      "preview": "Thanks Lynda, that sounds positive."
     },
     {
       "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Roast chicken awaits !"
+      "from": "84623824556136",
+      "preview": "That waistcoat."
     },
     {
       "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Send love xxxxxxxxx"
-    },
-    {
-      "channel": "wa",
-      "from": "4698794942473",
-      "preview": "😂 very droll"
+      "from": "BGV 2026",
+      "preview": "Hi all, dropping the photos from yesterday."
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -80,7 +69,18 @@
       "urgency": null
     }
   ],
-  "school_week": [],
+  "school_week": [
+    {
+      "date": "2026-06-21",
+      "date_display": "Sun 21 Jun",
+      "time": "",
+      "all_day": true,
+      "school": "Cheltenham",
+      "title": "Cheltonian Society Polo Day",
+      "is_hoh": false,
+      "location": "Cirencester Park Polo Club"
+    }
+  ],
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
@@ -125,34 +125,34 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 12,
-        "icon": "☀"
+        "temp": 11,
+        "icon": "⛅"
       },
       {
         "time": "12:00",
         "temp": 16,
-        "icon": "⛅"
+        "icon": "☀"
       },
       {
         "time": "15:00",
         "temp": 18,
-        "icon": "☀"
+        "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 17,
-        "icon": "☀"
+        "temp": 18,
+        "icon": "⛅"
       }
     ],
-    "summary": "<strong>10–18°C</strong> · overcast · sunrise 04:48",
+    "summary": "<strong>8–18°C</strong> · overcast · sunrise 04:47",
     "narrative": "Quiet weather. Top of 18°C around lunchtime."
   },
-  "weather_summary": "<strong>10–18°C</strong> · overcast · sunrise 04:48",
+  "weather_summary": "<strong>8–18°C</strong> · overcast · sunrise 04:47",
   "body": {
-    "value": "1.12",
+    "value": "1.10",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 7.1% on the prior week. Sleep ran 7h 9m overnight.",
+    "trend": "Up 2.7% on the prior week. Sleep ran 7h 8m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -160,61 +160,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Rugby star Sinfield and authors Blackman and Donaldson lead honours list"
+      "text": "Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Married at First Sight Australia stars not told partners had drug and violence convictions"
+      "text": "Resident doctors cancel strike after new offer from government"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Elon Musk becomes world's first trillionaire as SpaceX soars in stock market debut"
+      "text": "Molly Russell's dad says PM rushing social media restrictions 'deplorable'"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Deal to end fighting would lead to Hormuz reopening, Iran says"
+      "text": "Jarvis says Labour must 'meet the moment' on defence spending"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "I have a duty to stay on, says Starmer, as he justifies defence spending decisions"
+      "text": "Norway braces for verdict in rape trial of crown princess's son Høiby"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Rugby star Sinfield and authors Blackman and Donaldson lead honours list"
+      "text": "Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Married at First Sight Australia stars not told partners had drug and violence convictions"
+      "text": "Resident doctors cancel strike after new offer from government"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Elon Musk becomes world's first trillionaire as SpaceX soars in stock market debut"
+      "text": "Molly Russell's dad says PM rushing social media restrictions 'deplorable'"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Deal to end fighting would lead to Hormuz reopening, Iran says"
+      "text": "Jarvis says Labour must 'meet the moment' on defence spending"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "I have a duty to stay on, says Starmer, as he justifies defence spending decisions"
+      "text": "Norway braces for verdict in rape trial of crown princess's son Høiby"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "Priority signal",
-    "headline": "First call at <em>00</em>. Wedding.",
-    "deck": "—",
-    "byline": "12:35 · compiled from inbox, calendar & tasks"
+    "eyebrow": "STAFFING",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
+    "deck": "With no timeline specified, clarity on her departure date and transition plan is essential to minimize disruption. This needs to move from your task list to active management today.",
+    "byline": "06:31 · compiled from inbox, calendar & tasks"
   }
 }
