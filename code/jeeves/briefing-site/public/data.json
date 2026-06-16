@@ -2,16 +2,11 @@
   "date_day": "Tuesday",
   "date_long": "16 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 326,
+  "compiled_at": "12:30",
+  "briefing_no": 327,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
-    {
-      "time": "15:30",
-      "event": "Day2 weekly",
-      "where": ";"
-    },
     {
       "time": "17:00",
       "event": "Brian",
@@ -24,7 +19,12 @@
     {
       "channel": "wa",
       "from": "87793460072514",
-      "preview": "Looks like most of the grant systems suggested are currently closed… however there is an ideal one with puk, we would just need a uni or nhs"
+      "preview": "Ok. Friday I am off on a mad adventure so off grid from about 2"
+    },
+    {
+      "channel": "wa",
+      "from": "75 Hampnett Cleaning Service",
+      "preview": "No worries! you too"
     },
     {
       "channel": "wa",
@@ -37,14 +37,9 @@
       "preview": "Hi! just coming up for air. I have calls so planning to be at home so that would work fine Xx"
     },
     {
-      "channel": "wa",
-      "from": "Lords Day2",
-      "preview": "You’re dead to me"
-    },
-    {
-      "channel": "wa",
-      "from": "75 Hampnett Cleaning Service",
-      "preview": "Perfect thanks 🙏"
+      "channel": "im",
+      "from": "Unknown",
+      "preview": "￼This guy. Who’s this guy?"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -137,51 +132,46 @@
       {
         "time": "07:00",
         "temp": 15,
-        "icon": "☀"
+        "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 20,
-        "icon": "☀"
+        "temp": 19,
+        "icon": "⛅"
       },
       {
         "time": "15:00",
-        "temp": 20,
+        "temp": 19,
         "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 17,
+        "temp": 16,
         "icon": "☔"
       }
     ],
     "summary": "<strong>14–20°C</strong> · rain · sunrise 04:47",
-    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
+    "narrative": "Wet day ahead. Boots and a proper coat."
   },
   "weather_summary": "<strong>14–20°C</strong> · rain · sunrise 04:47",
   "body": {
     "value": "1.14",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Up 2.9% on the prior week. Sleep ran 9h 22m overnight.",
+    "trend": "Up 1.6% on the prior week. Sleep ran 9h 22m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": {
-    "name": "Shapeshifting on a Saturday Night",
-    "artist": "Avery Cochrane",
-    "album": "Shapeshifting on a Saturday Night",
-    "is_playing": false,
-    "duration_ms": 205728,
-    "progress_ms": 6464,
-    "cover_url": "https://i.scdn.co/image/ab67616d0000b273a3c5b8d6f0269a6d993091bc",
-    "spotify_url": "https://open.spotify.com/track/5ohPveFr3t93leJhCiWAqt"
+    "name": "Just In Time (Michael Gray Remix)",
+    "artist": "Raw Silk, Michael Gray",
+    "album": "Michael Gray Reworks",
+    "is_playing": true,
+    "duration_ms": 381737,
+    "progress_ms": 26300,
+    "cover_url": "https://i.scdn.co/image/ab67616d0000b27369c61d25665ee0ead8251859",
+    "spotify_url": "https://open.spotify.com/track/1m0EfoNUQ8ZFJkkin00ZI5"
   },
   "ticker": [
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Trump may release US-Iran deal before Friday, Vance says"
-    },
     {
       "kind": "news",
       "label": "BBC",
@@ -195,23 +185,23 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Iranian-Americans protest against Iran team at World Cup"
+      "text": "Starmer pleased 'justice has been done' after arson attacks"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "What one country's experiment says about attempts to boost birth rates"
+      "text": "Woman left traumatised by swinging says website 'facilitated abuse'"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Prince George to attend Eton College from September"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Trump may release US-Iran deal before Friday, Vance says"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
       "text": "Thames Water closer to nationalisation after government objects to rescue deal"
     },
     {
@@ -222,19 +212,24 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Iranian-Americans protest against Iran team at World Cup"
+      "text": "Starmer pleased 'justice has been done' after arson attacks"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "What one country's experiment says about attempts to boost birth rates"
+      "text": "Woman left traumatised by swinging says website 'facilitated abuse'"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Prince George to attend Eton College from September"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "OPERATIONAL",
-    "headline": "A <em>key team departure</em> requires immediate attention.",
-    "deck": "Teresa's resignation is flagged in your task list without resolution details or timeline. You need clarity on succession planning and transition before this becomes a broader team issue.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "IMMEDIATE ATTENTION",
+    "headline": "<em>Teresa's resignation</em> requires urgent handling and succession planning.",
+    "deck": "You have a departing team member flagged as a task with no due date or urgency marker, suggesting it may not yet be formally processed. Clarity on timing and next steps is critical before the situation creates operational gaps.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
