@@ -1,25 +1,20 @@
 {
-  "date_day": "Monday",
-  "date_long": "15 June 2026",
+  "date_day": "Tuesday",
+  "date_long": "16 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:40",
-  "briefing_no": 325,
+  "compiled_at": "06:25",
+  "briefing_no": 326,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "14:00",
-      "event": "Colin",
-      "where": ""
+      "time": "15:30",
+      "event": "Day2 weekly",
+      "where": ";"
     },
     {
-      "time": "15:15",
-      "event": "George",
-      "where": ""
-    },
-    {
-      "time": "16:15",
-      "event": "Tom",
+      "time": "17:00",
+      "event": "Brian",
       "where": ""
     }
   ],
@@ -28,28 +23,28 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "87793460072514",
+      "preview": "Looks like most of the grant systems suggested are currently closed… however there is an ideal one with puk, we would just need a uni or nhs"
+    },
+    {
+      "channel": "wa",
+      "from": "4698794942473",
+      "preview": "Forgot to ask re crowdfunding mate. Got July 7 in diary. Is that still on?"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Hi! just coming up for air. I have calls so planning to be at home so that would work fine Xx"
+    },
+    {
+      "channel": "wa",
       "from": "Lords Day2",
       "preview": "You’re dead to me"
     },
     {
       "channel": "wa",
-      "from": "87793460072514",
-      "preview": "🙌"
-    },
-    {
-      "channel": "wa",
       "from": "75 Hampnett Cleaning Service",
       "preview": "Perfect thanks 🙏"
-    },
-    {
-      "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Morning. If u hear from another person after a film, the 50% thing still is on offer. Natalie seems flakey. She has said she cant now talk a"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Charlie much better"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -100,12 +95,11 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$358.16",
-    "change": "+$42.44 · +13.44%",
+    "price": "$367.11",
+    "change": "+$32.64 · +9.76%",
     "direction": "up",
-    "as_of": "Close 12 Jun · NASDAQ",
+    "as_of": "Close 15 Jun · NASDAQ",
     "history": [
-      383.2200012207031,
       379.6400146484375,
       384.2699890136719,
       395.1400146484375,
@@ -134,103 +128,113 @@
       362.2900085449219,
       353.32000732421875,
       356.55999755859375,
-      358.1600036621094
+      358.1600036621094,
+      367.1099853515625
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 12,
-        "icon": "⛅"
+        "temp": 15,
+        "icon": "☀"
       },
       {
         "time": "12:00",
-        "temp": 19,
-        "icon": "⛅"
+        "temp": 20,
+        "icon": "☀"
       },
       {
         "time": "15:00",
-        "temp": 22,
+        "temp": 20,
         "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 21,
-        "icon": "⛅"
+        "temp": 17,
+        "icon": "☔"
       }
     ],
-    "summary": "<strong>11–22°C</strong> · light drizzle · sunrise 04:47",
+    "summary": "<strong>14–20°C</strong> · rain · sunrise 04:47",
     "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>11–22°C</strong> · light drizzle · sunrise 04:47",
+  "weather_summary": "<strong>14–20°C</strong> · rain · sunrise 04:47",
   "body": {
-    "value": "1.09",
+    "value": "1.14",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 3.1% on the prior week. Sleep ran 7h 1m overnight.",
+    "trend": "Up 2.9% on the prior week. Sleep ran 9h 22m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": null,
+  "spotify": {
+    "name": "Shapeshifting on a Saturday Night",
+    "artist": "Avery Cochrane",
+    "album": "Shapeshifting on a Saturday Night",
+    "is_playing": false,
+    "duration_ms": 205728,
+    "progress_ms": 6464,
+    "cover_url": "https://i.scdn.co/image/ab67616d0000b273a3c5b8d6f0269a6d993091bc",
+    "spotify_url": "https://open.spotify.com/track/5ohPveFr3t93leJhCiWAqt"
+  },
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "How will social media ban work and when does it start?"
+      "text": "Trump may release US-Iran deal before Friday, Vance says"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "The US and Iran have agreed a deal. How soon could things go back to normal?"
+      "text": "Thames Water closer to nationalisation after government objects to rescue deal"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Two men found guilty over Starmer-linked arson attacks"
+      "text": "Married at First Sight Australia allegations 'disturbing', says country's watchdog"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "OnlyFans 'agents' control and threaten creators while taking half their earnings, BBC finds"
+      "text": "Iranian-Americans protest against Iran team at World Cup"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Award-winning investigative journalist Roger Cook dies aged 83"
+      "text": "What one country's experiment says about attempts to boost birth rates"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "How will social media ban work and when does it start?"
+      "text": "Trump may release US-Iran deal before Friday, Vance says"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "The US and Iran have agreed a deal. How soon could things go back to normal?"
+      "text": "Thames Water closer to nationalisation after government objects to rescue deal"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Two men found guilty over Starmer-linked arson attacks"
+      "text": "Married at First Sight Australia allegations 'disturbing', says country's watchdog"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "OnlyFans 'agents' control and threaten creators while taking half their earnings, BBC finds"
+      "text": "Iranian-Americans protest against Iran team at World Cup"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Award-winning investigative journalist Roger Cook dies aged 83"
+      "text": "What one country's experiment says about attempts to boost birth rates"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "STAFFING",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and transition planning.",
-    "deck": "With no due date logged and multiple competing priorities ahead, addressing this departure needs to move to the top of your queue to ensure continuity and begin succession planning. The longer this sits, the more operational risk accumulates.",
-    "byline": "12:41 · compiled from inbox, calendar & tasks"
+    "eyebrow": "OPERATIONAL",
+    "headline": "A <em>key team departure</em> requires immediate attention.",
+    "deck": "Teresa's resignation is flagged in your task list without resolution details or timeline. You need clarity on succession planning and transition before this becomes a broader team issue.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
