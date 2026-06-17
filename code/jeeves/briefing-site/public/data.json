@@ -2,8 +2,8 @@
   "date_day": "Wednesday",
   "date_long": "17 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 328,
+  "compiled_at": "12:30",
+  "briefing_no": 329,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
@@ -28,26 +28,31 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "It would be good to know the exact dates that the lorries will be going through the village Alexander, when you have them. Thank you."
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Momma has requested you to take chicken out of fridge so far is gon"
+      "from": "84623824556136",
+      "preview": "Ooooh….!!! exciting"
     },
     {
       "channel": "wa",
       "from": "87793460072514",
-      "preview": "Ok. Friday I am off on a mad adventure so off grid from about 2"
+      "preview": "Bit tight today then maybe… need to pick Thea up"
     },
     {
       "channel": "wa",
-      "from": "75 Hampnett Cleaning Service",
-      "preview": "No worries! you too"
+      "from": "175647016153161",
+      "preview": "Ok thank you"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Shame 😳"
+    },
+    {
+      "channel": "wa",
+      "from": "Hampnett village group",
+      "preview": "It would be good to know the exact dates that the lorries will be going through the village Alexander, when you have them. Thank you."
     }
   ],
-  "messages_tally": "4 unread · 4 chats",
+  "messages_tally": "5 unread · 5 chats",
   "tasks": [
     {
       "text": "Brian. Book meeting Prep for Caroline",
@@ -90,6 +95,16 @@
       "title": "Cheltonian Society Polo Day",
       "is_hoh": false,
       "location": "Cirencester Park Polo Club"
+    },
+    {
+      "date": "2026-06-24",
+      "date_display": "Wed 24 Jun",
+      "time": "11:00",
+      "all_day": false,
+      "school": "Cheltenham",
+      "title": "Lower Sixth Mock Interview Session",
+      "is_hoh": false,
+      "location": "Cheltenham College"
     }
   ],
   "market": {
@@ -137,21 +152,21 @@
       {
         "time": "07:00",
         "temp": 16,
-        "icon": "⛅"
+        "icon": "☔"
       },
       {
         "time": "12:00",
-        "temp": 18,
-        "icon": "⛅"
+        "temp": 17,
+        "icon": "☔"
       },
       {
         "time": "15:00",
-        "temp": 19,
-        "icon": "⛅"
+        "temp": 17,
+        "icon": "☔"
       },
       {
         "time": "19:00",
-        "temp": 19,
+        "temp": 18,
         "icon": "⛅"
       }
     ],
@@ -166,75 +181,66 @@
     "trend": "Up 15.5% on the prior week. Sleep ran 7h 32m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": {
-    "name": "Too Much",
-    "artist": "Dove Cameron",
-    "album": "Too Much",
-    "is_playing": false,
-    "duration_ms": 171335,
-    "progress_ms": 3725,
-    "cover_url": "https://i.scdn.co/image/ab67616d0000b273cad38423dbe84082c31e3d84",
-    "spotify_url": "https://open.spotify.com/track/6lKSOnC9iLGDonypMgvGrm"
-  },
+  "spotify": null,
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'It was surreal': British couple describe having warning shots fired near them by Russian warship"
+      "text": "PM warns Burnham against immediate leadership challenge if he wins by-election"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Streeting would 'be prepared' to trigger leadership contest as early as next week"
+      "text": "Israel launches fresh strikes on Lebanon despite Trump criticism"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Social media has risks but has given us opportunities too, teen influencers say"
+      "text": "Fashion experts on the England squad's off-pitch look"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Why is Trump furious with Netanyahu over strikes on Lebanon?"
+      "text": "Inflation unexpectedly steady as food price rises slow"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "England will not adapt style despite USA heat, Tuchel says"
+      "text": "Jeremy Clarkson reveals prostate cancer diagnosis on farming show"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'It was surreal': British couple describe having warning shots fired near them by Russian warship"
+      "text": "PM warns Burnham against immediate leadership challenge if he wins by-election"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Streeting would 'be prepared' to trigger leadership contest as early as next week"
+      "text": "Israel launches fresh strikes on Lebanon despite Trump criticism"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Social media has risks but has given us opportunities too, teen influencers say"
+      "text": "Fashion experts on the England squad's off-pitch look"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Why is Trump furious with Netanyahu over strikes on Lebanon?"
+      "text": "Inflation unexpectedly steady as food price rises slow"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "England will not adapt style despite USA heat, Tuchel says"
+      "text": "Jeremy Clarkson reveals prostate cancer diagnosis on farming show"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "TODAY AT 1:30 PM",
-    "headline": "First <em>Lived Experience Lead</em> interview shapes organizational direction",
-    "deck": "Your initial conversation with Matt Ross sets the tone for a critical hire that will bring authentic perspective to the role. Getting this right today matters for how the organization listens and responds to the communities it serves.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "TODAY'S PRIORITY",
+    "headline": "A <em>critical hire</em> awaits your decision this afternoon.",
+    "deck": "Your first interview for the Lived Experience Lead role with Matt Ross happens at 1:30 p.m.—a position that will shape how your organization connects with the communities you serve. Getting this right sets the tone for everything that follows.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
