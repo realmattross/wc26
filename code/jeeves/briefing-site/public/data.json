@@ -1,26 +1,21 @@
 {
-  "date_day": "Wednesday",
-  "date_long": "17 June 2026",
+  "date_day": "Thursday",
+  "date_long": "18 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 329,
+  "compiled_at": "06:25",
+  "briefing_no": 330,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "13:30",
-      "event": "First interview for Lived Experience Lead with Mr Matt Ross",
+      "time": "08:00",
+      "event": "Day2 Walk-through Meeting",
       "where": ""
     },
     {
-      "time": "13:30",
-      "event": "First interview for Lived Experience Lead with Mr Matt Ross",
+      "time": "08:00",
+      "event": "Day2 Walk-through Meeting",
       "where": ""
-    },
-    {
-      "time": "21:00",
-      "event": "England vs Croatia (FIFA World Cup Group Stage)",
-      "where": "Dallas Stadium, Arlington, Texas"
     }
   ],
   "emails": [],
@@ -28,28 +23,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Ooooh….!!! exciting"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Bit tight today then maybe… need to pick Thea up"
-    },
-    {
-      "channel": "wa",
-      "from": "175647016153161",
-      "preview": "Ok thank you"
+      "from": "Day2 Tech",
+      "preview": "America!! 🙄"
     },
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "Shame 😳"
+      "preview": "Let’s have it!!"
     },
     {
       "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "It would be good to know the exact dates that the lorries will be going through the village Alexander, when you have them. Thank you."
+      "from": "Thom & Max",
+      "preview": "Yes of course x"
+    },
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "Ah, sounds like a classic case of underselling what’s needed!"
+    },
+    {
+      "channel": "wa",
+      "from": "84623824556136",
+      "preview": "Ooooh….!!! exciting"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -110,12 +105,11 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$371.10",
-    "change": "+$38.33 · +11.52%",
+    "price": "$362.10",
+    "change": "+$22.70 · +6.69%",
     "direction": "up",
-    "as_of": "Close 16 Jun · NASDAQ",
+    "as_of": "Close 17 Jun · NASDAQ",
     "history": [
-      384.2699890136719,
       395.1400146484375,
       395.29998779296875,
       397.04998779296875,
@@ -144,103 +138,113 @@
       356.55999755859375,
       358.1600036621094,
       367.1099853515625,
-      371.1000061035156
+      371.1000061035156,
+      362.1000061035156
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 16,
-        "icon": "☔"
+        "temp": 15,
+        "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 17,
+        "temp": 18,
         "icon": "☔"
       },
       {
         "time": "15:00",
-        "temp": 17,
-        "icon": "☔"
+        "temp": 21,
+        "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 18,
+        "temp": 20,
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>15–19°C</strong> · light drizzle · sunrise 04:47",
+    "summary": "<strong>15–22°C</strong> · light drizzle · sunrise 04:47",
     "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>15–19°C</strong> · light drizzle · sunrise 04:47",
+  "weather_summary": "<strong>15–22°C</strong> · light drizzle · sunrise 04:47",
   "body": {
-    "value": "1.16",
+    "value": "1.14",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Up 15.5% on the prior week. Sleep ran 7h 32m overnight.",
+    "trend": "Down 22.7% on the prior week. Sleep ran 7h 32m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": null,
+  "spotify": {
+    "name": "House Tour",
+    "artist": "Sabrina Carpenter",
+    "album": "Man’s Best Friend",
+    "is_playing": false,
+    "duration_ms": 169214,
+    "progress_ms": 5520,
+    "cover_url": "https://i.scdn.co/image/ab67616d0000b273b1863bf95557ea7f357c4947",
+    "spotify_url": "https://open.spotify.com/track/25jgQBxuUkGDdCG1WGKKN9"
+  },
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "PM warns Burnham against immediate leadership challenge if he wins by-election"
+      "text": "US and Iranian presidents sign deal aiming to end war"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Israel launches fresh strikes on Lebanon despite Trump criticism"
+      "text": "What's in the US-Iran agreement?"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Fashion experts on the England squad's off-pitch look"
+      "text": "England fans cheer each goal in exhilarating opener"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Inflation unexpectedly steady as food price rises slow"
+      "text": "Cervical cancer deaths in England fall to zero in young women given vaccine"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Jeremy Clarkson reveals prostate cancer diagnosis on farming show"
+      "text": "Simpler, older version of Stonehenge found three miles from famous site"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "PM warns Burnham against immediate leadership challenge if he wins by-election"
+      "text": "US and Iranian presidents sign deal aiming to end war"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Israel launches fresh strikes on Lebanon despite Trump criticism"
+      "text": "What's in the US-Iran agreement?"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Fashion experts on the England squad's off-pitch look"
+      "text": "England fans cheer each goal in exhilarating opener"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Inflation unexpectedly steady as food price rises slow"
+      "text": "Cervical cancer deaths in England fall to zero in young women given vaccine"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Jeremy Clarkson reveals prostate cancer diagnosis on farming show"
+      "text": "Simpler, older version of Stonehenge found three miles from famous site"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "TODAY'S PRIORITY",
-    "headline": "A <em>critical hire</em> awaits your decision this afternoon.",
-    "deck": "Your first interview for the Lived Experience Lead role with Matt Ross happens at 1:30 p.m.—a position that will shape how your organization connects with the communities you serve. Getting this right sets the tone for everything that follows.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "PERSONNEL",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
+    "deck": "With no due date assigned and multiple competing priorities, this departure risks operational continuity. Matt needs to move quickly on transition strategy and backfill before momentum stalls.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
