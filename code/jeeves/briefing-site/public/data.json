@@ -1,21 +1,36 @@
 {
-  "date_day": "Thursday",
-  "date_long": "18 June 2026",
+  "date_day": "Friday",
+  "date_long": "19 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 331,
+  "compiled_at": "06:27",
+  "briefing_no": 332,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "16:00",
-      "event": "Day2 Catch up-Matt will call",
+      "time": "10:00",
+      "event": "Matt / Ben - Intro call",
       "where": ""
+    },
+    {
+      "time": "10:00",
+      "event": "Mrs Ross - Esme",
+      "where": "Microsoft Teams Meeting"
     }
   ],
   "emails": [],
   "email_tally": "0 new · 0 want a reply",
   "messages": [
+    {
+      "channel": "wa",
+      "from": "Thom & Max",
+      "preview": "Ok will get Thom to message him when we leave x"
+    },
+    {
+      "channel": "wa",
+      "from": "Ross boys",
+      "preview": "Wonderful sight and a wonderful couple ."
+    },
     {
       "channel": "wa",
       "from": "175647016153161",
@@ -30,16 +45,6 @@
       "channel": "wa",
       "from": "The Young Ones",
       "preview": "https://prksn.uk/4uEiR4Q"
-    },
-    {
-      "channel": "wa",
-      "from": "275994699104256",
-      "preview": "They love a workshop 😉"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Let’s have it!!"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -110,10 +115,10 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$362.10",
-    "change": "+$22.70 · +6.69%",
+    "price": "$367.46",
+    "change": "+$28.06 · +8.27%",
     "direction": "up",
-    "as_of": "Close 17 Jun · NASDAQ",
+    "as_of": "Close 18 Jun · NASDAQ",
     "history": [
       395.1400146484375,
       395.29998779296875,
@@ -151,34 +156,34 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 16,
-        "icon": "⛅"
+        "temp": 14,
+        "icon": "☀"
       },
       {
         "time": "12:00",
-        "temp": 20,
-        "icon": "⛅"
+        "temp": 21,
+        "icon": "☀"
       },
       {
         "time": "15:00",
-        "temp": 21,
-        "icon": "⛅"
+        "temp": 24,
+        "icon": "☀"
       },
       {
         "time": "19:00",
-        "temp": 22,
-        "icon": "☀"
+        "temp": 21,
+        "icon": "⛅"
       }
     ],
-    "summary": "<strong>16–23°C</strong> · light drizzle · sunrise 04:47",
-    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
+    "summary": "<strong>13–24°C</strong> · overcast · sunrise 04:47",
+    "narrative": "Quiet weather. Top of 24°C around lunchtime."
   },
-  "weather_summary": "<strong>16–23°C</strong> · light drizzle · sunrise 04:47",
+  "weather_summary": "<strong>13–24°C</strong> · overcast · sunrise 04:47",
   "body": {
-    "value": "1.14",
+    "value": "1.02",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 22.7% on the prior week. Sleep ran 7h 32m overnight.",
+    "trend": "Down 4.3% on the prior week. Sleep ran 8h 35m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -186,61 +191,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "What's in the US-Iran agreement?"
+      "text": "Chris Mason: Emphatic win leaves Starmer and Labour MPs with big decision"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Moscow hit by largest Ukrainian attack since start of Russia's full-scale war"
+      "text": "Burnham says 'this is a final chance to change' in his victory speech"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Young women now have 'close to zero' risk of cervical cancer death after HPV jab"
+      "text": "Scottish Conservatives win first Westminster by-election in more than 50 years"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Church of England apologises for role in forced adoptions"
+      "text": "Sir John Curtice: Burnham's win represents remarkable personal success for him"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Lisa Nandy 'not satisfied' with Channel 4 response on Married at First Sight UK"
+      "text": "US lifts naval blockade as Iran's supreme leader says Trump made deal 'out of desperation'"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "What's in the US-Iran agreement?"
+      "text": "Chris Mason: Emphatic win leaves Starmer and Labour MPs with big decision"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Moscow hit by largest Ukrainian attack since start of Russia's full-scale war"
+      "text": "Burnham says 'this is a final chance to change' in his victory speech"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Young women now have 'close to zero' risk of cervical cancer death after HPV jab"
+      "text": "Scottish Conservatives win first Westminster by-election in more than 50 years"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Church of England apologises for role in forced adoptions"
+      "text": "Sir John Curtice: Burnham's win represents remarkable personal success for him"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Lisa Nandy 'not satisfied' with Channel 4 response on Married at First Sight UK"
+      "text": "US lifts naval blockade as Iran's supreme leader says Trump made deal 'out of desperation'"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "URGENT PERSONNEL MATTER",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and transition planning.",
-    "deck": "With no due date flagged but clearly sitting unaddressed in your task list, this personnel change needs to be handled now to ensure business continuity and team stability. The longer this remains pending, the greater the risk to operations and morale.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "STAFFING SHIFT",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
+    "deck": "With no clear timeline marked and multiple competing priorities, you need to address the departure head-on today—whether that's understanding the circumstances, identifying coverage, or beginning the search for a replacement. Leaving this unresolved risks cascading disruptions across your team.",
+    "byline": "06:28 · compiled from inbox, calendar & tasks"
   }
 }
