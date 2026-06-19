@@ -2,16 +2,11 @@
   "date_day": "Friday",
   "date_long": "19 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:27",
-  "briefing_no": 332,
+  "compiled_at": "12:33",
+  "briefing_no": 333,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
-    {
-      "time": "10:00",
-      "event": "Matt / Ben - Intro call",
-      "where": ""
-    },
     {
       "time": "10:00",
       "event": "Mrs Ross - Esme",
@@ -21,6 +16,16 @@
   "emails": [],
   "email_tally": "0 new · 0 want a reply",
   "messages": [
+    {
+      "channel": "wa",
+      "from": "Day2 Tech",
+      "preview": "Sounds good to me!"
+    },
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "Might get to you closer to 1:30?"
+    },
     {
       "channel": "wa",
       "from": "Thom & Max",
@@ -35,16 +40,6 @@
       "channel": "wa",
       "from": "175647016153161",
       "preview": "Hey Matt, the college I go to holds talks from business and people every term. I thought you would eb great for it given your experience wit"
-    },
-    {
-      "channel": "wa",
-      "from": "Day2 Tech",
-      "preview": "That works for me"
-    },
-    {
-      "channel": "wa",
-      "from": "The Young Ones",
-      "preview": "https://prksn.uk/4uEiR4Q"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -110,6 +105,16 @@
       "title": "Lower Sixth Mock Interview Session",
       "is_hoh": false,
       "location": "Cheltenham College"
+    },
+    {
+      "date": "2026-06-26",
+      "date_display": "Fri 26 Jun",
+      "time": "08:45",
+      "all_day": false,
+      "school": "Cheltenham",
+      "title": "Lower Sixth Mock Interview Session",
+      "is_hoh": false,
+      "location": "Cheltenham College"
     }
   ],
   "market": {
@@ -157,28 +162,28 @@
       {
         "time": "07:00",
         "temp": 14,
-        "icon": "☀"
+        "icon": "⛅"
       },
       {
         "time": "12:00",
         "temp": 21,
-        "icon": "☀"
+        "icon": "⛅"
       },
       {
         "time": "15:00",
-        "temp": 24,
-        "icon": "☀"
+        "temp": 23,
+        "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 21,
+        "temp": 20,
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>13–24°C</strong> · overcast · sunrise 04:47",
-    "narrative": "Quiet weather. Top of 24°C around lunchtime."
+    "summary": "<strong>13–23°C</strong> · overcast · sunrise 04:47",
+    "narrative": "Quiet weather. Top of 23°C around lunchtime."
   },
-  "weather_summary": "<strong>13–24°C</strong> · overcast · sunrise 04:47",
+  "weather_summary": "<strong>13–23°C</strong> · overcast · sunrise 04:47",
   "body": {
     "value": "1.02",
     "unit": "m/s",
@@ -191,12 +196,17 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Chris Mason: Emphatic win leaves Starmer and Labour MPs with big decision"
+      "text": "Chris Mason: Emphatic win leaves Starmer with big decision on leadership"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Burnham says 'this is a final chance to change' in his victory speech"
+      "text": "Farage blames Makerfield defeat on anti-Starmer votes"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "What is Burnham's path to becoming Labour leader and PM?"
     },
     {
       "kind": "news",
@@ -206,24 +216,24 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Sir John Curtice: Burnham's win represents remarkable personal success for him"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "US lifts naval blockade as Iran's supreme leader says Trump made deal 'out of desperation'"
+      "text": "Sir John Curtice: Burnham's win against Reform represents remarkable personal success"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Chris Mason: Emphatic win leaves Starmer and Labour MPs with big decision"
+      "text": "Chris Mason: Emphatic win leaves Starmer with big decision on leadership"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Burnham says 'this is a final chance to change' in his victory speech"
+      "text": "Farage blames Makerfield defeat on anti-Starmer votes"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "What is Burnham's path to becoming Labour leader and PM?"
     },
     {
       "kind": "news",
@@ -233,19 +243,14 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Sir John Curtice: Burnham's win represents remarkable personal success for him"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "US lifts naval blockade as Iran's supreme leader says Trump made deal 'out of desperation'"
+      "text": "Sir John Curtice: Burnham's win against Reform represents remarkable personal success"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "STAFFING SHIFT",
+    "eyebrow": "STAFFING",
     "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "With no clear timeline marked and multiple competing priorities, you need to address the departure head-on today—whether that's understanding the circumstances, identifying coverage, or beginning the search for a replacement. Leaving this unresolved risks cascading disruptions across your team.",
-    "byline": "06:28 · compiled from inbox, calendar & tasks"
+    "deck": "With this departure now on your task list, you need to move quickly on coverage, knowledge transfer, and identifying her replacement. The longer this sits, the more operational risk compounds across your team.",
+    "byline": "12:34 · compiled from inbox, calendar & tasks"
   }
 }
