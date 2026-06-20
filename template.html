@@ -701,6 +701,18 @@ const cflag  = c=>({'United States':'🇺🇸','Mexico':'🇲🇽','Canada':'�
 const cClass = c=>({'United States':'usa','Mexico':'mex','Canada':'can'}[c]||'');
 
 function fmtDate(d){
+  if(!d) return '–';
+  // Handle ESPN ISO format: "2026-06-25T18:00Z"
+  if(d.includes('T')){
+    const dt=new Date(d);
+    const mo=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const day=dt.getUTCDate();
+    const mon=mo[dt.getUTCMonth()];
+    const hr=String(dt.getUTCHours()).padStart(2,'0');
+    const min=String(dt.getUTCMinutes()).padStart(2,'0');
+    return`${mon} ${day} · ${hr}:${min}`;
+  }
+  // Handle old format: "06/25/2026 18:00"
   const[dt,tm]=d.split(' ');const[m,day]=dt.split('/');
   const mo=['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   return`${mo[+m]} ${+day} · ${tm}`;
@@ -818,7 +830,7 @@ function rScores(){
     const ht=tById(g.home_team_id),at=tById(g.away_team_id);
     const done=isDone(g),live=isLive(g);
     const hs=done||live?g.home_score:'–',as2=done||live?g.away_score:'–';
-    const badge=live?`<span class="sc-st stlive">🔴 ${g.time_elapsed}'</span>`:done?`<span class="sc-st stft">FT</span>`:`<span class="sc-st stsoon">Soon</span>`;
+    const badge=live?`<span class="sc-st stlive">🔴 ${g.time_elapsed}'</span>`:done?`<span class="sc-st stft">FT</span>`:`<span class="sc-st stsoon">${fmtDate(g.local_date)}</span>`;
     return`<div class="sc${live?' live':''}" data-gid="${g.id}">
       <div class="sc-top"><span class="sc-stg">${stageLabel(g)}</span>${badge}</div>
       <div class="sc-m">
@@ -859,7 +871,7 @@ function rFixtures(){
       const done=isDone(g),live=isLive(g);
       const hf=ht?`<img src="${ht.flag}" class="ffl"/>`:'';
       const af=at?`<img src="${at.flag}" class="ffl"/>`:'';
-      const score=done?`<span style="font-size:20px;font-weight:900">${g.home_score}–${g.away_score}</span>`:live?`<span style="color:var(--red);font-size:18px;font-weight:900">${g.home_score}–${g.away_score}</span>`:`<span class="fvs">${g.local_date.split(' ')[1]}</span>`;
+      const score=done?`<span style="font-size:20px;font-weight:900">${g.home_score}–${g.away_score}</span>`:live?`<span style="color:var(--red);font-size:18px;font-weight:900">${g.home_score}–${g.away_score}</span>`:`<span class="fvs">${fmtDate(g.local_date)}</span>`;
       const hl=g.home_team_label?`<span style="font-size:9px;color:var(--txt3);display:block;text-transform:uppercase;letter-spacing:.5px">${g.home_team_label}</span>`:'';
       const al=g.away_team_label?`<span style="font-size:9px;color:var(--txt3);display:block;text-transform:uppercase;letter-spacing:.5px">${g.away_team_label}</span>`:'';
       return`<div class="fr" data-gid="${g.id}">
