@@ -295,10 +295,11 @@ body::before{
 .fr{
   background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--r);
   padding:11px 14px;
-  display:grid;grid-template-columns:1fr auto 1fr;
+  display:grid;grid-template-columns:1fr auto 1fr auto;
   align-items:center;gap:8px;cursor:pointer;transition:.15s;
   -webkit-tap-highlight-color:transparent;
   min-height:52px;
+  position:relative;
 }
 .fr:active{background:var(--bg3)}
 .frt{display:flex;align-items:center;gap:7px;min-width:0}
@@ -523,24 +524,25 @@ body.light .ticker-label{background:var(--black);color:var(--gold)}
 /* ── ADD TO CALENDAR ── */
 .fr{position:relative}
 .cal-btn{
-  position:absolute;right:10px;top:50%;transform:translateY(-50%);
   background:none;border:1px solid var(--bdr);
-  color:var(--txt3);font-size:11px;font-family:var(--font-d);
+  color:var(--txt3);font-size:10px;font-family:var(--font-d);
   font-weight:700;letter-spacing:.5px;text-transform:uppercase;
   padding:4px 9px;border-radius:4px;
   opacity:0;transition:.15s;white-space:nowrap;
   -webkit-tap-highlight-color:transparent;
-  cursor:pointer;
+  cursor:pointer;justify-self:end;flex-shrink:0;
 }
-.fr:hover .cal-btn,.fr:focus-within .cal-btn{opacity:1}
-/* Always visible on mobile (no hover) */
-@media(max-width:899px){.cal-btn{opacity:1;position:static;transform:none;margin-left:auto;flex-shrink:0}}
+.fr:hover .cal-btn{opacity:1;border-color:var(--gold);color:var(--gold)}
+@media(max-width:899px){
+  .cal-btn{opacity:1}
+  .fr{grid-template-columns:1fr auto 1fr auto}
+}
 /* Cal dropdown */
 .cal-drop{
-  position:absolute;right:10px;top:calc(50% + 18px);z-index:100;
+  position:fixed;z-index:400;
   background:var(--bg2);border:1px solid var(--bdr2);border-radius:var(--r);
-  padding:6px;min-width:160px;
-  box-shadow:0 8px 24px rgba(0,0,0,.4);
+  padding:6px;min-width:180px;
+  box-shadow:0 8px 32px rgba(0,0,0,.5);
   display:none;
 }
 .cal-drop.open{display:block}
@@ -1206,32 +1208,36 @@ document.addEventListener('click', e => {
 });
 
 function openCalDrop(gid, btn){
-  // Close others
   document.querySelectorAll('.cal-drop.open').forEach(d=>d.classList.remove('open'));
   const g = GAMES.find(x=>x.id===String(gid));
   if(!g) return;
-  // Build dropdown
-  let drop = btn.parentElement.querySelector('.cal-drop');
+  // Reuse or create dropdown (attached to body for proper positioning)
+  let drop = document.getElementById('calDropGlobal');
   if(!drop){
     drop = document.createElement('div');
+    drop.id='calDropGlobal';
     drop.className='cal-drop';
     drop.innerHTML=`
       <button class="cal-opt" data-action="google"><span class="cal-opt-icon">📅</span>Google Calendar</button>
       <button class="cal-opt" data-action="outlook"><span class="cal-opt-icon">📆</span>Outlook</button>
-      <button class="cal-opt" data-action="apple"><span class="cal-opt-icon">🍎</span>Apple Calendar</button>
+      <button class="cal-opt" data-action="apple"><span class="cal-opt-icon">🍎</span>Apple / ICS</button>
     `;
-    drop.querySelectorAll('.cal-opt').forEach(opt=>{
-      opt.addEventListener('click', e=>{
-        e.stopPropagation();
-        const action = opt.dataset.action;
-        if(action==='google')  window.open(makeGoogleURL(g),'_blank');
-        if(action==='outlook') window.open(makeOutlookURL(g),'_blank');
-        if(action==='apple')   downloadICS(g);
-        drop.classList.remove('open');
-      });
-    });
-    btn.parentElement.appendChild(drop);
+    document.body.appendChild(drop);
   }
+  // Update handlers for this game
+  drop.querySelectorAll('.cal-opt').forEach(opt=>{
+    opt.onclick = e=>{
+      e.stopPropagation();
+      if(opt.dataset.action==='google')  window.open(makeGoogleURL(g),'_blank');
+      if(opt.dataset.action==='outlook') window.open(makeOutlookURL(g),'_blank');
+      if(opt.dataset.action==='apple')   downloadICS(g);
+      drop.classList.remove('open');
+    };
+  });
+  // Position below the button
+  const rect = btn.getBoundingClientRect();
+  drop.style.top  = (rect.bottom + 6 + window.scrollY) + 'px';
+  drop.style.right = (window.innerWidth - rect.right) + 'px';
   drop.classList.toggle('open');
 }
 
