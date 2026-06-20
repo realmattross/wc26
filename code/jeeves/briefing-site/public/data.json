@@ -2,8 +2,8 @@
   "date_day": "Saturday",
   "date_long": "20 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:30",
-  "briefing_no": 334,
+  "compiled_at": "12:41",
+  "briefing_no": 335,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
@@ -18,8 +18,18 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "150409754763471",
+      "preview": "just making sure you have a key"
+    },
+    {
+      "channel": "wa",
+      "from": "Sneakerheads",
+      "preview": "What could go wrong?"
+    },
+    {
+      "channel": "wa",
       "from": "84623824556136",
-      "preview": "(And for the first time ever, I am sending a potential new client my website!) - Very proud moment."
+      "preview": "Yep brill. Thanks"
     },
     {
       "channel": "wa",
@@ -30,16 +40,6 @@
       "channel": "wa",
       "from": "Day2  Core Team",
       "preview": "Agreed!! I think we can get some decent funding this way if we play it right"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Leaving now…"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Like the spurs away shirt"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -161,8 +161,8 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 16,
-        "icon": "⛅"
+        "temp": 17,
+        "icon": "☔"
       },
       {
         "time": "12:00",
@@ -171,19 +171,19 @@
       },
       {
         "time": "15:00",
-        "temp": 20,
+        "temp": 21,
         "icon": "⛅"
       },
       {
         "time": "19:00",
         "temp": 20,
-        "icon": "☀"
+        "icon": "⛅"
       }
     ],
-    "summary": "<strong>15–21°C</strong> · light drizzle · sunrise 04:48",
+    "summary": "<strong>16–22°C</strong> · light drizzle · sunrise 04:48",
     "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>15–21°C</strong> · light drizzle · sunrise 04:48",
+  "weather_summary": "<strong>16–22°C</strong> · light drizzle · sunrise 04:48",
   "body": {
     "value": "1.06",
     "unit": "m/s",
@@ -196,61 +196,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Driver dies and 33 people seriously injured in Bedford train crash"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
       "text": "'People flew from their seats': Passengers describe how collision unfolded"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "PM under pressure from Labour MPs and ministers to set timetable for exit"
+      "text": "Talk of Starmer staying on to fight is fading - fast"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Israel and Hezbollah agree ceasefire, US says, as more Lebanon strikes reported"
+      "text": "Steve Rosenberg: Moscow oil refinery attack brings Russia's war with Ukraine closer to home"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Cooler Saturday gives brief relief before heat returns"
+      "text": "Popping a cocktail of supplements every day might be doing you more harm than good"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Flawed but relentless Scotland show themselves as men of substance"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Driver dies and 33 people seriously injured in Bedford train crash"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
       "text": "'People flew from their seats': Passengers describe how collision unfolded"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "PM under pressure from Labour MPs and ministers to set timetable for exit"
+      "text": "Talk of Starmer staying on to fight is fading - fast"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Israel and Hezbollah agree ceasefire, US says, as more Lebanon strikes reported"
+      "text": "Steve Rosenberg: Moscow oil refinery attack brings Russia's war with Ukraine closer to home"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Cooler Saturday gives brief relief before heat returns"
+      "text": "Popping a cocktail of supplements every day might be doing you more harm than good"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Flawed but relentless Scotland show themselves as men of substance"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "INTERNAL",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "With no timeline specified in your task list, this departure could impact operations and team stability. Clarifying next steps and coverage needs should take priority this morning.",
-    "byline": "06:39 · compiled from inbox, calendar & tasks"
+    "eyebrow": "STAFFING",
+    "headline": "<em>Teresa's resignation</em> needs immediate attention",
+    "deck": "With no due date flagged on this task, there's risk of delay in managing transition planning and communicating changes across the team. This should move to the top of your list today.",
+    "byline": "12:56 · compiled from inbox, calendar & tasks"
   }
 }
