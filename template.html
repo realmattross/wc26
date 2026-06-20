@@ -687,7 +687,7 @@ const GROUPS_INIT = __GROUPS__;
 let GAMES  = JSON.parse(JSON.stringify(INIT_GAMES));
 let GROUPS = JSON.parse(JSON.stringify(GROUPS_INIT));
 const scoreSnap={};
-GAMES.forEach(g=>{scoreSnap[g.id]=`${g.home_score}-${g.away_score}-${g.finished}-${g.time_elapsed}`;});
+GAMES.forEach(g=>{scoreSnap[g.id]=`${g.home_score}|${g.away_score}|${g.finished}|${g.time_elapsed}`;});
 
 const S={view:'scores',sf:'all',stage:'all',country:'all',q:''};
 let alertsEnabled=false,notifPerm=(typeof Notification!=='undefined'?Notification.permission:'denied'),refreshTimer=null,lastRefreshFailed=false;
@@ -761,9 +761,62 @@ function updateAlertUI(){
 
 // LIVE REFRESH
 async function fetchLive(){
-  const p=u=>`https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`;
-  const[g,gr]=await Promise.all([fetch(p('https://worldcup26.ir/get/games')).then(r=>r.json()),fetch(p('https://worldcup26.ir/get/groups')).then(r=>r.json())]);
-  return{games:g.games||[],groups:gr.groups||[]};
+  // ESPN public API — no auth, works from browser, same source as build script
+  const ESPN='https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?limit=200&dates=20260611-20260719';
+  const data=await fetch(ESPN).then(r=>r.json());
+  const events=data.events||[];
+
+  function parseGroup(note){return(note&&note.includes('Group'))?note.split('Group ').pop().trim():'';}
+  function parseStage(e){
+    const slug=e.season?.slug||'group-stage';const note=e.competitions[0]?.altGameNote||'';
+    if(slug.includes('group')||note.includes('Group'))return'group';
+    if(slug.includes('round-of-32'))return'r32';if(slug.includes('round-of-16'))return'r16';
+    if(slug.includes('quarterfinal'))return'qf';if(slug.includes('semifinal'))return'sf';
+    if(slug.includes('final'))return'final';return'group';
+  }
+  function parseScorersStr(details,tid){
+    return details.filter(d=>d.scoringPlay&&String(d.team?.id)===String(tid))
+      .map(d=>{const a=d.athletesInvolved||[];return`${a[0]?.shortName||'?'} ${d.clock?.displayValue||''}${d.ownGoal?' (OG)':''}${d.penaltyKick?' (P)':''}`; }).join(', ');
+  }
+
+  const games=events.map(e=>{
+    const comp=e.competitions[0];const st=comp.status.type;
+    const hc=comp.competitors.find(c=>c.homeAway==='home')||comp.competitors[0];
+    const ac=comp.competitors.find(c=>c.homeAway==='away')||comp.competitors[1];
+    const done=st.completed;const live=st.state==='in'&&!done;
+    const elapsed=live?comp.status.displayClock||'':(!done?'notstarted':'finished');
+    const details=comp.details||[];
+    return{
+      id:comp.id,
+      home_team_id:hc.team.id,away_team_id:ac.team.id,
+      home_team_name_en:hc.team.displayName,away_team_name_en:ac.team.displayName,
+      home_score:+(hc.score||0),away_score:+(ac.score||0),
+      home_scorers:parseScorersStr(details,hc.team.id),
+      away_scorers:parseScorersStr(details,ac.team.id),
+      finished:done?'TRUE':'FALSE',time_elapsed:elapsed,
+      local_date:e.date,type:parseStage(e),
+      group:parseGroup(comp.altGameNote||''),matchday:'1',
+      stadium_id:comp.venue?.id||'',stadium_name:comp.venue?.fullName||'TBD',
+      home_logo:hc.team.logo||'',away_logo:ac.team.logo||'',
+    };
+  });
+
+  // Rebuild groups from results
+  const grpMap={};
+  games.forEach(g=>{
+    if(g.type!=='group'||g.finished!=='TRUE')return;
+    const grp=g.group;if(!grp)return;
+    if(!grpMap[grp])grpMap[grp]={};
+    [[g.home_team_id,g.home_score,g.away_score],[g.away_team_id,g.away_score,g.home_score]].forEach(([tid,gf,ga])=>{
+      if(!grpMap[grp][tid])grpMap[grp][tid]={team_id:tid,mp:0,w:0,d:0,l:0,gf:0,ga:0,gd:0,pts:0};
+      const r=grpMap[grp][tid];r.mp++;r.gf+=gf;r.ga+=ga;r.gd=r.gf-r.ga;
+      if(gf>ga){r.w++;r.pts+=3;}else if(gf===ga){r.d++;r.pts++;}else r.l++;
+    });
+  });
+  const groups=Object.entries(grpMap).sort(([a],[b])=>a.localeCompare(b))
+    .map(([name,teams])=>({name,teams:Object.values(teams).sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf)}));
+
+  return{games,groups};
 }
 function detectChanges(ng){
   const ag=document.getElementById('chk-goals').checked;
@@ -771,9 +824,9 @@ function detectChanges(ng){
   const af=document.getElementById('chk-ft').checked;
   const ch=[];
   ng.forEach(n=>{
-    const key=`${n.home_score}-${n.away_score}-${n.finished}-${n.time_elapsed}`;
+    const key=`${n.home_score}|${n.away_score}|${n.finished}|${n.time_elapsed}`;
     const prev=scoreSnap[n.id];if(!prev||prev===key)return;
-    const pp=prev.split('-'),pD=pp[2]==='TRUE',pL=pp[2]!=='TRUE'&&!['notstarted','finished','Finished'].includes(pp[3]);
+    const pp=prev.split('|'),pD=pp[2]==='TRUE',pL=pp[2]!=='TRUE'&&!['notstarted','finished','Finished'].includes(pp[3]);
     const nD=isDone(n),nL=isLive(n);const hn=n.home_team_name_en,an=n.away_team_name_en;
     if(ak&&!pL&&nL)ch.push({type:'kickoff',msg:`${hn} vs ${an}`,sub:`Group ${n.group} · Kicked off`});
     if(ag&&(nL||nD)){
@@ -791,7 +844,7 @@ async function refresh(){
     const{games:ng,groups:ngr}=await fetchLive();if(!ng.length)return;
     const ch=alertsEnabled?detectChanges(ng):[];
     GAMES=ng;GROUPS=ngr;
-    GAMES.forEach(g=>{if(!scoreSnap[g.id])scoreSnap[g.id]=`${g.home_score}-${g.away_score}-${g.finished}-${g.time_elapsed}`;});
+    GAMES.forEach(g=>{if(!scoreSnap[g.id])scoreSnap[g.id]=`${g.home_score}|${g.away_score}|${g.finished}|${g.time_elapsed}`;});
     ch.forEach(c=>{const i=c.type==='goal'?'⚽':c.type==='kickoff'?'🔴':'✅';showToast(i,c.msg,c.sub);sendNotif(c.msg,c.sub);});
     buildTicker();
     if(S.view==='scores')rScores();
