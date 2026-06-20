@@ -1,5 +1,6 @@
 [build]
   publish = "dist"
+  ignore = "exit 0"  # Always skip Netlify's own build — GitHub Action handles it
 
 [[headers]]
   for = "/*"
