@@ -553,7 +553,64 @@ body.light .ticker-label{background:var(--black);color:var(--gold)}
 }
 .cal-opt:hover{background:var(--bg3)}
 .cal-opt-icon{margin-right:8px}
+
+/* ── TOP SCORERS ── */
+.scorers-table{display:flex;flex-direction:column;gap:6px;max-width:680px}
+.scorer-row{
+  background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--r);
+  padding:12px 16px;display:flex;align-items:center;gap:14px;
+  transition:.15s;
+}
+.scorer-row:hover{border-color:var(--bdr2)}
+.scorer-rank{
+  font-family:var(--font-d);font-size:20px;font-weight:900;
+  color:var(--txt3);min-width:28px;text-align:center;
+}
+.scorer-rank.gold{color:#f0c040}
+.scorer-rank.silver{color:#c0c0c0}
+.scorer-rank.bronze{color:#cd7f32}
+.scorer-flag{width:36px;height:24px;object-fit:cover;border-radius:2px;border:1px solid var(--bdr);flex-shrink:0}
+.scorer-info{flex:1;min-width:0}
+.scorer-name{font-family:var(--font-d);font-size:16px;font-weight:800;letter-spacing:.3px;text-transform:uppercase}
+.scorer-team{font-size:11px;color:var(--txt3);font-family:var(--font-d);letter-spacing:.5px;text-transform:uppercase;margin-top:1px}
+.scorer-goals{
+  font-family:var(--font-d);font-size:28px;font-weight:900;color:var(--gold);
+  display:flex;align-items:center;gap:6px;flex-shrink:0;
+}
+.scorer-goals span{font-size:11px;color:var(--txt3);font-weight:600;margin-top:4px}
+.scorer-bar-wrap{width:100%;height:3px;background:var(--bg4);border-radius:2px;margin-top:6px}
+.scorer-bar{height:3px;background:var(--gold);border-radius:2px;transition:width .6s ease}
+
+/* ── BRACKET ── */
+.bracket-stage-label{
+  font-family:var(--font-d);font-size:11px;font-weight:800;letter-spacing:2px;
+  text-transform:uppercase;color:var(--gold);
+  padding:16px 0 6px;border-bottom:1px solid var(--bdr);margin-bottom:10px;
+}
+.bracket-grid{display:flex;flex-direction:column;gap:6px;margin-bottom:24px}
+.bracket-match{
+  background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--r);
+  padding:10px 14px;display:grid;grid-template-columns:1fr auto 1fr;
+  align-items:center;gap:10px;cursor:pointer;transition:.15s;
+}
+.bracket-match:hover{border-color:var(--bdr2);background:var(--bg3)}
+.bracket-match.done{border-left:2px solid var(--gold)}
+.bracket-match.live{border-left:2px solid var(--red)}
+.bm-team{display:flex;align-items:center;gap:8px;min-width:0}
+.bm-team.away{flex-direction:row-reverse;text-align:right}
+.bm-flag{width:24px;height:16px;object-fit:cover;border-radius:1px;flex-shrink:0}
+.bm-name{font-family:var(--font-d);font-size:14px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bm-tbd{color:var(--txt3)}
+.bm-score{font-family:var(--font-d);font-size:20px;font-weight:900;text-align:center;white-space:nowrap;min-width:50px}
+.bm-vs{font-family:var(--font-d);font-size:11px;font-weight:600;color:var(--txt3);letter-spacing:1px;text-transform:uppercase;text-align:center}
+.bm-meta{font-size:10px;color:var(--txt3);font-family:var(--font-d);letter-spacing:.5px;text-align:center;margin-top:2px;text-transform:uppercase}
+.bracket-tba{text-align:center;padding:20px;color:var(--txt3);font-family:var(--font-d);font-size:13px;letter-spacing:1px;text-transform:uppercase}
 </style>
+
+  <link rel="manifest" href="data:application/json;charset=utf-8,%7B%22name%22%3A%22WE+ARE+26%22%2C%22short_name%22%3A%22WC26%22%2C%22start_url%22%3A%22%2F%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%230a0a0a%22%2C%22theme_color%22%3A%22%23c9a227%22%2C%22description%22%3A%22FIFA+World+Cup+2026+Hub%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%3Csvg+xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27+viewBox%3D%270+0+100+100%27%3E%3Ctext+y%3D%27.9em%27+font-size%3D%2790%27%3E%E2%9A%BD%3C%2Ftext%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22any%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%7D%5D%7D"/>
+  <meta name="theme-color" content="#c9a227"/>
+  <meta name="apple-mobile-web-app-title" content="WC26"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 </head>
 <body>
 <div class="shell">
@@ -600,6 +657,8 @@ body.light .ticker-label{background:var(--black);color:var(--gold)}
       <button class="nb" data-v="fixtures">Fixtures</button>
       <button class="nb" data-v="teams">Teams</button>
       <button class="nb" data-v="stadiums">Stadiums</button>
+    <button class="nb" data-v="scorers">Scorers</button>
+    <button class="nb" data-v="bracket">Bracket</button>
     </nav>
 
     <div class="hdr-right">
@@ -693,6 +752,19 @@ body.light .ticker-label{background:var(--black);color:var(--gold)}
     <div class="stadgrid" id="stadgrid"></div>
   </div>
 
+  <!-- SCORERS -->
+  <div class="view" id="v-scorers">
+    <div class="vh"><div><div class="vt">Top Scorers</div><div class="vt-rule"></div><div class="vs">Golden Boot Race</div></div></div>
+    <div id="scorersTable"></div>
+  </div>
+
+  <!-- BRACKET -->
+  <div class="view" id="v-bracket">
+    <div class="vh"><div><div class="vt">Bracket</div><div class="vt-rule"></div><div class="vs">Knockout Stage · Begins Jul 1</div></div></div>
+    <div id="bracketWrap"></div>
+  </div>
+
+
 </main>
 
 <!-- BOTTOM NAV (mobile only) -->
@@ -702,7 +774,9 @@ body.light .ticker-label{background:var(--black);color:var(--gold)}
     <button class="bnb" data-v="groups"><span class="bnb-icon">📊</span><span class="bnb-label">Groups</span></button>
     <button class="bnb" data-v="fixtures"><span class="bnb-icon">📅</span><span class="bnb-label">Fixtures</span></button>
     <button class="bnb" data-v="teams"><span class="bnb-icon">🌍</span><span class="bnb-label">Teams</span></button>
-    <button class="bnb" data-v="stadiums"><span class="bnb-icon">🏟</span><span class="bnb-label">Stadiums</span></button>
+    <button class="bnb" data-v="stadiums"><span class="bnb-icon">🏟</span><span class="bnb-label">Venues</span></button>
+    <button class="bnb" data-v="scorers"><span class="bnb-icon">⚽</span><span class="bnb-label">Scorers</span></button>
+    <button class="bnb" data-v="bracket"><span class="bnb-icon">🏆</span><span class="bnb-label">Bracket</span></button>
   </div>
 </nav>
 
@@ -1052,6 +1126,8 @@ function render(){
   if(S.view==='fixtures')rFixtures();
   if(S.view==='teams')   rTeams();
   if(S.view==='stadiums')rStadiums();
+  if(S.view==='scorers') rScorers();
+  if(S.view==='bracket') rBracket();
 }
 
 
@@ -1158,6 +1234,112 @@ function openCalDrop(gid, btn){
   }
   drop.classList.toggle('open');
 }
+
+// ── TOP SCORERS ──────────────────────────────────────────────────────────────
+function rScorers(){
+  // Build scorer table from GAMES details
+  const scorers={};
+  GAMES.filter(g=>isDone(g)||isLive(g)).forEach(g=>{
+    const details=g._details||[];
+    details.filter(d=>d.scoringPlay&&!d.ownGoal).forEach(d=>{
+      const ath=d.athletesInvolved?.[0];if(!ath)return;
+      const pid=ath.id||ath.displayName;
+      if(!scorers[pid])scorers[pid]={name:ath.displayName||'',short:ath.shortName||'',
+        team:g.home_team_id===String(d.team?.id)?g.home_team_name_en:g.away_team_name_en,
+        logo:g.home_team_id===String(d.team?.id)?g.home_logo:g.away_logo,
+        goals:0};
+      scorers[pid].goals++;
+    });
+  });
+
+  // Fallback: parse from home_scorers/away_scorers strings if no _details
+  if(!Object.keys(scorers).length){
+    GAMES.filter(g=>isDone(g)||isLive(g)).forEach(g=>{
+      [[g.home_scorers,g.home_team_name_en,g.home_logo],[g.away_scorers,g.away_team_name_en,g.away_logo]].forEach(([str,team,logo])=>{
+        if(!str)return;
+        str.split(',').map(s=>s.trim()).filter(Boolean).forEach(entry=>{
+          // "Messi 66'" or "Messi 66' (P)"
+          const name=entry.replace(/\s*\d+['\''].*$/,'').trim();
+          if(!name)return;
+          if(!scorers[name])scorers[name]={name,short:name.split(' ').pop(),team,logo,goals:0};
+          scorers[name].goals++;
+        });
+      });
+    });
+  }
+
+  const top=Object.values(scorers).sort((a,b)=>b.goals-a.goals).slice(0,25);
+  const max=top[0]?.goals||1;
+
+  if(!top.length){document.getElementById('scorersTable').innerHTML='<div class="empty">No goals scored yet</div>';return;}
+
+  document.getElementById('scorersTable').innerHTML=`<div class="scorers-table">${top.map((s,i)=>{
+    const rankClass=i===0?'gold':i===1?'silver':i===2?'bronze':'';
+    const pct=Math.round((s.goals/max)*100);
+    const img=s.logo?`<img src="${s.logo}" class="scorer-flag" loading="lazy"/>`:'';
+    return`<div class="scorer-row">
+      <div class="scorer-rank ${rankClass}">${i+1}</div>
+      ${img}
+      <div class="scorer-info">
+        <div class="scorer-name">${s.name||s.short}</div>
+        <div class="scorer-team">${s.team}</div>
+        <div class="scorer-bar-wrap"><div class="scorer-bar" style="width:${pct}%"></div></div>
+      </div>
+      <div class="scorer-goals">${s.goals}<span>goals</span></div>
+    </div>`;
+  }).join('')}</div>`;
+}
+
+// ── BRACKET ──────────────────────────────────────────────────────────────────
+function rBracket(){
+  const stages=[
+    {key:'r32',  label:'Round of 32',    slug:'round-of-32'},
+    {key:'r16',  label:'Round of 16',    slug:'round-of-16'},
+    {key:'qf',   label:'Quarter-Finals', slug:'quarterfinals'},
+    {key:'sf',   label:'Semi-Finals',    slug:'semifinals'},
+    {key:'final',label:'Final 🏆',        slug:'final'},
+  ];
+
+  const knockoutGames=GAMES.filter(g=>g.type!=='group');
+
+  if(!knockoutGames.length){
+    document.getElementById('bracketWrap').innerHTML=`
+      <div class="bracket-tba">
+        🏆 Knockout stage begins Jul 1<br/>
+        <span style="color:var(--txt3);font-size:11px">Group stage ends Jun 29</span>
+      </div>`;
+    return;
+  }
+
+  const tById2=id=>TEAMS.find(t=>t.id===String(id));
+  let html='';
+  stages.forEach(({key,label})=>{
+    const matches=GAMES.filter(g=>g.type===key);
+    if(!matches.length)return;
+    html+=`<div class="bracket-stage-label">${label}</div><div class="bracket-grid">`;
+    matches.forEach(g=>{
+      const done=isDone(g),live=isLive(g);
+      const ht=tById2(g.home_team_id),at=tById2(g.away_team_id);
+      const hf=ht?`<img src="${ht.flag}" class="bm-flag" loading="lazy"/>`:'' ;
+      const af=at?`<img src="${at.flag}" class="bm-flag" loading="lazy"/>`:'';
+      const hname=g.home_team_name_en||'TBD'; const aname=g.away_team_name_en||'TBD';
+      const isTBD=hname==='TBD'||aname==='TBD';
+      const score=done?`<div><div class="bm-score">${g.home_score}–${g.away_score}</div><div class="bm-meta">FT</div></div>`:
+                  live?`<div><div class="bm-score" style="color:var(--red)">${g.home_score}–${g.away_score}</div><div class="bm-meta" style="color:var(--red)">LIVE</div></div>`:
+                       `<div><div class="bm-vs">vs</div><div class="bm-meta">${fmtDate(g.local_date)}</div></div>`;
+      html+=`<div class="bracket-match${done?' done':live?' live':''}" data-gid="${g.id}">
+        <div class="bm-team">${!isTBD?hf:''}<span class="bm-name${isTBD?' bm-tbd':''}">${hname}</span></div>
+        ${score}
+        <div class="bm-team away"><span class="bm-name${isTBD?' bm-tbd':''}">${aname}</span>${!isTBD?af:''}</div>
+      </div>`;
+    });
+    html+='</div>';
+  });
+
+  document.getElementById('bracketWrap').innerHTML=html||`<div class="bracket-tba">🏆 Knockout stage begins Jul 1</div>`;
+  document.querySelectorAll('.bracket-match[data-gid]').forEach(m=>m.addEventListener('click',()=>openModal(m.dataset.gid)));
+}
+
 buildTicker();render();startRefresh();
 </script>
 </body>
