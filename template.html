@@ -485,6 +485,40 @@ body::before{
   /* Main content gets padding for bottom nav */
   .main-content{padding-bottom:0}
 }
+
+.mode-btn{
+  background:var(--bg3);border:1px solid var(--bdr);
+  color:var(--txt2);
+  width:34px;height:34px;border-radius:var(--r);
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;transition:.15s;flex-shrink:0;
+  -webkit-tap-highlight-color:transparent;
+}
+.mode-btn:hover{border-color:var(--bdr2)}
+
+/* ── LIGHT MODE ── */
+body.light{
+  --bg:#f0ede6;
+  --bg2:#ffffff;
+  --bg3:#f5f2eb;
+  --bg4:#e8e4db;
+  --txt:#1a1a1a;
+  --txt2:#4a4640;
+  --txt3:#9a9690;
+  --bdr:rgba(0,0,0,0.08);
+  --bdr2:rgba(0,0,0,0.16);
+  --gold:#b8920f;
+  --gold-bright:#d4a800;
+}
+body.light .hdr{background:rgba(240,237,230,0.97)}
+body.light body::before{
+  background-image:
+    repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(0,0,0,0.04) 39px,rgba(0,0,0,0.04) 40px),
+    repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(0,0,0,0.04) 39px,rgba(0,0,0,0.04) 40px);
+}
+body.light .bottom-nav{background:rgba(240,237,230,0.97)}
+body.light .ticker{background:var(--gold)}
+body.light .ticker-label{background:var(--black);color:var(--gold)}
 </style>
 </head>
 <body>
@@ -535,7 +569,8 @@ body::before{
     </nav>
 
     <div class="hdr-right">
-      <button class="alert-btn" id="alertBtn"><span class="alert-dot"></span>Alerts</button>
+      <button class="mode-btn" id="modeBtn" title="Toggle light/dark mode">☀️</button>
+  <button class="alert-btn" id="alertBtn"><span class="alert-dot"></span>Alerts</button>
       <div class="hmeta">
         <div><strong>__DONE__/__TOTAL__</strong> Played</div>
         <div>__NOW__</div>
@@ -917,6 +952,19 @@ function render(){
   if(S.view==='teams')   rTeams();
   if(S.view==='stadiums')rStadiums();
 }
+
+
+// ── LIGHT/DARK TOGGLE ────────────────────────────────────────────────────────
+(function(){
+  const btn = document.getElementById('modeBtn');
+  const saved = localStorage.getItem('wc26-theme');
+  if(saved === 'light') { document.body.classList.add('light'); btn.textContent = '🌙'; }
+  btn.addEventListener('click', () => {
+    const isLight = document.body.classList.toggle('light');
+    btn.textContent = isLight ? '🌙' : '☀️';
+    localStorage.setItem('wc26-theme', isLight ? 'light' : 'dark');
+  });
+})();
 
 buildTicker();render();startRefresh();
 </script>
