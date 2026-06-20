@@ -456,7 +456,7 @@ body::before{
   .ggrid{grid-template-columns:repeat(2,1fr)}
   .tgrid{grid-template-columns:repeat(3,1fr)}
   .stadgrid{grid-template-columns:repeat(2,1fr)}
-  .fr{grid-template-columns:1fr 80px 1fr auto}
+  .fr{grid-template-columns:1fr auto 1fr auto}
   .mdl{border-radius:var(--r2);max-width:480px;align-self:center;transform:translateY(20px)}
   .mbg{align-items:center}
 }
@@ -528,15 +528,12 @@ body.light .ticker-label{background:var(--black);color:var(--gold)}
   color:var(--txt3);font-size:10px;font-family:var(--font-d);
   font-weight:700;letter-spacing:.5px;text-transform:uppercase;
   padding:4px 9px;border-radius:4px;
-  opacity:0;transition:.15s;white-space:nowrap;
+  white-space:nowrap;transition:.15s;
   -webkit-tap-highlight-color:transparent;
   cursor:pointer;justify-self:end;flex-shrink:0;
 }
-.fr:hover .cal-btn{opacity:1;border-color:var(--gold);color:var(--gold)}
-@media(max-width:899px){
-  .cal-btn{opacity:1}
-  .fr{grid-template-columns:1fr auto 1fr auto}
-}
+.fr:hover .cal-btn{border-color:var(--gold);color:var(--gold)}
+
 /* Cal dropdown */
 .cal-drop{
   position:fixed;z-index:400;
