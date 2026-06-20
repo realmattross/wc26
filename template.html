@@ -519,6 +519,40 @@ body.light body::before{
 body.light .bottom-nav{background:rgba(240,237,230,0.97)}
 body.light .ticker{background:var(--gold)}
 body.light .ticker-label{background:var(--black);color:var(--gold)}
+
+/* ── ADD TO CALENDAR ── */
+.fr{position:relative}
+.cal-btn{
+  position:absolute;right:10px;top:50%;transform:translateY(-50%);
+  background:none;border:1px solid var(--bdr);
+  color:var(--txt3);font-size:11px;font-family:var(--font-d);
+  font-weight:700;letter-spacing:.5px;text-transform:uppercase;
+  padding:4px 9px;border-radius:4px;
+  opacity:0;transition:.15s;white-space:nowrap;
+  -webkit-tap-highlight-color:transparent;
+  cursor:pointer;
+}
+.fr:hover .cal-btn,.fr:focus-within .cal-btn{opacity:1}
+/* Always visible on mobile (no hover) */
+@media(max-width:899px){.cal-btn{opacity:1;position:static;transform:none;margin-left:auto;flex-shrink:0}}
+/* Cal dropdown */
+.cal-drop{
+  position:absolute;right:10px;top:calc(50% + 18px);z-index:100;
+  background:var(--bg2);border:1px solid var(--bdr2);border-radius:var(--r);
+  padding:6px;min-width:160px;
+  box-shadow:0 8px 24px rgba(0,0,0,.4);
+  display:none;
+}
+.cal-drop.open{display:block}
+.cal-opt{
+  display:block;width:100%;text-align:left;
+  background:none;border:none;color:var(--txt);
+  font-family:var(--font-b);font-size:13px;
+  padding:8px 10px;border-radius:4px;cursor:pointer;
+  transition:background .12s;white-space:nowrap;
+}
+.cal-opt:hover{background:var(--bg3)}
+.cal-opt-icon{margin-right:8px}
 </style>
 </head>
 <body>
@@ -927,10 +961,12 @@ function rFixtures(){
       const score=done?`<span style="font-size:20px;font-weight:900">${g.home_score}–${g.away_score}</span>`:live?`<span style="color:var(--red);font-size:18px;font-weight:900">${g.home_score}–${g.away_score}</span>`:`<span class="fvs">${fmtDate(g.local_date)}</span>`;
       const hl=g.home_team_label?`<span style="font-size:9px;color:var(--txt3);display:block;text-transform:uppercase;letter-spacing:.5px">${g.home_team_label}</span>`:'';
       const al=g.away_team_label?`<span style="font-size:9px;color:var(--txt3);display:block;text-transform:uppercase;letter-spacing:.5px">${g.away_team_label}</span>`:'';
+      const calBtn=!done?`<button class="cal-btn" onclick="event.stopPropagation();openCalDrop('${g.id}',this)">+ Cal</button>`:'';
       return`<div class="fr" data-gid="${g.id}">
         <div class="frt">${hf}<div><span class="fnm">${g.home_team_name_en}</span>${hl}</div></div>
         <div class="frs">${score}</div>
         <div class="frt aw"><div style="text-align:right"><span class="fnm">${g.away_team_name_en}</span>${al}</div>${af}</div>
+        ${calBtn}
       </div>`;
     }).join('')}`;
   }).join('');
@@ -1031,6 +1067,97 @@ function render(){
   });
 })();
 
+
+// ── CALENDAR HELPERS ─────────────────────────────────────────────────────────
+function toICSDate(isoStr){
+  // "2026-06-25T18:00Z" → "20260625T180000Z"
+  return isoStr.replace(/[-:]/g,'').replace('.000','').replace('Z','Z');
+}
+
+function makeICS(g){
+  const start = toICSDate(g.local_date);
+  // Add 2 hours for end time
+  const startD = new Date(g.local_date);
+  const endD   = new Date(startD.getTime() + 2*60*60*1000);
+  const end    = toICSDate(endD.toISOString());
+  const title  = `${g.home_team_name_en} vs ${g.away_team_name_en} — FIFA World Cup 2026`;
+  const loc    = g.stadium_name || 'TBD';
+  const desc   = `FIFA World Cup 2026 | ${g.type==='group'?'Group '+g.group:'Knockout'} | ${loc}`;
+  return [
+    'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//WC26//EN','CALSCALE:GREGORIAN',
+    'BEGIN:VEVENT',
+    `DTSTART:${start}`,`DTEND:${end}`,
+    `SUMMARY:${title}`,`DESCRIPTION:${desc}`,`LOCATION:${loc}`,
+    `UID:wc26-${g.id}@world-cup-roscoe.netlify.app`,
+    'END:VEVENT','END:VCALENDAR'
+  ].join('\r\n');
+}
+
+function makeGoogleURL(g){
+  const start = g.local_date.replace(/[-:]/g,'').replace('.000Z','Z');
+  const startD = new Date(g.local_date);
+  const endD   = new Date(startD.getTime() + 2*60*60*1000);
+  const end    = endD.toISOString().replace(/[-:]/g,'').replace('.000Z','Z');
+  const title  = encodeURIComponent(`${g.home_team_name_en} vs ${g.away_team_name_en} — FIFA World Cup 2026`);
+  const loc    = encodeURIComponent(g.stadium_name || 'TBD');
+  const details= encodeURIComponent(`FIFA World Cup 2026 | ${g.type==='group'?'Group '+g.group:'Knockout'}`);
+  return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${start}/${end}&details=${details}&location=${loc}`;
+}
+
+function makeOutlookURL(g){
+  const start = new Date(g.local_date).toISOString();
+  const endD  = new Date(new Date(g.local_date).getTime() + 2*60*60*1000).toISOString();
+  const title = encodeURIComponent(`${g.home_team_name_en} vs ${g.away_team_name_en} — FIFA World Cup 2026`);
+  const loc   = encodeURIComponent(g.stadium_name || 'TBD');
+  return `https://outlook.live.com/calendar/0/deeplink/compose?subject=${title}&startdt=${start}&enddt=${endD}&location=${loc}&path=/calendar/action/compose`;
+}
+
+function downloadICS(g){
+  const ics  = makeICS(g);
+  const blob = new Blob([ics], {type:'text/calendar;charset=utf-8'});
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href=url; a.download=`wc26-${g.home_team_name_en}-vs-${g.away_team_name_en}.ics`;
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a); URL.revokeObjectURL(url);
+}
+
+// Close any open cal dropdowns
+document.addEventListener('click', e => {
+  if(!e.target.closest('.cal-btn') && !e.target.closest('.cal-drop')){
+    document.querySelectorAll('.cal-drop.open').forEach(d=>d.classList.remove('open'));
+  }
+});
+
+function openCalDrop(gid, btn){
+  // Close others
+  document.querySelectorAll('.cal-drop.open').forEach(d=>d.classList.remove('open'));
+  const g = GAMES.find(x=>x.id===String(gid));
+  if(!g) return;
+  // Build dropdown
+  let drop = btn.parentElement.querySelector('.cal-drop');
+  if(!drop){
+    drop = document.createElement('div');
+    drop.className='cal-drop';
+    drop.innerHTML=`
+      <button class="cal-opt" data-action="google"><span class="cal-opt-icon">📅</span>Google Calendar</button>
+      <button class="cal-opt" data-action="outlook"><span class="cal-opt-icon">📆</span>Outlook</button>
+      <button class="cal-opt" data-action="apple"><span class="cal-opt-icon">🍎</span>Apple Calendar</button>
+    `;
+    drop.querySelectorAll('.cal-opt').forEach(opt=>{
+      opt.addEventListener('click', e=>{
+        e.stopPropagation();
+        const action = opt.dataset.action;
+        if(action==='google')  window.open(makeGoogleURL(g),'_blank');
+        if(action==='outlook') window.open(makeOutlookURL(g),'_blank');
+        if(action==='apple')   downloadICS(g);
+        drop.classList.remove('open');
+      });
+    });
+    btn.parentElement.appendChild(drop);
+  }
+  drop.classList.toggle('open');
+}
 buildTicker();render();startRefresh();
 </script>
 </body>
