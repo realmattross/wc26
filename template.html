@@ -170,7 +170,7 @@ body::before{
 }
 
 /* Views — block display, not absolute stacked */
-.view{display:none;padding:20px 0 100px}
+.view{display:none;padding:20px 0 130px}
 .view.on{display:block}
 
 /* ── BOTTOM NAV (mobile only) ── */
@@ -616,7 +616,7 @@ body.light .ticker-label{background:var(--black);color:var(--gold)}
     flex-shrink:0;
   }
   /* Push main content up so ticker + bottom nav don't cover it */
-  .main-content{padding-bottom:calc(86px + var(--sab))}
+  .main-content{padding-bottom:calc(100px + var(--sab))}
 }
 </style>
 
@@ -628,11 +628,7 @@ body.light .ticker-label{background:var(--black);color:var(--gold)}
 <body>
 <div class="shell">
 
-<!-- TICKER -->
-<div class="ticker">
-  <span class="ticker-label">WE ARE 26</span>
-  <div class="ti" id="ti"></div>
-</div>
+<!-- ticker moved to bottom -->
 
 <!-- HEADER -->
 <header class="hdr">
