@@ -185,6 +185,9 @@ body::before{
   z-index:100;
   padding-bottom:var(--sab);
 }
+#tickerBar{
+  /* default: inline in document flow */
+}
 .bottom-nav-inner{
   display:flex;
   height:56px;
@@ -604,6 +607,17 @@ body.light .ticker-label{background:var(--black);color:var(--gold)}
 .bm-vs{font-family:var(--font-d);font-size:11px;font-weight:600;color:var(--txt3);letter-spacing:1px;text-transform:uppercase;text-align:center}
 .bm-meta{font-size:10px;color:var(--txt3);font-family:var(--font-d);letter-spacing:.5px;text-align:center;margin-top:2px;text-transform:uppercase}
 .bracket-tba{text-align:center;padding:20px;color:var(--txt3);font-family:var(--font-d);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+@media(max-width:899px){
+  #tickerBar{
+    position:fixed;
+    bottom:calc(56px + var(--sab));
+    left:0;right:0;
+    z-index:99;
+    flex-shrink:0;
+  }
+  /* Push main content up so ticker + bottom nav don't cover it */
+  .main-content{padding-bottom:calc(86px + var(--sab))}
+}
 </style>
 
   <link rel="manifest" href="data:application/json;charset=utf-8,%7B%22name%22%3A%22WE+ARE+26%22%2C%22short_name%22%3A%22WC26%22%2C%22start_url%22%3A%22%2F%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%230a0a0a%22%2C%22theme_color%22%3A%22%23c9a227%22%2C%22description%22%3A%22FIFA+World+Cup+2026+Hub%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%3Csvg+xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27+viewBox%3D%270+0+100+100%27%3E%3Ctext+y%3D%27.9em%27+font-size%3D%2790%27%3E%E2%9A%BD%3C%2Ftext%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22any%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%7D%5D%7D"/>
@@ -765,6 +779,9 @@ body.light .ticker-label{background:var(--black);color:var(--gold)}
 
 
 </main>
+
+<!-- TICKER (bottom on mobile, below content) -->
+<div class="ticker" id="tickerBar"><div class="ti" id="ti"></div></div>
 
 <!-- BOTTOM NAV (mobile only) -->
 <nav class="bottom-nav" id="bottomNav">
@@ -1343,6 +1360,17 @@ function rBracket(){
   document.querySelectorAll('.bracket-match[data-gid]').forEach(m=>m.addEventListener('click',()=>openModal(m.dataset.gid)));
 }
 
+
+// On desktop, move ticker to top of shell
+function positionTicker(){
+  const ticker = document.getElementById('tickerBar');
+  const shell  = ticker.parentElement;
+  if(window.innerWidth >= 900){
+    shell.insertBefore(ticker, shell.firstChild);
+  }
+}
+positionTicker();
+window.addEventListener('resize', positionTicker);
 buildTicker();render();startRefresh();
 </script>
 </body>
